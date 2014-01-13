@@ -68,8 +68,8 @@
                 <?php } ?>
               </div><!-- /.row -->
               <BR>
-              <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+              <div class="row text-center">
+                
                   <ul class="list-inline acompanhe ">
                     <li>
                       <div>
@@ -96,7 +96,7 @@
                       </div>
                     </li>
                   </ul>
-                </div>
+                
               </div><!-- /.row --> 
             </div><!-- /.container -->
 
