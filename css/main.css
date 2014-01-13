@@ -25,6 +25,10 @@ font-size:40px;
 font-weight:lighter;
 text-shadow:0px 2px 13px rgba(255, 255, 255, 0.3);
 }
+
+.nav{
+padding: 8px;
+}
 a:active, a:hover, a:focus{
 background-color:#111111;
 color:#9F0034;

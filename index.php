@@ -41,119 +41,119 @@
         <link href="/css/bootstrap-ie7.css" rel="stylesheet">
         <![endif]-->
 </head>
-<body data-spy="scroll" data-target=".nav" class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+<body data-spy="scroll" data-target=".nav">
   <?php include_once("analyticstracking.php") ?>
 
         <?php include 'cabecalho.php'; ?>
 
 
         <div id="section2" class="section">
-        	
-	          <div class="container col-lg-8 col-md-8 col-sm-6 col-xs-12">
-	            <div class="row">
-	              <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-	                <h1 class="text-center aldo">Últimas Fotos<hr></h1>
-	                </div>
-	            </div>
-	            <div class="row">
-	              <?php $query = mysql_query("SELECT id_galeria, titulo, codigo, DATE_FORMAT(data,'%d/%m') as data1 FROM tbgalerias WHERE flag_status = 1"); while ($dadosAlbum = mysql_fetch_assoc($query)) { ?>
-	              <div class="text-center col-lg-2 col-lg-offset-0 col-md-2 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-8 col-xs-offset-2">
-	                <h1>
-	                   <a href="/fotos.php?hash=<?=$dadosAlbum['codigo'].'&gcod='.$dadosAlbum['id_galeria'].'&data='.urlencode($dadosAlbum['data1'])?>">
-	                    <img src="painel/arquivos/galeria/<?=$dadosAlbum['codigo']?>/capa.jpg" class="img-responsive center-block albumcapa"  alt="<?=$dadosAlbum['titulo']?>"/>
-	                    <span class="gc ttdata posicaodata"><?=$dadosAlbum['data1']?></span>
-	                  </a>
-	                </h1>
-	              </div>
-	              <?php } ?>
-	            </div><!-- /.row -->
-	            <div class="row center-block">
-	              <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-	                <ul class="list-inline acompanhe ">
-	                  <li>
-	                    <div>
-	                      <a href="https://www.facebook.com/boateterranight" class="social" target="_blank">
-	                        <img src="../img/title_facebook.png"></a>
-	                    </div>
-	                  </li>
-	                  <li>
-	                    <div>
-	                      <a href="https://twitter.com/search?q=terranight" class="social" target="_blank">
-	                        <img src="../img/title_twitter.png"></a>
-	                    </div>
-	                  </li>
-	                  <li>
-	                    <div>
-	                      <a href="http://statigr.am/tag/terranight/" class="social" target="_blank">
-	                        <img src="../img/title_instagram.png"></a>
-	                    </div>
-	                  </li>
-	                  <li>
-	                    <div>
-	                      <a href="http://www.youtube.com/results?search_query=terra+night" class="social" target="_blank">
-	                        <img src="../img/title_youtube.png"></a>
-	                    </div>
-	                  </li>
-	                </ul>
-	              </div>
-	            </div><!-- /.row --> 
-	          </div><!-- /.container -->
+          
+            <div class="container col-lg-8 col-md-8 col-sm-6 col-xs-12">
+              <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                  <h1 class="text-center aldo">Últimas Fotos<hr></h1>
+                  </div>
+              </div>
+              <div class="row">
+                <?php $query = mysql_query("SELECT id_galeria, titulo, codigo, DATE_FORMAT(data,'%d/%m') as data1 FROM tbgalerias WHERE flag_status = 1"); while ($dadosAlbum = mysql_fetch_assoc($query)) { ?>
+                <div class="text-center col-lg-2 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-8 col-xs-offset-2">
+                  <h1>
+                     <a href="/fotos.php?hash=<?=$dadosAlbum['codigo'].'&gcod='.$dadosAlbum['id_galeria'].'&data='.urlencode($dadosAlbum['data1'])?>">
+                      <img src="painel/arquivos/galeria/<?=$dadosAlbum['codigo']?>/capa.jpg" class="img-responsive center-block albumcapa"  alt="<?=$dadosAlbum['titulo']?>"/>
+                      <span class="gc ttdata posicaodata"><?=$dadosAlbum['data1']?></span>
+                    </a>
+                  </h1>
+                </div>
+                <?php } ?>
+              </div><!-- /.row -->
+              <div class="row center-block">
+                <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                  <ul class="list-inline acompanhe ">
+                    <li>
+                      <div>
+                        <a href="https://www.facebook.com/boateterranight" class="social" target="_blank">
+                          <img src="../img/title_facebook.png"></a>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <a href="https://twitter.com/search?q=terranight" class="social" target="_blank">
+                          <img src="../img/title_twitter.png"></a>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <a href="http://statigr.am/tag/terranight/" class="social" target="_blank">
+                          <img src="../img/title_instagram.png"></a>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <a href="http://www.youtube.com/results?search_query=terra+night" class="social" target="_blank">
+                          <img src="../img/title_youtube.png"></a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div><!-- /.row --> 
+            </div><!-- /.container -->
 
-        		<div class="container col-lg-4 col-md-4 col-sm-6 col-xs-12">
-        			<div class="row">
-			            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-			                <h1 class="text-center aldo">Programação<hr></h1>
-			            </div>	
-        			</div>
-        			<div class="row">
-        				<div class="tab-content faq-cat-content ttdata">
-		                   <ul class="agenda">
+            <div class="container col-lg-4 col-md-4 col-sm-6 col-xs-12">
+              <div class="row">
+                  <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                      <h1 class="text-center aldo">Programação<hr></h1>
+                  </div>  
+              </div>
+              <div class="row">
+                <div class="tab-content faq-cat-content ttdata">
+                       <ul class="agenda">
 
-		                    <?php $query = mysql_query("SELECT descricao, titulo, DAY(datahora) as dia, MONTH(datahora) as mes FROM tbprogramacao WHERE MONTH(datahora) = '".date('m')."' ORDER BY datahora ASC");
-		                          for ($i = 0;$dadosAgenda = mysql_fetch_assoc($query);$i++) {
-		                        ?><li>
-		                        <div class="tab-pane in fade" id="faq-cat-<?=$i?>">
-		                          <div class="panel-group" id="accordion-cat-<?=$i?>">
-		                              <div class="panel panel-faq" id="contentDarkTerraNiggaNight">
-		                                  <div class="panel-heading">
-		                                    <a data-toggle="collapse" data-parent="#accordion-cat-<?=$i?>" href="#faq-cat-<?=$i?>-sub-<?=$i?>">
-		                                        <div class="pull-left">
-		                                          
-		                                          <p class="dia gc" style="color:#000000 !important;">
-		                                            <b><?=((int)$dadosAgenda['dia'] < 10 ? "0{$dadosAgenda['dia']}" : $dadosAgenda['dia'])?></b>
-		                                          </p>
-		                                          <p class="mes gc" style="color:#000000 !important;">
-		                                            <b><?=((int)$dadosAgenda['mes'] < 10 ? "0{$dadosAgenda['mes']}" : $dadosAgenda['mes'])?></b>
-		                                          </p>
-		                                          <img class="img-responsive" src="../img/ovo-data.png">
-		                                          
-		                                        </div>
-		                                        <div class="agendaposition">
-		                                          <h3 class="gc">
-		                                           <b><?=utf8_encode($dadosAgenda['titulo'])?></b>
-		                                            <br>
-		                                            <small> 
-		                                              <b>+ informações</b>
-		                                            </small>
-		                                          </h3>
-		                                        </div>
-		                                      </a>
-		                                  </div>     
-		                                <div id="faq-cat-<?=$i?>-sub-<?=$i?>" class="panel-collapse collapse">
-		                                    <div class="panel-body">
-		                                      <p class="gc"><?=utf8_encode($dadosAgenda['descricao'])?></p>
-		                                    </div>
-		                                </div>
-		                             </div>
-		                         </div>
-		                        </li><br><?php } ?>
-		                      
-		                      </ul> 
-		                    </div><!--./faq-cat-one-->
-		         		</div><!--/.faq-cat-content-->
-        		</div>
-        	</div>
-        </div><!-- /.section -->	
+                        <?php $query = mysql_query("SELECT descricao, titulo, DAY(datahora) as dia, MONTH(datahora) as mes FROM tbprogramacao WHERE MONTH(datahora) = '".date('m')."' ORDER BY datahora ASC");
+                              for ($i = 0;$dadosAgenda = mysql_fetch_assoc($query);$i++) {
+                            ?><li>
+                            <div class="tab-pane in fade" id="faq-cat-<?=$i?>">
+                              <div class="panel-group" id="accordion-cat-<?=$i?>">
+                                  <div class="panel panel-faq" id="contentDarkTerraNiggaNight">
+                                      <div class="panel-heading">
+                                        <a data-toggle="collapse" data-parent="#accordion-cat-<?=$i?>" href="#faq-cat-<?=$i?>-sub-<?=$i?>">
+                                            <div class="pull-left">
+                                              
+                                              <p class="dia gc" style="color:#000000 !important;">
+                                                <b><?=((int)$dadosAgenda['dia'] < 10 ? "0{$dadosAgenda['dia']}" : $dadosAgenda['dia'])?></b>
+                                              </p>
+                                              <p class="mes gc" style="color:#000000 !important;">
+                                                <b><?=((int)$dadosAgenda['mes'] < 10 ? "0{$dadosAgenda['mes']}" : $dadosAgenda['mes'])?></b>
+                                              </p>
+                                              <img class="img-responsive" src="../img/ovo-data.png">
+                                              
+                                            </div>
+                                            <div class="agendaposition">
+                                              <h3 class="gc">
+                                               <b><?=utf8_encode($dadosAgenda['titulo'])?></b>
+                                                <br>
+                                                <small> 
+                                                  <b>+ informações</b>
+                                                </small>
+                                              </h3>
+                                            </div>
+                                          </a>
+                                      </div>     
+                                    <div id="faq-cat-<?=$i?>-sub-<?=$i?>" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                          <p class="gc"><?=utf8_encode($dadosAgenda['descricao'])?></p>
+                                        </div>
+                                    </div>
+                                 </div>
+                             </div>
+                            </li><br><?php } ?>
+                          
+                          </ul> 
+                        </div><!--./faq-cat-one-->
+                </div><!--/.faq-cat-content-->
+            </div>
+          </div>
+        </div><!-- /.section -->  
         <div class="clearfix"></div>
 
 
@@ -334,7 +334,7 @@
         
       <div class="section text-center">
         <div class="container maps center-block">
-          <div class="row">
+          <div class="row col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
 
             <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
             <style>
