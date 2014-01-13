@@ -1,0 +1,583 @@
+[21-Nov-2013 16:43:04] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[21-Nov-2013 16:46:38] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[22-Nov-2013 09:08:16] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[22-Nov-2013 09:21:37] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[04-Dec-2013 09:24:38] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[04-Dec-2013 13:58:00] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[04-Dec-2013 15:13:01] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[04-Dec-2013 17:50:36] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[05-Dec-2013 08:08:10] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[06-Dec-2013 08:37:50] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[06-Dec-2013 08:38:26] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[06-Dec-2013 08:42:11] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[06-Dec-2013 08:53:32] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[06-Dec-2013 08:57:21] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[06-Dec-2013 09:11:01] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[06-Dec-2013 09:47:44] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[06-Dec-2013 10:05:34] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[06-Dec-2013 16:26:55] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[06-Dec-2013 16:55:12] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[06-Dec-2013 17:03:43] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[06-Dec-2013 17:16:17] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[06-Dec-2013 17:16:17] PHP Warning:  getimagesize(arquivos/galeria//capa.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory in /home/terranig/public_html/painel/img.php on line 50
+[06-Dec-2013 17:16:17] PHP Warning:  Division by zero in /home/terranig/public_html/painel/img.php on line 71
+[06-Dec-2013 17:16:17] PHP Warning:  Division by zero in /home/terranig/public_html/painel/img.php on line 80
+[06-Dec-2013 17:16:17] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/terranig/public_html/painel/img.php on line 120
+[06-Dec-2013 17:16:17] PHP Warning:  imagecreatefromjpeg(arquivos/galeria//capa.jpg) [<a href='function.imagecreatefromjpeg'>function.imagecreatefromjpeg</a>]: failed to open stream: No such file or directory in /home/terranig/public_html/painel/img.php on line 124
+[06-Dec-2013 17:16:17] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/terranig/public_html/painel/img.php on line 129
+[06-Dec-2013 17:16:17] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/terranig/public_html/painel/img.php on line 140
+[06-Dec-2013 17:18:23] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[06-Dec-2013 17:18:23] PHP Warning:  getimagesize(arquivos/galeria//capa.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory in /home/terranig/public_html/painel/img.php on line 50
+[06-Dec-2013 17:18:23] PHP Warning:  Division by zero in /home/terranig/public_html/painel/img.php on line 71
+[06-Dec-2013 17:18:23] PHP Warning:  Division by zero in /home/terranig/public_html/painel/img.php on line 80
+[06-Dec-2013 17:18:23] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/terranig/public_html/painel/img.php on line 120
+[06-Dec-2013 17:18:23] PHP Warning:  imagecreatefromjpeg(arquivos/galeria//capa.jpg) [<a href='function.imagecreatefromjpeg'>function.imagecreatefromjpeg</a>]: failed to open stream: No such file or directory in /home/terranig/public_html/painel/img.php on line 124
+[06-Dec-2013 17:18:23] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/terranig/public_html/painel/img.php on line 129
+[06-Dec-2013 17:18:23] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/terranig/public_html/painel/img.php on line 140
+[06-Dec-2013 17:25:01] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[06-Dec-2013 17:25:01] PHP Warning:  getimagesize(arquivos/galeria//capa.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory in /home/terranig/public_html/painel/img.php on line 50
+[06-Dec-2013 17:25:01] PHP Warning:  Division by zero in /home/terranig/public_html/painel/img.php on line 71
+[06-Dec-2013 17:25:01] PHP Warning:  Division by zero in /home/terranig/public_html/painel/img.php on line 80
+[06-Dec-2013 17:25:01] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/terranig/public_html/painel/img.php on line 120
+[06-Dec-2013 17:25:01] PHP Warning:  imagecreatefromjpeg(arquivos/galeria//capa.jpg) [<a href='function.imagecreatefromjpeg'>function.imagecreatefromjpeg</a>]: failed to open stream: No such file or directory in /home/terranig/public_html/painel/img.php on line 124
+[06-Dec-2013 17:25:01] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/terranig/public_html/painel/img.php on line 129
+[06-Dec-2013 17:25:01] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/terranig/public_html/painel/img.php on line 140
+[06-Dec-2013 17:33:18] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[06-Dec-2013 17:33:18] PHP Warning:  getimagesize(arquivos/galeria//capa.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory in /home/terranig/public_html/painel/img.php on line 50
+[06-Dec-2013 17:33:18] PHP Warning:  Division by zero in /home/terranig/public_html/painel/img.php on line 71
+[06-Dec-2013 17:33:18] PHP Warning:  Division by zero in /home/terranig/public_html/painel/img.php on line 80
+[06-Dec-2013 17:33:18] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/terranig/public_html/painel/img.php on line 120
+[06-Dec-2013 17:33:18] PHP Warning:  imagecreatefromjpeg(arquivos/galeria//capa.jpg) [<a href='function.imagecreatefromjpeg'>function.imagecreatefromjpeg</a>]: failed to open stream: No such file or directory in /home/terranig/public_html/painel/img.php on line 124
+[06-Dec-2013 17:33:18] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/terranig/public_html/painel/img.php on line 129
+[06-Dec-2013 17:33:18] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/terranig/public_html/painel/img.php on line 140
+[06-Dec-2013 17:34:23] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[06-Dec-2013 17:34:23] PHP Warning:  getimagesize(arquivos/galeria//capa.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory in /home/terranig/public_html/painel/img.php on line 50
+[06-Dec-2013 17:34:23] PHP Warning:  Division by zero in /home/terranig/public_html/painel/img.php on line 71
+[06-Dec-2013 17:34:23] PHP Warning:  Division by zero in /home/terranig/public_html/painel/img.php on line 80
+[06-Dec-2013 17:34:23] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/terranig/public_html/painel/img.php on line 120
+[06-Dec-2013 17:34:23] PHP Warning:  imagecreatefromjpeg(arquivos/galeria//capa.jpg) [<a href='function.imagecreatefromjpeg'>function.imagecreatefromjpeg</a>]: failed to open stream: No such file or directory in /home/terranig/public_html/painel/img.php on line 124
+[06-Dec-2013 17:34:23] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/terranig/public_html/painel/img.php on line 129
+[06-Dec-2013 17:34:23] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/terranig/public_html/painel/img.php on line 140
+[06-Dec-2013 17:34:25] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[06-Dec-2013 17:34:25] PHP Warning:  getimagesize(arquivos/galeria//capa.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory in /home/terranig/public_html/painel/img.php on line 50
+[06-Dec-2013 17:34:25] PHP Warning:  Division by zero in /home/terranig/public_html/painel/img.php on line 71
+[06-Dec-2013 17:34:25] PHP Warning:  Division by zero in /home/terranig/public_html/painel/img.php on line 80
+[06-Dec-2013 17:34:25] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/terranig/public_html/painel/img.php on line 120
+[06-Dec-2013 17:34:25] PHP Warning:  imagecreatefromjpeg(arquivos/galeria//capa.jpg) [<a href='function.imagecreatefromjpeg'>function.imagecreatefromjpeg</a>]: failed to open stream: No such file or directory in /home/terranig/public_html/painel/img.php on line 124
+[06-Dec-2013 17:34:25] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/terranig/public_html/painel/img.php on line 129
+[06-Dec-2013 17:34:25] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/terranig/public_html/painel/img.php on line 140
+[06-Dec-2013 17:36:47] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[06-Dec-2013 17:36:47] PHP Warning:  getimagesize(arquivos/galeria//capa.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory in /home/terranig/public_html/painel/img.php on line 50
+[06-Dec-2013 17:36:47] PHP Warning:  Division by zero in /home/terranig/public_html/painel/img.php on line 71
+[06-Dec-2013 17:36:47] PHP Warning:  Division by zero in /home/terranig/public_html/painel/img.php on line 80
+[06-Dec-2013 17:36:47] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/terranig/public_html/painel/img.php on line 120
+[06-Dec-2013 17:36:47] PHP Warning:  imagecreatefromjpeg(arquivos/galeria//capa.jpg) [<a href='function.imagecreatefromjpeg'>function.imagecreatefromjpeg</a>]: failed to open stream: No such file or directory in /home/terranig/public_html/painel/img.php on line 124
+[06-Dec-2013 17:36:47] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/terranig/public_html/painel/img.php on line 129
+[06-Dec-2013 17:36:47] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/terranig/public_html/painel/img.php on line 140
+[06-Dec-2013 17:37:00] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[06-Dec-2013 17:37:00] PHP Warning:  getimagesize(arquivos/galeria//capa.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory in /home/terranig/public_html/painel/img.php on line 50
+[06-Dec-2013 17:37:00] PHP Warning:  Division by zero in /home/terranig/public_html/painel/img.php on line 71
+[06-Dec-2013 17:37:00] PHP Warning:  Division by zero in /home/terranig/public_html/painel/img.php on line 80
+[06-Dec-2013 17:37:00] PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in /home/terranig/public_html/painel/img.php on line 120
+[06-Dec-2013 17:37:00] PHP Warning:  imagecreatefromjpeg(arquivos/galeria//capa.jpg) [<a href='function.imagecreatefromjpeg'>function.imagecreatefromjpeg</a>]: failed to open stream: No such file or directory in /home/terranig/public_html/painel/img.php on line 124
+[06-Dec-2013 17:37:00] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/terranig/public_html/painel/img.php on line 129
+[06-Dec-2013 17:37:00] PHP Warning:  imagejpeg(): supplied argument is not a valid Image resource in /home/terranig/public_html/painel/img.php on line 140
+[06-Dec-2013 17:50:42] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[06-Dec-2013 17:52:53] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[06-Dec-2013 17:55:09] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[06-Dec-2013 17:55:53] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[06-Dec-2013 17:56:53] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[06-Dec-2013 17:57:49] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[06-Dec-2013 17:58:18] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[10-Dec-2013 09:44:53] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[10-Dec-2013 09:56:39] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[10-Dec-2013 14:50:36] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[10-Dec-2013 15:00:32] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[10-Dec-2013 15:02:28] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[10-Dec-2013 15:02:28] PHP Warning:  imagecreatefromjpeg() [<a href='function.imagecreatefromjpeg'>function.imagecreatefromjpeg</a>]: gd-jpeg: JPEG library reports unrecoverable error:  in /home/terranig/public_html/painel/img.php on line 124
+[10-Dec-2013 15:02:28] PHP Warning:  imagecreatefromjpeg() [<a href='function.imagecreatefromjpeg'>function.imagecreatefromjpeg</a>]: 'arquivos/galeria/4f457c87d624a0a2b970ab53cfedca09/capa.jpg' is not a valid JPEG file in /home/terranig/public_html/painel/img.php on line 124
+[10-Dec-2013 15:02:28] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/terranig/public_html/painel/img.php on line 129
+[10-Dec-2013 15:03:51] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[10-Dec-2013 15:03:51] PHP Warning:  imagecreatefromjpeg() [<a href='function.imagecreatefromjpeg'>function.imagecreatefromjpeg</a>]: gd-jpeg: JPEG library reports unrecoverable error:  in /home/terranig/public_html/painel/img.php on line 124
+[10-Dec-2013 15:03:51] PHP Warning:  imagecreatefromjpeg() [<a href='function.imagecreatefromjpeg'>function.imagecreatefromjpeg</a>]: 'arquivos/galeria/4f457c87d624a0a2b970ab53cfedca09/capa.jpg' is not a valid JPEG file in /home/terranig/public_html/painel/img.php on line 124
+[10-Dec-2013 15:03:51] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/terranig/public_html/painel/img.php on line 129
+[10-Dec-2013 15:06:07] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[10-Dec-2013 15:06:07] PHP Warning:  imagecreatefromjpeg() [<a href='function.imagecreatefromjpeg'>function.imagecreatefromjpeg</a>]: gd-jpeg: JPEG library reports unrecoverable error:  in /home/terranig/public_html/painel/img.php on line 124
+[10-Dec-2013 15:06:07] PHP Warning:  imagecreatefromjpeg() [<a href='function.imagecreatefromjpeg'>function.imagecreatefromjpeg</a>]: 'arquivos/galeria/01a73ef7910f2f5d8a31795f85fcc4dd/capa.jpg' is not a valid JPEG file in /home/terranig/public_html/painel/img.php on line 124
+[10-Dec-2013 15:06:07] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/terranig/public_html/painel/img.php on line 129
+[10-Dec-2013 15:06:58] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[10-Dec-2013 15:06:58] PHP Warning:  imagecreatefromjpeg() [<a href='function.imagecreatefromjpeg'>function.imagecreatefromjpeg</a>]: gd-jpeg: JPEG library reports unrecoverable error:  in /home/terranig/public_html/painel/img.php on line 124
+[10-Dec-2013 15:06:58] PHP Warning:  imagecreatefromjpeg() [<a href='function.imagecreatefromjpeg'>function.imagecreatefromjpeg</a>]: 'arquivos/galeria/01a73ef7910f2f5d8a31795f85fcc4dd/capa.jpg' is not a valid JPEG file in /home/terranig/public_html/painel/img.php on line 124
+[10-Dec-2013 15:06:58] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/terranig/public_html/painel/img.php on line 129
+[10-Dec-2013 18:13:33] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[11-Dec-2013 00:34:10] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[11-Dec-2013 10:21:46] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[11-Dec-2013 11:02:11] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[11-Dec-2013 12:01:26] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[11-Dec-2013 18:05:42] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[11-Dec-2013 19:40:32] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[11-Dec-2013 20:19:21] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[12-Dec-2013 08:03:44] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[12-Dec-2013 10:44:31] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[12-Dec-2013 10:53:33] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[12-Dec-2013 14:10:58] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[12-Dec-2013 14:11:10] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[12-Dec-2013 14:15:43] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[12-Dec-2013 14:20:11] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[12-Dec-2013 14:36:32] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[12-Dec-2013 17:10:55] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[12-Dec-2013 17:37:31] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[13-Dec-2013 10:41:37] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[16-Dec-2013 08:37:57] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[16-Dec-2013 14:46:19] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[16-Dec-2013 17:23:42] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[16-Dec-2013 18:11:21] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[16-Dec-2013 18:15:16] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[16-Dec-2013 18:44:11] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[16-Dec-2013 20:02:07] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[17-Dec-2013 09:51:49] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[17-Dec-2013 09:56:14] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[17-Dec-2013 09:56:24] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[18-Dec-2013 08:54:48] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[18-Dec-2013 12:36:57] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[18-Dec-2013 14:19:15] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[18-Dec-2013 14:21:22] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[18-Dec-2013 14:35:40] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[18-Dec-2013 14:38:58] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[18-Dec-2013 14:48:37] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[18-Dec-2013 14:52:57] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[19-Dec-2013 13:26:34] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[21-Dec-2013 09:55:27] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[22-Dec-2013 12:00:34] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[22-Dec-2013 12:00:35] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[22-Dec-2013 12:00:35] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[22-Dec-2013 13:58:05] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[23-Dec-2013 10:09:34] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[23-Dec-2013 10:13:33] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[23-Dec-2013 10:37:28] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[23-Dec-2013 17:18:12] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[25-Dec-2013 15:32:36] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[26-Dec-2013 12:31:38] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[30-Dec-2013 10:10:08] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[30-Dec-2013 11:09:19] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[30-Dec-2013 11:10:40] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[30-Dec-2013 14:43:42] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[30-Dec-2013 14:44:13] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[30-Dec-2013 14:45:45] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[30-Dec-2013 14:46:12] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[30-Dec-2013 14:46:12] PHP Warning:  getimagesize(arquivos/galeria//capa.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory in /home/terranig/public_html/painel/img.php on line 50
+[30-Dec-2013 14:46:12] PHP Warning:  Division by zero in /home/terranig/public_html/painel/img.php on line 71
+[30-Dec-2013 14:46:12] PHP Warning:  Division by zero in /home/terranig/public_html/painel/img.php on line 80
+[30-Dec-2013 14:46:12] PHP Warning:  imagecreatefromjpeg(arquivos/galeria//capa.jpg) [<a href='function.imagecreatefromjpeg'>function.imagecreatefromjpeg</a>]: failed to open stream: No such file or directory in /home/terranig/public_html/painel/img.php on line 124
+[30-Dec-2013 14:46:12] PHP Warning:  imagecopyresampled(): supplied argument is not a valid Image resource in /home/terranig/public_html/painel/img.php on line 129
+[02-Jan-2014 11:47:51] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[02-Jan-2014 16:18:30] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
+[02-Jan-2014 16:18:32] PHP Warning:  PHP Startup: timezonedb: Unable to initialize module
+Module compiled with module API=20090626, debug=0, thread-safety=0
+PHP    compiled with module API=20060613, debug=0, thread-safety=0
+These options need to match
+ in Unknown on line 0
