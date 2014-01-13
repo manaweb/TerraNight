@@ -37,7 +37,7 @@ color:#9F0034;
 background-color:transparent;
 }
 body{
-background-image:url(../img/header-background.jpg);
+background:url("../img/header-background.png") no-repeat #000000;
 
 }
 .navbar-inverse .navbar-nav .agenda > li > a{
@@ -404,7 +404,8 @@ padding:20px 65px;
 opacity:0.40;
 }
 .ttdata{
-text-shadow:-2px 0px 14px rgba(214, 122, 217, 0.9);
+   color: #FFCC00 !important;
+/*text-shadow:-2px 0px 14px rgba(214, 122, 217, 0.9);*/
 }
 /* custom styling of the directional arrows */
                 .ekko-lightbox-container{
@@ -498,8 +499,37 @@ background-repeat:no-repeat;
         background-size:500%;
 }
 .gc.ttdata.posicaodata{
-font-size:33px;
+font-size:35px;
 line-height:35px;
-position:absolute;
 text-align:right;
+}
+
+.fbAvatar{
+        border: none;
+        visibility: visible;
+        width: 190px;
+        height: 60px;
+        display: inline-block;
+        vertical-align: top;
+}
+
+.fbFriendFaces{
+        border: none;
+        visibility: visible;
+        width: 545px;
+        height: 150px;
+        position: relative;
+        overflow: hidden;
+        bottom: 93px;
+}
+
+.parentFbFaces{
+        overflow: hidden;
+        display: inline-block;
+        height: 50px;
+}
+
+.likebarcontent{
+		overflow: hidden;
+		width: 100%;
 }

@@ -57,16 +57,17 @@
               </div>
               <div class="row">
                 <?php $query = mysql_query("SELECT id_galeria, titulo, codigo, DATE_FORMAT(data,'%d/%m') as data1 FROM tbgalerias WHERE flag_status = 1"); while ($dadosAlbum = mysql_fetch_assoc($query)) { ?>
-                <div class="text-center col-lg-2 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-8 col-xs-offset-2">
+                <div class="text-center col-lg-2 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
                   <h1>
                      <a href="/fotos.php?hash=<?=$dadosAlbum['codigo'].'&gcod='.$dadosAlbum['id_galeria'].'&data='.urlencode($dadosAlbum['data1'])?>">
                       <img src="painel/arquivos/galeria/<?=$dadosAlbum['codigo']?>/capa.jpg" class="img-responsive center-block albumcapa"  alt="<?=$dadosAlbum['titulo']?>"/>
-                      <span class="gc ttdata posicaodata"><?=$dadosAlbum['data1']?></span>
+                      <span class="gc ttdata posicaodata pull-right"><?=$dadosAlbum['data1']?></span>
                     </a>
                   </h1>
                 </div>
                 <?php } ?>
               </div><!-- /.row -->
+<<<<<<< HEAD
               <div class="row center-block">
                 
                   <ul class="list-inline acompanhe ">
@@ -97,7 +98,17 @@
                   </ul>
                 
               </div><!-- /.row --> 
+=======
+              <div class="row center-block text-center likebarcontent">
+               <iframe class="fbAvatar" name="f7e65ffb8" width="1000px" height="1000px" frameborder="0" allowtransparency="true" scrolling="no" title="fb:like_box Facebook Social Plugin" src="https://www.facebook.com/plugins/like_box.php?app_id=113869198637480&amp;channel=https%3A%2F%2Fs-static.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D28%23cb%3Df26660671%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Fff5235b4c%26relation%3Dparent.parent&amp;header=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fboateterranight&amp;locale=pt_BR&amp;sdk=joey&amp;show_border=false&amp;show_faces=true&amp;stream=false" ></iframe>
+                <div class="parentFbFaces">
+                    <iframe class="fbFriendFaces" name="f189ac9d8" width="1000px" height="1000px" frameborder="0" allowtransparency="true" scrolling="no" title="fb:like_box Facebook Social Plugin" src="https://www.facebook.com/plugins/like_box.php?app_id=113869198637480&amp;channel=https%3A%2F%2Fs-static.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D28%23cb%3Df227f89074%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Fff5235b4c%26relation%3Dparent.parent&amp;header=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fboateterranight&amp;locale=pt_BR&amp;sdk=joey&amp;show_border=false&amp;show_faces=true&amp;stream=false"></iframe>
+                </div>
+              </div><!-- /.row -->
+>>>>>>> moshe
             </div><!-- /.container -->
+
+            
 
             <div class="container col-lg-4 col-md-4 col-sm-6 col-xs-12">
               <div class="row">
@@ -152,6 +163,39 @@
                         </div><!--./faq-cat-one-->
                 </div><!--/.faq-cat-content-->
             </div>
+            <BR>
+            <BR>
+            <BR>
+            <div class="container col-lg-8 col-lg-offset-0 col-md-8 col-md-offset-0 col-sm-11 col-sm-offset-1 col-xs-12 col-xs-offset-0 ">
+              <div class="row text-center">
+                  <ul class="list-inline acompanhe ">
+                    <li>
+                      <div>
+                        <a href="https://www.facebook.com/boateterranight" class="social" target="_blank">
+                          <img src="../img/title_facebook.png"></a>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <a href="https://twitter.com/search?q=terranight" class="social" target="_blank">
+                          <img src="../img/title_twitter.png"></a>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <a href="http://statigr.am/tag/terranight/" class="social" target="_blank">
+                          <img src="../img/title_instagram.png"></a>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <a href="http://www.youtube.com/results?search_query=terra+night" class="social" target="_blank">
+                          <img src="../img/title_youtube.png"></a>
+                      </div>
+                    </li>
+                  </ul>
+              </div><!-- /.row --> 
+            </div><!-- /.container -->
           </div>
         </div><!-- /.section -->  
         <div class="clearfix"></div>
