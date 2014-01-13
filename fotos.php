@@ -84,7 +84,7 @@
                 }else {
                   $query = mysql_query("SELECT id_galeria, titulo, codigo, DATE_FORMAT(data,'%d/%m/%Y') as data1 FROM tbgalerias");
                   while ($dadosAlbum = mysql_fetch_assoc($query)) {
-                    $fotos .= '<div class="text-center col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-10 col-sm-offset-3 col-xs-10 col-xs-offset-2">
+                    $fotos .= '<div class="text-center col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-10 col-sm-offset-3 col-xs-10 col-xs-offset-2 fotos-item">
                       <h1>
                         <a href="/fotos.php?hash='.$dadosAlbum['codigo'].'&gcod='.$dadosAlbum['id_galeria'].'&data='.urlencode($dadosAlbum['data1']).'">
                           <img src="painel/arquivos/galeria/'.$dadosAlbum['codigo'].'/capa.jpg" class="img-responsive albumcapa"  alt="'.$dadosAlbum['titulo'].'"/>
@@ -127,7 +127,10 @@
           });
         });
           <?php }else { ?>
-          
+            $('.fotos-item').click(function() {
+              $('.dropdown-menu').show();
+              return false;
+            });
           <?php } ?>
       });
       </script>
