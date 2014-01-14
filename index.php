@@ -41,7 +41,8 @@
         <link href="/css/bootstrap-ie7.css" rel="stylesheet">
         <![endif]-->
 </head>
-<body data-spy="scroll" data-target=".nav">
+<body data-spy="scroll" data-target=".nav" class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+
   <?php include_once("analyticstracking.php") ?>
 
         <?php include 'cabecalho.php'; ?>
@@ -402,12 +403,13 @@
       </div>
 
       <?php include 'rodape.php'; ?>   
-
+      <script type="text/javascript" src="js/cycle2.js"></script>
     <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
             g.src='//www.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
+
 </body>
   </html>

@@ -79,19 +79,6 @@ position:absolute;
 top:107px;
 width:346%;
 }
-.carousel-control .glyphicons-chevron-left, .carousel-control .glyphicons-chevron-right, .carousel-control .icon-prev, .carousel-control .icon-next{
-font-size:120px;
-height:30px;
-margin-left:-15px;
-margin-top:-15px;
-width:30px;
-}
-.carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right{
-display:inline-block;
-position:absolute;
-top:27%;
-z-index:5;
-}
 .acompanhe div{
 margin:3px;
 }
@@ -194,11 +181,6 @@ margin-top:10px;
 right:0%;
 position:absolute;
 top:75px;
-}
-.carroseltopo{
-height:32%;
-margin-top:3%;
-width:77%;
 }
 .albumtext span{
 background:rgb(255,183,107);
@@ -533,9 +515,50 @@ text-align:right;
 		overflow: hidden;
 		width: 100%;
 }
+<<<<<<< HEAD
+
+/*cycle-slideshow*/
+
+.cycle-slideshow { 
+  width: auto; 
+  margin:10% 10% 0% 10%; 
+}
+
+.cycle-slideshow img { 
+  width: 100%; 
+  height: auto 
+}
+
+
+.cycle-prev, .cycle-next {
+    cursor: pointer;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 20%;
+    z-index: 800;
+}
+
+.cycle-prev:hover, .cycle-next:hover {
+    opacity: 0.7;
+}
+
+.cycle-prev {
+    background: url("../img/cycle-prev.png") no-repeat scroll 50% 50% rgba(0, 0, 0, 0);
+    left:0;
+}
+
+.cycle-next {
+    background: url("../img/cycle-next.png") no-repeat scroll 50% 50% rgba(0, 0, 0, 0);
+    right: 0;
+}
+
+=======
 .traco{
 	background: url(../img/traco.jpg) right repeat-x; 
 	display: inline-block; 
 	width: 20%; 
 	height: 20px
 }
+>>>>>>> 6c85e623dad8603e94c6fe48dba951ffc3ecc706
