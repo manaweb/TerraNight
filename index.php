@@ -51,8 +51,8 @@
           
             <div class="container col-lg-8 col-md-8 col-sm-6 col-xs-12">
               <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-                  <h1 class="text-center aldo">Últimas Fotos<hr></h1>
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                  <h1 class="text-center aldo">Últimas Fotos<span style="background: url(img/traco.jpg) right repeat-x; display: inline-block; width: 60%; height: 20px"></span></h1>
                   </div>
               </div>
               <div class="row">
