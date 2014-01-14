@@ -81,6 +81,7 @@ width:346%;
 }
 .acompanhe div{
 margin:3px;
+margin-bottom: auto;
 }
 .sessao{
 background-image:url('../img/sessao.png');
@@ -498,7 +499,7 @@ text-align:right;
 .fbFriendFaces{
         border: none;
         visibility: visible;
-        width: 444px;
+        width: 400px;
         height: 150px;
         position: relative;
         overflow: hidden;
@@ -553,9 +554,17 @@ text-align:right;
     right: 0;
 }
 
-.traco{
- background: url(../img/traco.jpg) right repeat-x; 
- display: inline-block; 
- width: 20%; 
- height: 20px
-}
+hr {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #FFFFFF -moz-use-text-color -moz-use-text-color !important;
+    border-image: none;
+    border-style: solid none none;
+    border-width: 1px 0 0;
+    height: 0 !important;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 200px;
+  }

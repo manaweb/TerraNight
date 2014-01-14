@@ -163,8 +163,11 @@
         </div>-->
 <BR>
 <BR>
-<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
-  <div class="cycle-slideshow" data-cycle-fx=scrollHorz data-cycle-timeout=4000 data-cycle-slides=" > a" data-cycle-swipe=true>
+<div class="col-lg-10 col-lg-offset-1 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+  <div class="cycle-slideshow" data-cycle-timeout=4000 
+                               data-cycle-slides=" > a" 
+                               data-cycle-swipe=true 
+                               data-cycle-fx=shuffle >
       <!-- prev/next links -->
       <div class="cycle-prev"></div>
       <div class="cycle-next"></div>
