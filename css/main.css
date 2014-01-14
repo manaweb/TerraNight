@@ -534,7 +534,7 @@ text-align:right;
 		width: 100%;
 }
 .traco{
-	background: url(img/traco.jpg) right repeat-x; 
+	background: url(../img/traco.jpg) right repeat-x; 
 	display: inline-block; 
 	width: 55%; 
 	height: 20px
