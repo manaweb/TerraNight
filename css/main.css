@@ -515,7 +515,6 @@ text-align:right;
 		overflow: hidden;
 		width: 100%;
 }
-<<<<<<< HEAD
 
 /*cycle-slideshow*/
 
@@ -554,11 +553,9 @@ text-align:right;
     right: 0;
 }
 
-=======
 .traco{
-	background: url(../img/traco.jpg) right repeat-x; 
-	display: inline-block; 
-	width: 20%; 
-	height: 20px
+ background: url(../img/traco.jpg) right repeat-x; 
+ display: inline-block; 
+ width: 20%; 
+ height: 20px
 }
->>>>>>> 6c85e623dad8603e94c6fe48dba951ffc3ecc706
