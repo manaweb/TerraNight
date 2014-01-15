@@ -12,7 +12,7 @@
 		'pasta'=>'galeria',
 		'imagem'=>array(
 			'x'=>1920, 'y'=>1080, 'corte'=>0,
-			'mini' => array('x' => 95, 'y' => 65)
+			'mini' => array('x' => 245, 'y' => 164,'corte'=>1)
 		)
 	);
 

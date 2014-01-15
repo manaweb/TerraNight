@@ -26,6 +26,7 @@
         <link rel="stylesheet" href="fonts/alte_din_1451_mittelschrift.css">
         <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/bullets-slideshow.css">
 
         <!--[if gte IE 9]>
         <style type="text/css">
@@ -41,43 +42,35 @@
         <link href="/css/bootstrap-ie7.css" rel="stylesheet">
         <![endif]-->
 </head>
-<body data-spy="scroll" data-target=".nav" class="col-lg-8 col-lg-offset-2 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+<body data-spy="scroll" data-target=".nav" class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
 
   <?php include_once("analyticstracking.php") ?>
 
         <?php include 'cabecalho.php'; ?>
-
-
+<div class="clearfix"></div>
         <div id="section2" class="section">
-          
-            <div class="container col-lg-8 col-md-8 col-sm-6 col-xs-12">
+            <div class="container col-lg-4 col-lg-offset-3 col-md-8 col-sm-6 col-xs-12">
               <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-                  <ul class="list-inline">
-                    <li>
-                    <h1 class="aldo">Últimas Fotos</h1>
-                    </li>
-                    <li>
-                    <hr>
-                    </li>
-                  </ul>
-                </div>
+                  <h1 class="pull-left aldo">Últimas Fotos</h1>
               </div>
               <div class="row">
-                <?php $query = mysql_query("SELECT id_galeria, titulo, codigo, DATE_FORMAT(data,'%d/%m') as data1 FROM tbgalerias WHERE flag_status = 1"); while ($dadosAlbum = mysql_fetch_assoc($query)) { ?>
+                <?php
+
+                $query = mysql_query("SELECT id_galeria, titulo, codigo, DATE_FORMAT(data,'%d/%m') as data1 FROM tbgalerias WHERE flag_status = 1 ORDER BY id_galeria DESC");
+                while ($dadosAlbum = mysql_fetch_assoc($query)) {
+                ?>
                 <div class="text-center col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
                   <h1>
                      <a href="/fotos.php?hash=<?=$dadosAlbum['codigo'].'&gcod='.$dadosAlbum['id_galeria'].'&data='.urlencode($dadosAlbum['data1'])?>">
-                      <img src="painel/arquivos/galeria/<?=$dadosAlbum['codigo']?>/capa.jpg" class="img-responsive center-block albumcapa"  alt="<?=$dadosAlbum['titulo']?>"/>
+                      <img src="painel/img.php?img=arquivos/galeria/<?=$dadosAlbum['codigo'];?>/capa.jpg&x=245&y=164&corta=1" class="img-responsive center-block albumcapa"  alt="<?=$dadosAlbum['titulo']?>"/>
                       <span class="gc ttdata posicaodata pull-right"><?=$dadosAlbum['data1']?></span>
                     </a>
                   </h1>
                 </div>
                 <?php } ?>
               </div><!-- /.row -->
-
-             
-              <div class="row center-block text-center likebarcontent">
+          <div class="visible-lg visible-md hidden-sm hidden-xs">
+            <div class="row center-block text-center likebarcontent">
                <iframe class="fbAvatar" name="f7e65ffb8" width="1000px" height="1000px" frameborder="0" allowtransparency="true" scrolling="no" title="fb:like_box Facebook Social Plugin" src="https://www.facebook.com/plugins/like_box.php?app_id=113869198637480&amp;channel=https%3A%2F%2Fs-static.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D28%23cb%3Df26660671%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Fff5235b4c%26relation%3Dparent.parent&amp;header=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fboateterranight&amp;locale=pt_BR&amp;sdk=joey&amp;show_border=false&amp;show_faces=true&amp;stream=false" ></iframe>
                 <div class="parentFbFaces">
                     <iframe class="fbFriendFaces" name="f189ac9d8" width="1000px" height="1000px" frameborder="0" allowtransparency="true" scrolling="no" title="fb:like_box Facebook Social Plugin" src="https://www.facebook.com/plugins/like_box.php?app_id=113869198637480&amp;channel=https%3A%2F%2Fs-static.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D28%23cb%3Df227f89074%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Fff5235b4c%26relation%3Dparent.parent&amp;header=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fboateterranight&amp;locale=pt_BR&amp;sdk=joey&amp;show_border=false&amp;show_faces=true&amp;stream=false"></iframe>
@@ -112,23 +105,12 @@
                     </li>
                   </ul>
               </div><!-- /.row --> 
+           </div><!-- /.container -->
+             </div><!-- /.container -->         
 
-            </div><!-- /.container -->
-
-            
-
-            <div class="container col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="container col-lg-2 col-md-4 col-sm-6 col-xs-12">
               <div class="row">
-                  <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-                    <ul class="list-inline">
-                      <li>
-                        <h1 class="aldo">Programação</h1>
-                      </li>
-                      <li>
-                        <hr>
-                      </li>
-                    </ul>
-                  </div>  
+                    <h1 class="pull-left aldo">Programação</h1>
               </div>
               <div class="row">
                 <div class="tab-content faq-cat-content ttdata">
@@ -154,13 +136,13 @@
                                               
                                             </div>
                                             <div class="agendaposition">
-                                              <h3 class="gc">
+                                              <h4 class="gc">
                                                <b><?=utf8_encode($dadosAgenda['titulo'])?></b>
                                                 <br>
                                                 <small> 
                                                   <b>+ informações</b>
                                                 </small>
-                                              </h3>
+                                              </h4>
                                             </div>
                                           </a>
                                       </div>     
@@ -171,79 +153,116 @@
                                     </div>
                                  </div>
                              </div>
-                            </li><br><?php } ?>
-                          
-                          </ul> 
-                        </div><!--./faq-cat-one-->
-                </div><!--/.faq-cat-content-->
-            </div>
-            <div class="container col-lg-8 col-lg-offset-0 col-md-8 col-md-offset-0 col-sm-11 col-sm-offset-1 col-xs-12 col-xs-offset-0 ">
-            
+                           </div>
+                          </li><br><?php } ?>
+                        </ul> 
+                  </div><!--./faq-cat-one-->
+              </div><!--/.faq-cat-content-->
             </div><!-- /.container -->
-          </div>
+
+          <div class="container col-lg-4 col-lg-offset-3 col-md-8 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 hidden-lg hidden-md visible-sm visible-xs">
+            <div class="row center-block text-center likebarcontent">
+               <iframe class="fbAvatar" name="f7e65ffb8" width="1000px" height="1000px" frameborder="0" allowtransparency="true" scrolling="no" title="fb:like_box Facebook Social Plugin" src="https://www.facebook.com/plugins/like_box.php?app_id=113869198637480&amp;channel=https%3A%2F%2Fs-static.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D28%23cb%3Df26660671%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Fff5235b4c%26relation%3Dparent.parent&amp;header=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fboateterranight&amp;locale=pt_BR&amp;sdk=joey&amp;show_border=false&amp;show_faces=true&amp;stream=false" ></iframe>
+                <div class="parentFbFaces">
+                    <iframe class="fbFriendFaces" name="f189ac9d8" width="1000px" height="1000px" frameborder="0" allowtransparency="true" scrolling="no" title="fb:like_box Facebook Social Plugin" src="https://www.facebook.com/plugins/like_box.php?app_id=113869198637480&amp;channel=https%3A%2F%2Fs-static.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D28%23cb%3Df227f89074%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Fff5235b4c%26relation%3Dparent.parent&amp;header=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fboateterranight&amp;locale=pt_BR&amp;sdk=joey&amp;show_border=false&amp;show_faces=true&amp;stream=false"></iframe>
+                </div>
+              </div><!-- /.row -->
+              
+              <div class="row text-center">
+                  <ul class="list-inline acompanhe ">
+                    <li>
+                      <div>
+                        <a href="https://www.facebook.com/boateterranight" class="social" target="_blank">
+                          <img src="../img/title_facebook.png"></a>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <a href="https://twitter.com/search?q=terranight" class="social" target="_blank">
+                          <img src="../img/title_twitter.png"></a>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <a href="http://statigr.am/tag/terranight/" class="social" target="_blank">
+                          <img src="../img/title_instagram.png"></a>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <a href="http://www.youtube.com/results?search_query=terra+night" class="social" target="_blank">
+                          <img src="../img/title_youtube.png"></a>
+                      </div>
+                    </li>
+                  </ul>
+              </div><!-- /.row --> 
+           </div><!-- /.container -->
         </div><!-- /.section -->  
-        <div class="clearfix"></div>
 
-      <div class="section text-center">
-        <div class="container maps center-block">
-          <div class="row col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-
-            <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-            <style>
-                html, body, #map-canvas {
-                  height: 100%;
-                  margin: 0px;
-                  padding: 0px
+<div class="clearfix"></div>
+        <div id="section3" class="section">
+         <div class="container text-center col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+           <div class="row col-lg-6 col-lg-offset-3 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+              <h1 class="pull-left aldo">Como chegar</h1>
+            </div>
+          <div class="clearfix"></div>
+          <div class="row maps center-block">
+            <div class="row">
+              <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+              <style>
+                  html, body, #map-canvas {
+                    height: 100%;
+                    margin: 0px;
+                    padding: 0px
+                  }
+                </style>
+              <script type="text/javascript">
+                window.onload = function() {
+                    initialize();
                 }
-              </style>
-            <script type="text/javascript">
-              window.onload = function() {
-                  initialize();
-              }
-           
-              function initialize() {
-                  var myLatlng = new google.maps.LatLng(-20.786529,-48.332228);
-                  
-                  var myOptions = {
-                      zoom: 15,
-                      center: myLatlng,
-                      mapTypeId: google.maps.MapTypeId.ROADMAP        }
-                   
-                  var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+             
+                function initialize() {
+                    var myLatlng = new google.maps.LatLng(-20.786529,-48.332228);
+                    
+                    var myOptions = {
+                        zoom: 15,
+                        center: myLatlng,
+                        mapTypeId: google.maps.MapTypeId.ROADMAP        }
+                     
+                    var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
 
-                   
-                  var contentString = "AP Móveis - A empresa, devidamente, atua no mercado a mais de 10 anos. Atualmente se encontra instalada no Distrito Industrial de JABOTICABAL-SP, colaborando para o crescimento do Distrito da Cidade...";
-                   
-                  var infowindow = new google.maps.InfoWindow({
-                      content: contentString
-                  });
-                   
-                  var marker = new google.maps.Marker({
-                      position: myLatlng,
-                      icon: '../img/marcador.png',
-                      map: map,
-                      title: "Terra Night"
-                  });
+                     
+                    var contentString = " descriçao balada";
+                     
+                    var infowindow = new google.maps.InfoWindow({
+                        content: contentString
+                    });
+                     
+                    var marker = new google.maps.Marker({
+                        position: myLatlng,
+                        icon: '../img/marcador.png',
+                        map: map,
+                        title: "Terra Night"
+                    });
 
 
-                  google.maps.event.addListener(marker, 'click', function() {
-                      infowindow.open(map,marker);
-                  });
+                    google.maps.event.addListener(marker, 'click', function() {
+                        infowindow.open(map,marker);
+                    });
 
-                  var styles = [{"featureType":"water","stylers":[{"color":"#021019"}]},{"featureType":"landscape","stylers":[{"color":"#08304b"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#0c4152"},{"lightness":5}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#0b434f"},{"lightness":25}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#000000"}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#0b3d51"},{"lightness":16}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"}]},{"elementType":"labels.text.fill","stylers":[{"color":"#ffffff"}]},{"elementType":"labels.text.stroke","stylers":[{"color":"#000000"},{"lightness":13}]},{"featureType":"transit","stylers":[{"color":"#146474"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#144b53"},{"lightness":14},{"weight":1.4}]}] ;
-                map.setOptions({styles: styles});
-              }
-          </script>
-            <div id="map_canvas" style="width:3000px;height:365px;" class="img-responsive" type="submit"></div>
+                    var styles = [{"featureType":"water","stylers":[{"color":"#021019"}]},{"featureType":"landscape","stylers":[{"color":"#08304b"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#0c4152"},{"lightness":5}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#0b434f"},{"lightness":25}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#000000"}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#0b3d51"},{"lightness":16}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"}]},{"elementType":"labels.text.fill","stylers":[{"color":"#ffffff"}]},{"elementType":"labels.text.stroke","stylers":[{"color":"#000000"},{"lightness":13}]},{"featureType":"transit","stylers":[{"color":"#146474"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#144b53"},{"lightness":14},{"weight":1.4}]}] ;
+                  map.setOptions({styles: styles});
+                }
+            </script>
+              <div id="map_canvas" style="width:3000px;height:365px;" class="img-responsive" type="submit"></div>
+            </div>
           </div>
-        </div>
       </div>
-
-      <?php include 'rodape.php'; ?>   
-      <script type="text/javascript" src="js/cycle2.js"></script>
-      <script type="text/javascript" src="js/jquery.cycle2.shuffle.min.js"></script>
-      <script type="text/javascript" src="js/jquery.cycle2.swipe.min.js"></script>
+    </div>
+  
       
+   <?php include 'rodape.php'; ?>   
+
     <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];

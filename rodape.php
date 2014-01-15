@@ -1,20 +1,15 @@
 <footer>
   <?php include_once("analyticstracking.php") ?>
-          <div  id="section4" class="section">
-            <div class="container">
+          <div  id="section4">
+            <div class="container container col-lg-6 col-lg-offset-3 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
               <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-                  <h1 class="text-center aldo">Contato</h1>
-                  <hr>
-    
-
-                </div>
+                  <h1 class="pull-left aldo">Contato</h1>
               </div>
 
 
                
             <div class="row">
-                <div class="col-lg-4 col-lg-offset-1 col-md-5 col-sm-12 col-xs-10 col-xs-offset-1 end">
+                <div class="col-lg-4 col-lg-offset-0 col-md-4 col-sm-12 col-xs-10 col-xs-offset-1 end">
                       <h1 class="gc"><b>Endereço:</b></h1>
                       <img class="marcador-footer" src="../img/marcador-footer.png">
                         <h4 class="gc">
@@ -37,14 +32,13 @@
 
                     </div>
                <br>
-              <div class="col-lg-6 col-md-5 col-sm-12 col-xs-10 col-xs-offset-1 contatorodape">
+              <div class="col-lg-7 col-lg-offset-1 col-md-6 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-10 col-xs-offset-1 contatorodape">
                 <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
-
-                <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-                    <h4 class="text-center gc">Preencha o formulário ou entre em contato conosco.</h4>
-                 </div>
-                 <br>
-            
+                  <div class="col-lg-11 col-lg-offset-2 col-md-12 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                      <h4 class="text-center gc">Preencha o formulário ou entre em contato conosco.</h4>
+                   </div>
+                   <br>
+              
                     <div class="alert alert-success contatoForm gc">
                       <a href="#" class="close" data-dismiss="alert">&times;</a>
                       Dados enviados com sucesso, aguarde o nosso contato...
@@ -53,37 +47,41 @@
                   <form action="#" method="post" class="form" role="form" id="contatoForm">
                     <br>
                     
-                    <div class="input-group col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                    <div class="input-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <span class="input-group-addon glyphicon glyphicon-user"></span>
                         <input class="form-control" name="nome" placeholder="Nome Completo" type="text" required />
                      </div>
-                     <div class="input-group col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                     <div class="input-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <span class="input-group-addon glyphicon glyphicon-envelope"></span>
                             <input class="form-control" name="email" placeholder="Seu Email" type="email" required />
                        </div>
-                       <div class="input-group col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                       <div class="input-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
                               <span class="input-group-addon glyphicon glyphicon-earphone"></span>
                               <input class="form-control" name="telefone" placeholder="Telefone,celular,etc..." type="text" required />
                          </div>
-                        <div class="input-group col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                        <div class="input-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
                               <span class="input-group-addon glyphicon glyphicon-pencil"></span>
                             <textarea class="form-control" rows="6" name="texto" required></textarea>
                        </div>
-                      <div class="input-group col-lg-10 col-md-10 col-sm-10 col-xs-12">
-                          <button type="submit" class="btn-enviar center-block gc"></button>    
+                      <div class="input-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                          <button type="submit" class="btn-enviar pull-right gc"></button>    
                        </div>
                   </div>
                 </form>    
                </div>
             </div>
           </div>
-
+</footer>
             <script src="js/jquery-1.10.2.min.js"></script>
             <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
             <script src="js/bootstrap.min.js"></script>
             <script src="js/plugins.js"></script>
             <script src="js/main.js"></script>
             <script src="js/modern-business.js"></script>
+            <script type="text/javascript" src="js/cycle2.js"></script>
+            <script type="text/javascript" src="js/jquery.cycle2.shuffle.min.js"></script>
+            <script type="text/javascript" src="js/jquery.cycle2.swipe.min.js"></script>
+
 
             <script>
               $(function() {
@@ -166,6 +164,7 @@
                   $('li.dropdown b').text(status);
                   $('li.dropdown').removeClass('open');
                   $('#login-nav').replaceWith('<form action="logout.php"><button type="submit" class="btn btn-danger btn-block gc"><b>Sair</b></button></form>');
+                  location.reload();
                 }
                 return false;
               });
@@ -205,5 +204,6 @@
               });
 
             </script>
+
      
-        </footer>
+    
