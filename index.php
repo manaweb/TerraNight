@@ -238,9 +238,7 @@
       </div>
 
       <?php include 'rodape.php'; ?>   
-      <script type="text/javascript" src="js/cycle2.js"></script>
-      <script type="text/javascript" src="js/jquery.cycle2.shuffle.min.js"></script>
-      <script type="text/javascript" src="js/jquery.cycle2.swipe.min.js"></script>
+
       
     <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

@@ -84,6 +84,10 @@
             <script src="js/plugins.js"></script>
             <script src="js/main.js"></script>
             <script src="js/modern-business.js"></script>
+            <script type="text/javascript" src="js/cycle2.js"></script>
+            <script type="text/javascript" src="js/jquery.cycle2.shuffle.min.js"></script>
+            <script type="text/javascript" src="js/jquery.cycle2.swipe.min.js"></script>
+
 
             <script>
               $(function() {
@@ -206,5 +210,6 @@
               });
 
             </script>
+
      
         </footer>
