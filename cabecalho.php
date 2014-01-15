@@ -164,7 +164,7 @@
 <BR>
 <BR>
 <BR>
-<div class="col-lg-8 col-lg-offset-2 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+<div class="col-lg-6 col-lg-offset-3 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
   <div class="cycle-slideshow" data-cycle-timeout=4000 
                                data-cycle-slides=" > a" 
                                data-cycle-swipe=true 
