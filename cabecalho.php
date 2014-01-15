@@ -161,50 +161,31 @@
             </div>
           </div>
         </div>-->
+<BR>
+<BR>
+<div class="col-lg-10 col-lg-offset-1 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+  <div class="cycle-slideshow" data-cycle-timeout=4000 
+                               data-cycle-slides=" > a" 
+                               data-cycle-swipe=true 
+                               data-cycle-fx=shuffle >
+      <!-- prev/next links -->
+      <div class="cycle-prev"></div>
+      <div class="cycle-next"></div>
 
-
-
-        <div id="myCarousel" class="carousel slide carroseltopo center-block">
-            <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            <?php
-            $size = 0;
-            $ol = array();
-            $sqlBanner = "select * from tbpublicidade";
-            $result = mysql_query($sqlBanner);
-            $active = '';
-            for($i = 0;$dadosBanner = mysql_fetch_array($result);$i++){
-              if ($i == 0)
-                $active = 'active';
-              else
-                $active = '';
-              $link = $dadosBanner['destino'] == "" ? "" : "href='".$dadosBanner['destino']."' target='_blank'";
-              $ol[$i] = $active;
-            ?>
-            <div class="item <?=$active?>">
-              <a <?=$link?> title="<?=$dadosBanner['titulo']?>">
-                <div class="fill img-responsive" style="background-image:url('painel/arquivos/banner/<?=$dadosBanner['arquivo']?>');"></div>
-              </a>
-            </div>
-          <?php }
-          $size = $i; ?>
-          </div>
-            
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <?php
-              for ($k = 0;$k < $size;$k++) {
-
-            ?>
-            <li data-target="#myCarousel" data-slide-to="<?=$k?>" class="<?=$ol[$k]?>"></li>
+     <?php
+              $size = 0;
+              $sqlBanner = "select * from tbpublicidade";
+              $result = mysql_query($sqlBanner);
+              while($dadosBanner = mysql_fetch_assoc($result)){
+              ?>
+              
+                <a <?=$link?> title="<?=$dadosBanner['titulo']?>">
+                  <div class="img-responsive">
+                    <img src="painel/arquivos/banner/<?=$dadosBanner['arquivo']?>">
+                  </div>
+                </a>
+              
             <?php } ?>
-          </ol>
+  </div>
+</div>
 
-          <!-- Controls -->
-          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
-          </a>
-          <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next"></span>
-          </a>
-        </div>
