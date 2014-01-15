@@ -57,7 +57,7 @@
                   <hr>
                 </div>
               </div>
-              <div class="row">
+              <div class="row col-lg-10 col-lg-offset-1 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
                 <?php
 
                 $query = mysql_query("SELECT id_galeria, titulo, codigo, DATE_FORMAT(data,'%d/%m') as data1 FROM tbgalerias WHERE flag_status = 1 ORDER BY id_galeria DESC");
