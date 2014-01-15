@@ -266,10 +266,11 @@ color:#555555;
 .headagenda .panel-group .panel-heading + .panel-collapse .panel-body{
 border-top:none;
 }
+/*
 .jgaleria > .img-home-portfolio, .img-customer, .portfolio-item{
 padding:0px;
 margin:0px;
-}
+}*/
 .headagenda .nav-tabs > li{
 float:left;
 margin:-1px;
