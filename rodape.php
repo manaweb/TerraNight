@@ -166,6 +166,7 @@
                   $('li.dropdown b').text(status);
                   $('li.dropdown').removeClass('open');
                   $('#login-nav').replaceWith('<form action="logout.php"><button type="submit" class="btn btn-danger btn-block gc"><b>Sair</b></button></form>');
+                  location.reload();
                 }
                 return false;
               });

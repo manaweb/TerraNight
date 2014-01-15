@@ -74,20 +74,20 @@
                       $attr = 'data-toggle="lightbox" data-gallery="columnwrappers" data-parent=".wrapper-parent" data-type="image"';
                     }
                     else {
-                      $href = 'cadastro.php';
+                      $href = 'javascript:void(0);';
                       $attr = '';
                     }
-                    $fotos .= '<div class="portfolio-item col-lg-2 col-md-2 col-sm-2 col-xs-4">
+                    $fotos .= '<div class="portfolio-item col-lg-2 col-md-2 col-sm-2 col-xs-4 fotos-item">
                 <a href="'.$href.'" '.$attr.'><img class="img-responsive" src="painel/arquivos/galeria/'.$hash.'/miniaturas/'.$fotosDados['imagem'].'"></a>
                   </div>';
                   }
                 }else {
-                  $query = mysql_query("SELECT id_galeria, titulo, codigo, DATE_FORMAT(data,'%d/%m/%Y') as data1 FROM tbgalerias");
+                  $query = mysql_query("SELECT id_galeria, titulo, codigo, DATE_FORMAT(data,'%d/%m/%Y') as data1 FROM tbgalerias ORDER BY id_galeria DESC");
                   while ($dadosAlbum = mysql_fetch_assoc($query)) {
                     $fotos .= '<div class="text-center col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-10 col-sm-offset-3 col-xs-10 col-xs-offset-2 fotos-item">
                       <h1>
                         <a href="/fotos.php?hash='.$dadosAlbum['codigo'].'&gcod='.$dadosAlbum['id_galeria'].'&data='.urlencode($dadosAlbum['data1']).'">
-                          <img src="painel/arquivos/galeria/'.$dadosAlbum['codigo'].'/capa.jpg" class="img-responsive albumcapa"  alt="'.$dadosAlbum['titulo'].'"/>
+                          <img src="painel/img.php?img=arquivos/galeria/'.$dadosAlbum['codigo'].'/capa.jpg&x=245&y=164&corta=1" class="img-responsive albumcapa"  alt="'.$dadosAlbum['titulo'].'"/>
                           <br>
                           <span class="gc ttdata">'.utf8_encode($dadosAlbum['titulo']).'</span>
                           <br>

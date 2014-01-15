@@ -64,11 +64,15 @@
                 </div>
               </div>
               <div class="row">
-                <?php $query = mysql_query("SELECT id_galeria, titulo, codigo, DATE_FORMAT(data,'%d/%m') as data1 FROM tbgalerias WHERE flag_status = 1"); while ($dadosAlbum = mysql_fetch_assoc($query)) { ?>
+                <?php
+
+                $query = mysql_query("SELECT id_galeria, titulo, codigo, DATE_FORMAT(data,'%d/%m') as data1 FROM tbgalerias WHERE flag_status = 1 ORDER BY id_galeria DESC");
+                while ($dadosAlbum = mysql_fetch_assoc($query)) {
+                ?>
                 <div class="text-center col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
                   <h1>
                      <a href="/fotos.php?hash=<?=$dadosAlbum['codigo'].'&gcod='.$dadosAlbum['id_galeria'].'&data='.urlencode($dadosAlbum['data1'])?>">
-                      <img src="painel/arquivos/galeria/<?=$dadosAlbum['codigo']?>/capa.jpg" class="img-responsive center-block albumcapa"  alt="<?=$dadosAlbum['titulo']?>"/>
+                      <img src="painel/img.php?img=arquivos/galeria/<?=$dadosAlbum['codigo'];?>/capa.jpg&x=245&y=164&corta=1" class="img-responsive center-block albumcapa"  alt="<?=$dadosAlbum['titulo']?>"/>
                       <span class="gc ttdata posicaodata pull-right"><?=$dadosAlbum['data1']?></span>
                     </a>
                   </h1>
