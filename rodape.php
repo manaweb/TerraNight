@@ -3,7 +3,7 @@
           <div  id="section4" class="section">
             <div class="container">
               <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
                   <h1 class="text-center aldo">Contato</h1>
                   <hr>
     
@@ -14,7 +14,7 @@
 
                
             <div class="row">
-                <div class="col-lg-4 col-lg-offset-1 col-md-5 col-sm-12 col-xs-10 col-xs-offset-1 end">
+                <div class="col-lg-4 col-lg-offset-1 col-md-4 col-sm-12 col-xs-10 col-xs-offset-1 end">
                       <h1 class="gc"><b>Endereço:</b></h1>
                       <img class="marcador-footer" src="../img/marcador-footer.png">
                         <h4 class="gc">
@@ -37,7 +37,7 @@
 
                     </div>
                <br>
-              <div class="col-lg-6 col-md-5 col-sm-12 col-xs-10 col-xs-offset-1 contatorodape">
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-10 col-xs-offset-1 contatorodape">
                 <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
 
                 <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">

@@ -83,6 +83,9 @@ width:346%;
 margin:3px;
 margin-bottom: auto;
 }
+.list-inline.acompanhe > li {
+    padding: 0;
+}
 .sessao{
 background-image:url('../img/sessao.png');
 background-repeat:no-repeat;
@@ -521,7 +524,7 @@ text-align:right;
 
 .cycle-slideshow { 
   width: auto; 
-  margin:10% 10% 0% 10%; 
+  margin:10% 2% 0% 2%; 
 }
 
 .cycle-slideshow img { 
@@ -554,17 +557,3 @@ text-align:right;
     right: 0;
 }
 
-hr {
-    -moz-border-bottom-colors: none;
-    -moz-border-left-colors: none;
-    -moz-border-right-colors: none;
-    -moz-border-top-colors: none;
-    border-color: #FFFFFF -moz-use-text-color -moz-use-text-color !important;
-    border-image: none;
-    border-style: solid none none;
-    border-width: 1px 0 0;
-    height: 0 !important;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    width: 200px;
-  }

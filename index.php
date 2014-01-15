@@ -53,14 +53,8 @@
             <div class="container col-lg-8 col-md-8 col-sm-6 col-xs-12">
               <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-                  <ul class="list-inline">
-                    <li>
-                    <h1 class="aldo">Últimas Fotos</h1>
-                    </li>
-                    <li>
-                    <hr>
-                    </li>
-                  </ul>
+                  <h1 class="text-center aldo">Últimas Fotos</h1>
+                  <hr>
                 </div>
               </div>
               <div class="row">
@@ -124,14 +118,8 @@
             <div class="container col-lg-4 col-md-4 col-sm-6 col-xs-12">
               <div class="row">
                   <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-                    <ul class="list-inline">
-                      <li>
-                        <h1 class="aldo">Programação</h1>
-                      </li>
-                      <li>
-                        <hr>
-                      </li>
-                    </ul>
+                    <h1 class="text-center aldo">Programação</h1>
+                    <hr>
                   </div>  
               </div>
               <div class="row">
@@ -181,66 +169,71 @@
                         </div><!--./faq-cat-one-->
                 </div><!--/.faq-cat-content-->
             </div>
-            <div class="container col-lg-8 col-lg-offset-0 col-md-8 col-md-offset-0 col-sm-11 col-sm-offset-1 col-xs-12 col-xs-offset-0 ">
-            
-            </div><!-- /.container -->
           </div>
         </div><!-- /.section -->  
         <div class="clearfix"></div>
 
       <div class="section text-center">
-        <div class="container maps center-block">
-          <div class="row col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+         <div class="container center-block">
+           <div class="row">
+                  <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                    <h1 class="text-center aldo">Como chegar</h1>
+                    <hr>
+                  </div>  
+              </div>
+            </div>
+          <div class="container maps center-block">
+            <div class="row col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
 
-            <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-            <style>
-                html, body, #map-canvas {
-                  height: 100%;
-                  margin: 0px;
-                  padding: 0px
+              <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+              <style>
+                  html, body, #map-canvas {
+                    height: 100%;
+                    margin: 0px;
+                    padding: 0px
+                  }
+                </style>
+              <script type="text/javascript">
+                window.onload = function() {
+                    initialize();
                 }
-              </style>
-            <script type="text/javascript">
-              window.onload = function() {
-                  initialize();
-              }
-           
-              function initialize() {
-                  var myLatlng = new google.maps.LatLng(-20.786529,-48.332228);
-                  
-                  var myOptions = {
-                      zoom: 15,
-                      center: myLatlng,
-                      mapTypeId: google.maps.MapTypeId.ROADMAP        }
-                   
-                  var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+             
+                function initialize() {
+                    var myLatlng = new google.maps.LatLng(-20.786529,-48.332228);
+                    
+                    var myOptions = {
+                        zoom: 15,
+                        center: myLatlng,
+                        mapTypeId: google.maps.MapTypeId.ROADMAP        }
+                     
+                    var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
 
-                   
-                  var contentString = "AP Móveis - A empresa, devidamente, atua no mercado a mais de 10 anos. Atualmente se encontra instalada no Distrito Industrial de JABOTICABAL-SP, colaborando para o crescimento do Distrito da Cidade...";
-                   
-                  var infowindow = new google.maps.InfoWindow({
-                      content: contentString
-                  });
-                   
-                  var marker = new google.maps.Marker({
-                      position: myLatlng,
-                      icon: '../img/marcador.png',
-                      map: map,
-                      title: "Terra Night"
-                  });
+                     
+                    var contentString = "AP Móveis - A empresa, devidamente, atua no mercado a mais de 10 anos. Atualmente se encontra instalada no Distrito Industrial de JABOTICABAL-SP, colaborando para o crescimento do Distrito da Cidade...";
+                     
+                    var infowindow = new google.maps.InfoWindow({
+                        content: contentString
+                    });
+                     
+                    var marker = new google.maps.Marker({
+                        position: myLatlng,
+                        icon: '../img/marcador.png',
+                        map: map,
+                        title: "Terra Night"
+                    });
 
 
-                  google.maps.event.addListener(marker, 'click', function() {
-                      infowindow.open(map,marker);
-                  });
+                    google.maps.event.addListener(marker, 'click', function() {
+                        infowindow.open(map,marker);
+                    });
 
-                  var styles = [{"featureType":"water","stylers":[{"color":"#021019"}]},{"featureType":"landscape","stylers":[{"color":"#08304b"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#0c4152"},{"lightness":5}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#0b434f"},{"lightness":25}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#000000"}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#0b3d51"},{"lightness":16}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"}]},{"elementType":"labels.text.fill","stylers":[{"color":"#ffffff"}]},{"elementType":"labels.text.stroke","stylers":[{"color":"#000000"},{"lightness":13}]},{"featureType":"transit","stylers":[{"color":"#146474"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#144b53"},{"lightness":14},{"weight":1.4}]}] ;
-                map.setOptions({styles: styles});
-              }
-          </script>
-            <div id="map_canvas" style="width:3000px;height:365px;" class="img-responsive" type="submit"></div>
+                    var styles = [{"featureType":"water","stylers":[{"color":"#021019"}]},{"featureType":"landscape","stylers":[{"color":"#08304b"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#0c4152"},{"lightness":5}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#0b434f"},{"lightness":25}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#000000"}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#0b3d51"},{"lightness":16}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"}]},{"elementType":"labels.text.fill","stylers":[{"color":"#ffffff"}]},{"elementType":"labels.text.stroke","stylers":[{"color":"#000000"},{"lightness":13}]},{"featureType":"transit","stylers":[{"color":"#146474"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#144b53"},{"lightness":14},{"weight":1.4}]}] ;
+                  map.setOptions({styles: styles});
+                }
+            </script>
+              <div id="map_canvas" style="width:3000px;height:365px;" class="img-responsive" type="submit"></div>
+            </div>
           </div>
-        </div>
       </div>
 
       <?php include 'rodape.php'; ?>   
