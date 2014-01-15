@@ -38,19 +38,19 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
               <ul class="nav navbar-nav navbar-right">
                 <li>
-                  <a href="index.php" class="gc"><b>Home</b></a>
+                  <a href="index.php" class="gc">Home</a>
                 </li>
                 <li>
-                  <a href="fotos.php" class="gc"><b>Fotos</b></a>
+                  <a href="fotos.php" class="gc">Fotos</a>
                 </li>
                 <li>
-                  <a href="index.php#section3" class="gc" id="pog"><b>Programação</b></a>
+                  <a href="index.php#section3" class="gc" id="pog">Programação</a>
                 </li>
                 <li>
-                  <a href="#section4" class="gc" id="contatus"><b>Contato</b></a>
+                  <a href="#section4" class="gc" id="contatus">Contato</a>
                 </li>
 
-                   <li class="dropdown">
+               <li class="dropdown">
                   <a href="#" class="dropdown-toggle gc" data-toggle="dropdown">
                     <span class="glyphicon glyphicon-user"></span> <b> <?=(!isset($_SESSION['loginName']) ? 'Login' : $_SESSION['loginName'])?></b>
                   </a>
@@ -163,7 +163,8 @@
         </div>-->
 <BR>
 <BR>
-<div class="col-lg-10 col-lg-offset-1 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+<BR>
+<div class="col-lg-8 col-lg-offset-2 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
   <div class="cycle-slideshow" data-cycle-timeout=4000 
                                data-cycle-slides=" > a" 
                                data-cycle-swipe=true 
