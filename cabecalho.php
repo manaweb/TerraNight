@@ -14,8 +14,8 @@
           para obter uma experiência completa do site.
         </ p>
         <![endif]-->
-      <nav class="navbar navbar-inverse navbar-fixed-top menu " role="navigation">
-          <div class="container">
+      <nav class="navbar navbar-inverse navbar-fixed-top menu" role="navigation">
+          <div class="container col-lg-6 col-lg-offset-3">
             <div id="section1" class="navbar-header">
             <div class="row">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -38,10 +38,13 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
               <ul class="nav navbar-nav navbar-right">
                 <li>
-                  <a href="index.php" class="gc">Home</a>
+                  <a href="index.php" class="gc">home</a>
                 </li>
                 <li>
-                  <a href="fotos.php" class="gc">Fotos</a>
+                  <a href="fotos.php" class="gc">informações</a>
+                </li>
+                <li>
+                  <a href="fotos.php" class="gc">fotos</a>
                 </li>
                 <li>
                   <a href="index.php#section3" class="gc" id="pog">Programação</a>
@@ -164,29 +167,28 @@
 <BR>
 <BR>
 <BR>
-<div class="col-lg-6 col-lg-offset-3 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
-  <div class="cycle-slideshow" data-cycle-timeout=4000 
-                               data-cycle-slides=" > a" 
-                               data-cycle-swipe=true 
-                               data-cycle-fx=shuffle >
-      <!-- prev/next links -->
-      <div class="cycle-prev"></div>
-      <div class="cycle-next"></div>
+<div id="section1" class="section"> 
+  <div class="col-lg-6 col-lg-offset-3 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
 
-     <?php
-              $size = 0;
-              $sqlBanner = "select * from tbpublicidade";
-              $result = mysql_query($sqlBanner);
-              while($dadosBanner = mysql_fetch_assoc($result)){
-              ?>
-              
-                <a <?=$link?> title="<?=$dadosBanner['titulo']?>">
-                  <div class="img-responsive">
-                    <img src="painel/arquivos/banner/<?=$dadosBanner['arquivo']?>">
-                  </div>
-                </a>
-              
-            <?php } ?>
+    <div class="cycle-slideshow" data-cycle-fx="scrollHorz" 
+                                 data-cycle-timeout="4000" 
+                                 data-cycle-slides=" > a" 
+                                 data-cycle-swipe= "true"
+                                 data-cycle-pager=".cycle-pager">
+        <!-- prev/next links -->
+       <?php
+            $size = 0;
+            $sqlBanner = "select * from tbpublicidade";
+            $result = mysql_query($sqlBanner);
+            while($dadosBanner = mysql_fetch_assoc($result)){
+            ?>
+              <a <?=$link?> title="<?=$dadosBanner['titulo']?>">
+                <div class="img-responsive">
+                  <img src="painel/arquivos/banner/<?=$dadosBanner['arquivo']?>">
+                </div>
+              </a>
+       <?php } ?>
+    </div>
+    <div class="cycle-pager"></div>
   </div>
 </div>
-

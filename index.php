@@ -26,6 +26,7 @@
         <link rel="stylesheet" href="fonts/alte_din_1451_mittelschrift.css">
         <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/bullets-slideshow.css">
 
         <!--[if gte IE 9]>
         <style type="text/css">
@@ -41,21 +42,16 @@
         <link href="/css/bootstrap-ie7.css" rel="stylesheet">
         <![endif]-->
 </head>
-<body data-spy="scroll" data-target=".nav" class="col-lg-10 col-lg-offset-1 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+<body data-spy="scroll" data-target=".nav" class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
 
   <?php include_once("analyticstracking.php") ?>
 
         <?php include 'cabecalho.php'; ?>
-
-
-        <div id="section2">
-          <div class="clearfix"></div>
-            <div class="container col-lg-8 col-md-8 col-sm-6 col-xs-12">
+<div class="clearfix"></div>
+        <div id="section2" class="section">
+            <div class="container col-lg-4 col-lg-offset-3 col-md-8 col-sm-6 col-xs-12">
               <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-                  <h1 class="text-center aldo">Últimas Fotos</h1>
-                  <hr>
-                </div>
+                  <h1 class="pull-left aldo">Últimas Fotos</h1>
               </div>
               <div class="row">
                 <?php
@@ -73,66 +69,7 @@
                 </div>
                 <?php } ?>
               </div><!-- /.row -->
-             </div><!-- /.container -->         
-
-            <div class="container col-lg-4 col-md-4 col-sm-6 col-xs-12">
-              <div class="row">
-                  <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-                    <h1 class="text-center aldo">Programação</h1>
-                    <hr>
-                  </div>  
-              </div>
-              <div class="row">
-                <div class="tab-content faq-cat-content ttdata">
-                       <ul class="agenda">
-
-                        <?php $query = mysql_query("SELECT descricao, titulo, DAY(datahora) as dia, MONTH(datahora) as mes FROM tbprogramacao WHERE MONTH(datahora) = '".date('m')."' ORDER BY datahora ASC");
-                              for ($i = 0;$dadosAgenda = mysql_fetch_assoc($query);$i++) {
-                            ?><li>
-                            <div class="tab-pane in fade" id="faq-cat-<?=$i?>">
-                              <div class="panel-group" id="accordion-cat-<?=$i?>">
-                                  <div class="panel panel-faq" id="contentDarkTerraNiggaNight">
-                                      <div class="panel-heading">
-                                        <a data-toggle="collapse" data-parent="#accordion-cat-<?=$i?>" href="#faq-cat-<?=$i?>-sub-<?=$i?>">
-                                            <div class="pull-left">
-                                              
-                                              <p class="dia gc" style="color:#000000 !important;">
-                                                <b><?=((int)$dadosAgenda['dia'] < 10 ? "0{$dadosAgenda['dia']}" : $dadosAgenda['dia'])?></b>
-                                              </p>
-                                              <p class="mes gc" style="color:#000000 !important;">
-                                                <b><?=((int)$dadosAgenda['mes'] < 10 ? "0{$dadosAgenda['mes']}" : $dadosAgenda['mes'])?></b>
-                                              </p>
-                                              <img class="img-responsive" src="../img/ovo-data.png">
-                                              
-                                            </div>
-                                            <div class="agendaposition">
-                                              <h3 class="gc">
-                                               <b><?=utf8_encode($dadosAgenda['titulo'])?></b>
-                                                <br>
-                                                <small> 
-                                                  <b>+ informações</b>
-                                                </small>
-                                              </h3>
-                                            </div>
-                                          </a>
-                                      </div>     
-                                    <div id="faq-cat-<?=$i?>-sub-<?=$i?>" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                          <p class="gc"><?=utf8_encode($dadosAgenda['descricao'])?></p>
-                                        </div>
-                                    </div>
-                                 </div>
-                             </div>
-                           </div>
-                          </li><br><?php } ?>
-                        </ul> 
-                  </div><!--./faq-cat-one-->
-              </div><!--/.faq-cat-content-->
-            </div><!-- /.container -->
-
-        <div class="clearfix"></div>
-
-          <div class="container container col-lg-8 col-lg-offset-0 col-md-8 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+          <div class="visible-lg visible-md hidden-sm hidden-xs">
             <div class="row center-block text-center likebarcontent">
                <iframe class="fbAvatar" name="f7e65ffb8" width="1000px" height="1000px" frameborder="0" allowtransparency="true" scrolling="no" title="fb:like_box Facebook Social Plugin" src="https://www.facebook.com/plugins/like_box.php?app_id=113869198637480&amp;channel=https%3A%2F%2Fs-static.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D28%23cb%3Df26660671%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Fff5235b4c%26relation%3Dparent.parent&amp;header=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fboateterranight&amp;locale=pt_BR&amp;sdk=joey&amp;show_border=false&amp;show_faces=true&amp;stream=false" ></iframe>
                 <div class="parentFbFaces">
@@ -169,23 +106,108 @@
                   </ul>
               </div><!-- /.row --> 
            </div><!-- /.container -->
+             </div><!-- /.container -->         
 
-         
-        </div><!-- /.section -->  
-        <div class="clearfix"></div>
-
-      <div class="text-center">
-         <div class="container center-block">
-           <div class="row">
-                  <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-                    <h1 class="text-center aldo">Como chegar</h1>
-                    <hr>
-                  </div>  
+            <div class="container col-lg-2 col-md-4 col-sm-6 col-xs-12">
+              <div class="row">
+                    <h1 class="pull-left aldo">Programação</h1>
               </div>
-            </div>
-          <div class="container maps center-block">
-            <div class="row col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+              <div class="row">
+                <div class="tab-content faq-cat-content ttdata">
+                       <ul class="agenda">
 
+                        <?php $query = mysql_query("SELECT descricao, titulo, DAY(datahora) as dia, MONTH(datahora) as mes FROM tbprogramacao WHERE MONTH(datahora) = '".date('m')."' ORDER BY datahora ASC");
+                              for ($i = 0;$dadosAgenda = mysql_fetch_assoc($query);$i++) {
+                            ?><li>
+                            <div class="tab-pane in fade" id="faq-cat-<?=$i?>">
+                              <div class="panel-group" id="accordion-cat-<?=$i?>">
+                                  <div class="panel panel-faq" id="contentDarkTerraNiggaNight">
+                                      <div class="panel-heading">
+                                        <a data-toggle="collapse" data-parent="#accordion-cat-<?=$i?>" href="#faq-cat-<?=$i?>-sub-<?=$i?>">
+                                            <div class="pull-left">
+                                              
+                                              <p class="dia gc" style="color:#000000 !important;">
+                                                <b><?=((int)$dadosAgenda['dia'] < 10 ? "0{$dadosAgenda['dia']}" : $dadosAgenda['dia'])?></b>
+                                              </p>
+                                              <p class="mes gc" style="color:#000000 !important;">
+                                                <b><?=((int)$dadosAgenda['mes'] < 10 ? "0{$dadosAgenda['mes']}" : $dadosAgenda['mes'])?></b>
+                                              </p>
+                                              <img class="img-responsive" src="../img/ovo-data.png">
+                                              
+                                            </div>
+                                            <div class="agendaposition">
+                                              <h4 class="gc">
+                                               <b><?=utf8_encode($dadosAgenda['titulo'])?></b>
+                                                <br>
+                                                <small> 
+                                                  <b>+ informações</b>
+                                                </small>
+                                              </h4>
+                                            </div>
+                                          </a>
+                                      </div>     
+                                    <div id="faq-cat-<?=$i?>-sub-<?=$i?>" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                          <p class="gc"><?=utf8_encode($dadosAgenda['descricao'])?></p>
+                                        </div>
+                                    </div>
+                                 </div>
+                             </div>
+                           </div>
+                          </li><br><?php } ?>
+                        </ul> 
+                  </div><!--./faq-cat-one-->
+              </div><!--/.faq-cat-content-->
+            </div><!-- /.container -->
+
+          <div class="container col-lg-4 col-lg-offset-3 col-md-8 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 hidden-lg hidden-md visible-sm visible-xs">
+            <div class="row center-block text-center likebarcontent">
+               <iframe class="fbAvatar" name="f7e65ffb8" width="1000px" height="1000px" frameborder="0" allowtransparency="true" scrolling="no" title="fb:like_box Facebook Social Plugin" src="https://www.facebook.com/plugins/like_box.php?app_id=113869198637480&amp;channel=https%3A%2F%2Fs-static.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D28%23cb%3Df26660671%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Fff5235b4c%26relation%3Dparent.parent&amp;header=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fboateterranight&amp;locale=pt_BR&amp;sdk=joey&amp;show_border=false&amp;show_faces=true&amp;stream=false" ></iframe>
+                <div class="parentFbFaces">
+                    <iframe class="fbFriendFaces" name="f189ac9d8" width="1000px" height="1000px" frameborder="0" allowtransparency="true" scrolling="no" title="fb:like_box Facebook Social Plugin" src="https://www.facebook.com/plugins/like_box.php?app_id=113869198637480&amp;channel=https%3A%2F%2Fs-static.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D28%23cb%3Df227f89074%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Fff5235b4c%26relation%3Dparent.parent&amp;header=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fboateterranight&amp;locale=pt_BR&amp;sdk=joey&amp;show_border=false&amp;show_faces=true&amp;stream=false"></iframe>
+                </div>
+              </div><!-- /.row -->
+              
+              <div class="row text-center">
+                  <ul class="list-inline acompanhe ">
+                    <li>
+                      <div>
+                        <a href="https://www.facebook.com/boateterranight" class="social" target="_blank">
+                          <img src="../img/title_facebook.png"></a>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <a href="https://twitter.com/search?q=terranight" class="social" target="_blank">
+                          <img src="../img/title_twitter.png"></a>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <a href="http://statigr.am/tag/terranight/" class="social" target="_blank">
+                          <img src="../img/title_instagram.png"></a>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <a href="http://www.youtube.com/results?search_query=terra+night" class="social" target="_blank">
+                          <img src="../img/title_youtube.png"></a>
+                      </div>
+                    </li>
+                  </ul>
+              </div><!-- /.row --> 
+           </div><!-- /.container -->
+        </div><!-- /.section -->  
+
+<div class="clearfix"></div>
+        <div id="section3" class="section">
+         <div class="container text-center col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+           <div class="row col-lg-6 col-lg-offset-3 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+              <h1 class="pull-left aldo">Como chegar</h1>
+            </div>
+          <div class="clearfix"></div>
+          <div class="row maps center-block">
+            <div class="row">
               <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
               <style>
                   html, body, #map-canvas {
@@ -210,7 +232,7 @@
                     var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
 
                      
-                    var contentString = "AP Móveis - A empresa, devidamente, atua no mercado a mais de 10 anos. Atualmente se encontra instalada no Distrito Industrial de JABOTICABAL-SP, colaborando para o crescimento do Distrito da Cidade...";
+                    var contentString = " descriçao balada";
                      
                     var infowindow = new google.maps.InfoWindow({
                         content: contentString
@@ -236,10 +258,11 @@
             </div>
           </div>
       </div>
-
-      <?php include 'rodape.php'; ?>   
-
+    </div>
+  
       
+   <?php include 'rodape.php'; ?>   
+
     <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];

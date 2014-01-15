@@ -21,14 +21,14 @@ font-family: 'aldosemibold';
 .aldo{
 color:#FFFFFF !important;
 font-family:'aldosemibold';
-font-size:40px;
+font-size:35px;
 font-weight:lighter;
 text-shadow:0px 2px 13px rgba(255, 255, 255, 0.3);
 }
 
 .nav{
 padding: 8px;
-font-size: 15px;
+font-size: 16px;
 }
 a:active, a:hover, a:focus{
 background-color:#111111;
@@ -161,14 +161,14 @@ color:#B0003A;
 background:none repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 .dia{
-font-size:45px;
-padding:0 14px;
-position:absolute;
+font-size: 35px;
+padding: 1px 0 0 12px;
+position: absolute;
 }
 .mes{
-font-size:33px;
-margin:49px 48px;
-position:absolute;
+font-size: 27px;
+margin: 40px;
+position: absolute;
 }
 .agendaposition{
 padding:0px 0px 0px 110px;
@@ -265,6 +265,9 @@ color:#555555;
 }
 .headagenda .panel-group .panel-heading + .panel-collapse .panel-body{
 border-top:none;
+}
+.panel-group .panel-heading + .panel-collapse .panel-body {
+    border-top: 1px solid #333333;
 }
 /*
 .jgaleria > .img-home-portfolio, .img-customer, .portfolio-item{
@@ -528,12 +531,20 @@ text-align:right;
 
 .cycle-slideshow { 
   width: auto; 
-  margin:5% 2% 0% 2%; 
+  margin:5% 0% 0% -2%; 
 }
 
 .cycle-slide {
-    background-color: #333333;
-    padding: 5px;
+    background-color: #000000;
+    padding: 10px;
+}
+
+
+.cycle-slide,
+.cycle-slide:focus, 
+.cycle-slide:hover  {
+    background-color: #000000;
+    padding: 10px;
 }
 
 .cycle-slideshow img { 
