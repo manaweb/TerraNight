@@ -165,8 +165,6 @@
           </div>
         </div>-->
 <BR>
-<BR>
-<BR>
 <div id="section1" class="section"> 
   <div class="col-lg-6 col-lg-offset-3 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
 

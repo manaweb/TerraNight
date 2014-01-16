@@ -1,5 +1,4 @@
-<footer>
-  <?php include_once("analyticstracking.php") ?>
+
           <div  id="section4">
             <div class="container container col-lg-6 col-lg-offset-3 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
               <div class="row">
@@ -21,7 +20,7 @@
                           </address>
                         </h4>
                             
-                      <h3 class="gc"><abbr title="Telefone"><i class="fa fa-phone"></i>&nbsp;<b>Telefone:</b></abbr>(017) 99724-5004</h3>
+                      <h3 class="gc"><abbr title="Telefone"><i class="fa fa-phone"></i>&nbsp;<b>Telefone:</b></abbr>(017)99724-5004</h3>
                               
                             
                           
@@ -71,7 +70,17 @@
                </div>
             </div>
           </div>
-</footer>
+      <footer>
+        <div class="clearfix"></div>
+        <div class="section">
+          <div class="container col-lg-6 col-lg-offset-3 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+            <a href="http://www.manaweb.com.br/" class="pull-right">
+              <img src="../img/manaweb.png" alt="Maná WEB">
+            </a>
+            <?php include_once("analyticstracking.php") ?>
+          </div>
+        </div>
+      </footer>
             <script src="js/jquery-1.10.2.min.js"></script>
             <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
             <script src="js/bootstrap.min.js"></script>
