@@ -95,6 +95,9 @@ background-repeat:no-repeat;
 width:100%;
 padding:20px;
 }
+.endereco{
+   margin-bottom: -30px;
+}
 .cadastro{
 /* IE9 SVG, needs conditional override of 'filter' to 'none' */
 background:url(data:image/svg+xml;
@@ -189,9 +192,10 @@ text-decoration:none !important;
 margin-top:10px;
 }
 .marcador-footer{
-right:0%;
-position:absolute;
-top:75px;
+left: 270px;
+position: relative;
+top: 55px;
+margin-top: 0px;
 }
 .albumtext span{
 background:rgb(255,183,107);

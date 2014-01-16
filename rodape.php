@@ -4,14 +4,12 @@
               <div class="row">
                   <h1 class="pull-left aldo">Contato</h1>
               </div>
-
-
-               
             <div class="row">
-                <div class="col-lg-4 col-lg-offset-0 col-md-4 col-sm-12 col-xs-10 col-xs-offset-1 end">
-                      <h1 class="gc"><b>Endereço:</b></h1>
-                      <img class="marcador-footer" src="../img/marcador-footer.png">
+                <div class="col-lg-4 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 end">
+                      <h1 class="gc endereco"><b>Endereço:</b></h1>
+                        <img class="marcador-footer" src="../img/marcador-footer.png">
                         <h4 class="gc">
+                          
                           <address><b>Rua</b> Juvenal Augusto nº386
                             <br> 
                              Bairro Centro - Terra Roxa, SP
@@ -30,8 +28,7 @@
 
 
                     </div>
-               <br>
-              <div class="col-lg-7 col-lg-offset-1 col-md-6 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-10 col-xs-offset-1 contatorodape">
+               <div class="col-lg-7 col-lg-offset-1 col-md-6 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 contatorodape">
                 <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
                   <div class="col-lg-11 col-lg-offset-2 col-md-12 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
                       <h4 class="text-center gc">Preencha o formulário ou entre em contato conosco.</h4>
