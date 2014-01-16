@@ -186,7 +186,7 @@ text-decoration:none !important;
 margin-top:10px;
 }
 .marcador-footer{
-    bottom: 225px;
+    bottom: 170px;
     left: 240px;
     position: relative;
 }
@@ -394,8 +394,8 @@ width:49%;
 * removes glyphicons:empty { width:1em;
 }
 */
-                }
-                .ekko-lightbox a:hover{
+}
+.ekko-lightbox a:hover{
 opacity:1;
 text-decoration:none;
 }
