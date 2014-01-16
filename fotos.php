@@ -39,12 +39,11 @@
 <body data-spy="scroll" data-offset="0" data-target="#myScrollspy">
   <?php include_once("analyticstracking.php") ?>
         <?php include 'cabecalho.php';?>
-        <div class="fotos">
+        <div class="section">
           <div class="container">
             <div class="row">
               <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-                <h2 class="text-center aldo">Álbum de fotos</h2>
-                <hr>
+                <h2 class="pull-left aldo">Álbum de fotos</h2>
               </div>
             </div>
             <div class="clearfix"></div>
