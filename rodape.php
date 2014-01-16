@@ -5,7 +5,7 @@
                   <h1 class="pull-left aldo">Contato</h1>
               </div>
             <div class="row">
-                <div class="col-lg-4 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 end">
+                <div class="col-lg-4 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-12 col-xs-offset-0 end">
                       <h1 class="gc endereco"><b>Endereço:</b></h1>
                         <img class="marcador-footer" src="../img/marcador-footer.png">
                         <h4 class="gc">
@@ -28,8 +28,8 @@
 
 
                     </div>
-               <div class="col-lg-7 col-lg-offset-1 col-md-6 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 contatorodape">
-                <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+               <div class="col-lg-7 col-lg-offset-1 col-md-6 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0 contatorodape">
+                <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
                   <div class="col-lg-11 col-lg-offset-2 col-md-12 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
                       <h4 class="text-center gc">Preencha o formulário ou entre em contato conosco.</h4>
                    </div>
@@ -71,9 +71,20 @@
         <div class="clearfix"></div>
         <div class="section">
           <div class="container col-lg-6 col-lg-offset-3 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
-            <a href="http://www.manaweb.com.br/" class="pull-right">
-              <img src="../img/manaweb.png" alt="Maná WEB">
-            </a>
+            <ul class="list-inline pull-right">
+              <li>
+                <a href="http://www.manaweb.com.br/">
+                  <a href="http://www.w3.org/html/logo/">
+                    <img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-graphics-semantics.png" width="197" height="64" alt="HTML5 Powered with CSS3 / Styling, Graphics, 3D &amp; Effects, and Semantics" title="HTML5 Powered with CSS3 / Styling, Graphics, 3D &amp; Effects, and Semantics">
+                  </a>
+                </a>
+              </li>
+              <li>
+                <a href="http://www.manaweb.com.br/">
+                  <img src="../img/manaweb.png" alt="Maná WEB">
+                </a>
+              </li>
+            </ul>
             <?php include_once("analyticstracking.php") ?>
           </div>
         </div>
