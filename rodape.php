@@ -6,28 +6,26 @@
               </div>
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-12 col-xs-offset-0 end">
-                      <h1 class="gc endereco"><b>Endereço:</b></h1>
-                        <img class="marcador-footer" src="../img/marcador-footer.png">
-                        <h4 class="gc">
-                          
-                          <address><b>Rua</b> Juvenal Augusto nº386
-                            <br> 
-                             Bairro Centro - Terra Roxa, SP
-                            <br> 
-                             CEP 14745-000 
-                          </address>
-                        </h4>
-                            
-                      <h3 class="gc"><abbr title="Telefone"><i class="fa fa-phone"></i>&nbsp;<b>Telefone:</b></abbr>(017)99724-5004</h3>
-                              
-                            
-                          
-                      <a class="gc email" href="mailto:contato@terranight.com.br">
-                        <h4><i class="fa fa-envelope-o"></i>&nbsp;contato@terranight.com.br</h4>
-                      </a>
+                  <h1 class="gc"><b>Endereço:</b></h1>
 
+                    <h4 class="gc">
+                      
+                      <address><b>Rua</b> Juvenal Augusto nº386
+                        <br> 
+                         Centro - Terra Roxa, SP
+                        <br> 
+                         CEP 14745-000 
+                      </address>
+                    </h4>
+                        
+                  <h3 class="gc"><abbr title="Telefone"><i class="fa fa-phone"></i>&nbsp;<b>Telefone:</b></abbr>(017)99724-5004</h3>
+                    <a class="gc email" href="mailto:contato@terranight.com.br">
+                      <h4><i class="fa fa-envelope-o"></i>&nbsp;contato@terranight.com.br</h4>
+                      
+                    </a>
+                      <img class="marcador-footer" src="../img/marcador-footer.png">
+                </div>
 
-                    </div>
                <div class="col-lg-7 col-lg-offset-1 col-md-6 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0 contatorodape">
                 <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
                   <div class="col-lg-11 col-lg-offset-2 col-md-12 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">

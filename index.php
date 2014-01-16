@@ -259,8 +259,7 @@
       </div>
     </div>
   
-      
-   <?php include 'rodape.php'; ?>   
+  
 
     <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
@@ -270,4 +269,7 @@
         </script>
 
 </body>
+
+    
+   <?php include 'rodape.php'; ?>   
   </html>
