@@ -338,9 +338,6 @@ padding:0px 20px;
 .navbar-collapse{
 max-height:530px !important;
 }
-.fotos {
-    padding: 320px 0 0;
-}
 a.social:active, a.social:hover, a.social:focus{
 /*border-radius*/
 -webkit-border-radius:20px;
