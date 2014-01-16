@@ -118,8 +118,9 @@
           });
         });
           <?php }else { ?>
-            $('.fotos-item').click(function() {
-              $('.dropdown-menu').show();
+            $('.fotos-item,.navbar-toggle').click(function(e) {
+              $('#menutudo').slideToggle('slow');
+              $('.dropdown').toggleClass('open');
               return false;
             });
           <?php } ?>
