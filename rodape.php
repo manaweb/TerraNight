@@ -143,12 +143,6 @@
 
                 });
               });
-
-            $('#pog').click(function() {
-              $('html,body').animate({
-                scrollTop: $('#section3').offset().top
-              },1000);
-            });
             $('#contatus').click(function() {
               $('html,body').animate({
                 scrollTop: $('#section4').offset().top

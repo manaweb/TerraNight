@@ -216,7 +216,7 @@ filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76b', endC
 margin-top:0px;
 }
 .faq-cat-tabs li a{
-background-color:#9F0034;
+background-color:#F69520;
 border:none;
 color:#FFFFFF;
 margin:1px;
@@ -252,13 +252,12 @@ font-weight:normal;
 border-bottom:none;
 }
 .headagenda .nav{
-background-color:#9F0034;
-padding:1px;
+background-color:#F69520;
 /*border-radius*/
--webkit-border-radius:6px;
-   -moz-border-radius:6px;
-        border-radius:6px;
-padding:2px 2px 2px 2px;
+-webkit-border-radius:10px;
+   -moz-border-radius:10px;
+        border-radius:10px;
+padding:5px;
 }
 .headagenda .nav > li > a:hover, .nav > li > a:focus{
 background-color:#FFFFFF;
@@ -455,8 +454,8 @@ background-repeat:no-repeat;
      padding: 1px 0 0 30px
 }
 .gc.ttdata.posicaodata{
-font-size:35px;
-line-height:35px;
+font-size:25px;
+line-height:25px;
 text-align:right;
 }
 .fbAvatar{

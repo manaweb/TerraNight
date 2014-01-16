@@ -126,7 +126,7 @@
                 <div class="tab-content faq-cat-content ttdata">
                   <ul class="agenda">
 
-                    <?php $query = mysql_query("SELECT descricao, titulo, DAY(datahora) as dia, MONTH(datahora) as mes FROM tbprogramacao WHERE MONTH(datahora) = '".date('m')."' ORDER BY datahora ASC");
+                    <?php $query = mysql_query("SELECT descricao, titulo, DAY(datahora) as dia, MONTH(datahora) as mes FROM tbprogramacao WHERE MONTH(datahora) = '".date('m')."' ORDER BY datahora DESC");
                           for ($i = 0;$dadosAgenda = mysql_fetch_assoc($query);$i++) {
                         ?>
                     <li>
@@ -137,11 +137,7 @@
                           <div class="panel panel-faq" id="contentDarkTerraNiggaNight">
                             <div class="panel-heading">
                               <a data-toggle="collapse" data-parent="#accordion-cat-<?=$i?>
-                                " href="#faq-cat-
-                                <?=$i?>
-                                -sub-
-                                <?=$i?>
-                                ">
+                                " href="#faq-cat-<?=$i?>-sub-<?=$i?>">
                                 <div class="pull-left">
                                   <p class="dia gc" style="color:#000000 !important;">
                                     <b><?=((int)$dadosAgenda['dia'] < 10 ? "0{$dadosAgenda['dia']}" : $dadosAgenda['dia'])?></b>
@@ -181,12 +177,12 @@
                 <!--/.faq-cat-content-->
                 <br>
                 <div class="center-block col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
-                  <img class="img-responsive center-block" src="../img/logo-ovo.png"></div>
-                <!--/.col-lg-6--> </div>
-              <!--/.col-lg-6--> </div>
-            <!--/.row--> </div>
-          <!--/.container--> </div>
-        <!--/.section - section3 -->
+                  <img class="img-responsive center-block" src="../img/logo-ovo.png">
+                </div><!--/.col-lg-6--> 
+              </div><!--/.col-lg-6-->
+             </div><!--/.row--> 
+           </div><!--/.container-->
+         </div><!--/.section - section3 -->
 
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

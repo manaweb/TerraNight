@@ -15,7 +15,7 @@
         </ p>
         <![endif]-->
       <nav class="navbar navbar-inverse navbar-fixed-top menu" role="navigation">
-          <div class="container col-lg-7 col-lg-offset-3">
+          <div class="container col-lg-10 col-lg-offset-1">
             <div id="section1" class="navbar-header">
             <div class="row">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -35,19 +35,19 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
 
 
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <div class="collapse navbar-collapse navbar-ex1-collapse" id="menutudo">
               <ul class="nav navbar-nav navbar-right">
                 <li>
-                  <a href="index.php" class="gc">home</a>
+                  <a href="index.php" class="gc">Home</a>
                 </li>
                 <li>
-                  <a href="fotos.php" class="gc">informações</a>
+                  <a href="fotos.php" class="gc">Informações</a>
                 </li>
                 <li>
-                  <a href="fotos.php" class="gc">fotos</a>
+                  <a href="fotos.php" class="gc">Fotos</a>
                 </li>
                 <li>
-                  <a href="index.php#section3" class="gc" id="pog">Programação</a>
+                  <a href="agenda.php" class="gc">Programação</a>
                 </li>
                 <li>
                   <a href="#section4" class="gc" id="contatus">Contato</a>
@@ -190,3 +190,4 @@
     <div class="cycle-pager"></div>
   </div>
 </div>
+<div class="clearfix"></div>
