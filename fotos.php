@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/jquery.h5-lightbox.css">
         <link rel="stylesheet" href="css/bullets-slideshow.css">
+        <link rel="stylesheet" type="text/css" href="css/ekko-lightbox.css">
 
         <!--[if lt IE 9]>
         <script src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
@@ -111,15 +112,18 @@
             $('#lightbox-img').attr('src',$(this).attr('data-large-src'));
           });*/
           <?php if ($_SESSION['isLogged'] == 1) { ?>
-           $('#open-image').click(function (e) {
+           $('*[data-toggle="lightbox"]').click(function (e) {
                 e.preventDefault();
                 $(this).ekkoLightbox();
-          });
-        });
+            });
           <?php }else { ?>
             $('.fotos-item,.navbar-toggle').click(function(e) {
               $('#menutudo').slideToggle('slow');
               $('.dropdown').toggleClass('open');
+              return false;
+            });
+            $('.fotos-item,#myModalCad').click(function(e) {
+              $('#myModalCad').toggleClass('in').fadeToggle('slow');
               return false;
             });
           <?php } ?>
