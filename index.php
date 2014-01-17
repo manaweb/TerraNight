@@ -201,11 +201,11 @@
 <div class="clearfix"></div>
         <div id="section3">
          <div class="container text-center col-lg-6 col-lg-offset-3 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
-           <div class="row  col-lg-10 col-lg-offset-1 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+           <div class="row">
               <h1 class="pull-left aldo">Como chegar</h1>
             </div>
           <div class="clearfix"></div>
-          <div class="row maps center-block">
+          <div class="row maps">
             <div class="row">
               <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
               <style>

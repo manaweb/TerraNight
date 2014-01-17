@@ -101,7 +101,7 @@
 
         <div class="modal fade" id="myModalCad" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">        <!-- Modal -->
           <div class="modal-dialog">
-            <div class="modal-content cadastro">
+            <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 <h2 class="modal-title center-block gc" id="myModalLabel">Cadastro</h2>
