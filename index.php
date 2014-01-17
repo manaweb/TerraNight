@@ -48,7 +48,7 @@
 
         <?php include 'cabecalho.php'; ?>
 <div class="clearfix"></div>
-        <div id="section2" class="section">
+        <div id="section2">
             <div class="container col-lg-4 col-lg-offset-3 col-md-8 col-sm-6 col-xs-12">
               <div class="row">
                   <h1 class="pull-left aldo">Últimas Fotos</h1>
@@ -109,7 +109,7 @@
            </div><!-- /.container -->
          </div><!-- /.container -->         
 
-            <div class="container col-lg-2 col-md-4 col-sm-6 col-xs-12">
+            <div class="container col-lg-2 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
               <div class="row">
                     <h1 class="pull-left aldo">Programação</h1>
               </div>
@@ -199,13 +199,13 @@
         </div><!-- /.section -->  
 
 <div class="clearfix"></div>
-        <div id="section3" class="section">
-         <div class="container text-center col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
-           <div class="row col-lg-6 col-lg-offset-3 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+        <div id="section3">
+         <div class="container text-center col-lg-6 col-lg-offset-3 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+           <div class="row">
               <h1 class="pull-left aldo">Como chegar</h1>
             </div>
           <div class="clearfix"></div>
-          <div class="row maps center-block">
+          <div class="row maps">
             <div class="row">
               <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
               <style>

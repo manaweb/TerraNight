@@ -1,10 +1,10 @@
 
           <div  id="section4">
-            <div class="container container col-lg-6 col-lg-offset-3 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+            <div class="container col-lg-6 col-lg-offset-3 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
               <div class="row">
+                <div class="affix col-lg-4 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-12 col-xs-offset-0 end">
                   <h1 class="pull-left aldo">Contato</h1>
-              </div>
-            <div class="row">
+                </div>
                 <div class="col-lg-4 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-12 col-xs-offset-0 end">
                   <h1 class="gc"><b>Endereço:</b></h1>
 
@@ -60,11 +60,13 @@
                       <div class="input-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
                           <button type="submit" class="btn-enviar pull-right gc"></button>    
                        </div>
+                    </form>  
                   </div>
-                </form>    
-               </div>
+                
+               
             </div>
           </div>
+        </div>
       <footer>
         <div class="clearfix"></div>
         <div class="section">
@@ -143,12 +145,6 @@
 
                 });
               });
-
-            $('#pog').click(function() {
-              $('html,body').animate({
-                scrollTop: $('#section3').offset().top
-              },1000);
-            });
             $('#contatus').click(function() {
               $('html,body').animate({
                 scrollTop: $('#section4').offset().top

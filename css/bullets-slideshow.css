@@ -26,7 +26,7 @@
 
 /* pager */
 .cycle-pager { 
-    text-align: center; width: 100%; z-index: 500; position: absolute; overflow: hidden;
+    text-align: center; width: 100%; z-index: 500; position: relative; overflow: hidden; height: 45px;
 }
 .cycle-pager span { 
     font-family: arial; font-size: 50px; width: 16px; height: 16px; 
@@ -73,4 +73,9 @@
 @media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
     .cycle-overlay { padding: 4px }
     .cycle-caption { bottom: 4px; right: 4px }
+}
+
+.col-lg-6 .col-md-12 .col-sm-12 .col-xs-12 {
+    padding-left:15px;
+    padding-right:15px;
 }
