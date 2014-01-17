@@ -138,8 +138,7 @@
                         <div class="panel-group" id="accordion-cat-<?=$i?>">
                           <div class="panel panel-faq" id="contentDarkTerraNiggaNight">
                             <div class="panel-heading">
-                              <a data-toggle="collapse" data-parent="#accordion-cat-<?=$i?>
-                                " href="#faq-cat-<?=$i?>-sub-<?=$i?>">
+                              <a data-toggle="collapse" data-parent="#accordion-cat-<?=$i?>" href="#faq-cat-<?=$i?>-sub-<?=$i?>">
                                 <div class="pull-left">
                                   <p class="dia gc" style="color:#000000 !important;">
                                     <b><?=((int)$dadosAgenda['dia'] < 10 ? "0{$dadosAgenda['dia']}" : $dadosAgenda['dia'])?></b>
@@ -160,8 +159,7 @@
                                 </div>
                               </a>
                             </div>
-                            <div id="faq-cat-<?=$i?>-sub-<?=$i?>
-                              " class="panel-collapse collapse">
+                            <div id="faq-cat-<?=$i?>-sub-<?=$i?>" class="panel-collapse collapse">
                               <div class="panel-body">
                                 <p class="gc">
                                   <?=utf8_encode($dadosAgenda['descricao'])?></p>
