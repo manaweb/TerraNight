@@ -48,7 +48,7 @@
 
         <?php include 'cabecalho.php'; ?>
 <div class="clearfix"></div>
-        <div id="section2" class="section">
+        <div id="section2">
             <div class="container col-lg-4 col-lg-offset-3 col-md-8 col-sm-6 col-xs-12">
               <div class="row">
                   <h1 class="pull-left aldo">Últimas Fotos</h1>
@@ -69,14 +69,15 @@
                 </div>
                 <?php } ?>
               </div><!-- /.row -->
-          <div class="visible-lg visible-md hidden-sm hidden-xs">
-            <div class="row center-block text-center likebarcontent">
-               <iframe class="fbAvatar" name="f7e65ffb8" width="1000px" height="1000px" frameborder="0" allowtransparency="true" scrolling="no" title="fb:like_box Facebook Social Plugin" src="https://www.facebook.com/plugins/like_box.php?app_id=113869198637480&amp;channel=https%3A%2F%2Fs-static.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D28%23cb%3Df26660671%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Fff5235b4c%26relation%3Dparent.parent&amp;header=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fboateterranight&amp;locale=pt_BR&amp;sdk=joey&amp;show_border=false&amp;show_faces=true&amp;stream=false" ></iframe>
-                <div class="parentFbFaces">
+              <br>
+              <div class="visible-lg visible-md hidden-sm hidden-xs">
+                <div class="row center-block text-center likebarcontent">
+                   <iframe class="fbAvatar" name="f7e65ffb8" width="1000px" height="1000px" frameborder="0" allowtransparency="true" scrolling="no" title="fb:like_box Facebook Social Plugin" src="https://www.facebook.com/plugins/like_box.php?app_id=113869198637480&amp;channel=https%3A%2F%2Fs-static.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D28%23cb%3Df26660671%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Fff5235b4c%26relation%3Dparent.parent&amp;header=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fboateterranight&amp;locale=pt_BR&amp;sdk=joey&amp;show_border=false&amp;show_faces=true&amp;stream=false" ></iframe>
+                    <div class="parentFbFaces">
                     <iframe class="fbFriendFaces" name="f189ac9d8" width="1000px" height="1000px" frameborder="0" allowtransparency="true" scrolling="no" title="fb:like_box Facebook Social Plugin" src="https://www.facebook.com/plugins/like_box.php?app_id=113869198637480&amp;channel=https%3A%2F%2Fs-static.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D28%23cb%3Df227f89074%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Fff5235b4c%26relation%3Dparent.parent&amp;header=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fboateterranight&amp;locale=pt_BR&amp;sdk=joey&amp;show_border=false&amp;show_faces=true&amp;stream=false"></iframe>
                 </div>
               </div><!-- /.row -->
-              
+              <br>
               <div class="row text-center">
                   <ul class="list-inline acompanhe ">
                     <li>
@@ -106,9 +107,9 @@
                   </ul>
               </div><!-- /.row --> 
            </div><!-- /.container -->
-             </div><!-- /.container -->         
+         </div><!-- /.container -->         
 
-            <div class="container col-lg-2 col-md-4 col-sm-6 col-xs-12">
+            <div class="container col-lg-2 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
               <div class="row">
                     <h1 class="pull-left aldo">Programação</h1>
               </div>
@@ -116,7 +117,7 @@
                 <div class="tab-content faq-cat-content ttdata">
                        <ul class="agenda">
 
-                        <?php $query = mysql_query("SELECT descricao, titulo, DAY(datahora) as dia, MONTH(datahora) as mes FROM tbprogramacao WHERE MONTH(datahora) = '".date('m')."' ORDER BY datahora ASC");
+                        <?php $query = mysql_query("SELECT descricao, titulo, DAY(datahora) as dia, MONTH(datahora) as mes FROM tbprogramacao WHERE MONTH(datahora) = '".date('m')."' ORDER BY datahora DESC limit 4");
                               for ($i = 0;$dadosAgenda = mysql_fetch_assoc($query);$i++) {
                             ?><li>
                             <div class="tab-pane in fade" id="faq-cat-<?=$i?>">
@@ -125,7 +126,6 @@
                                       <div class="panel-heading">
                                         <a data-toggle="collapse" data-parent="#accordion-cat-<?=$i?>" href="#faq-cat-<?=$i?>-sub-<?=$i?>">
                                             <div class="pull-left">
-                                              
                                               <p class="dia gc" style="color:#000000 !important;">
                                                 <b><?=((int)$dadosAgenda['dia'] < 10 ? "0{$dadosAgenda['dia']}" : $dadosAgenda['dia'])?></b>
                                               </p>
@@ -133,7 +133,6 @@
                                                 <b><?=((int)$dadosAgenda['mes'] < 10 ? "0{$dadosAgenda['mes']}" : $dadosAgenda['mes'])?></b>
                                               </p>
                                               <img class="img-responsive" src="../img/ovo-data.png">
-                                              
                                             </div>
                                             <div class="agendaposition">
                                               <h4 class="gc">
@@ -154,13 +153,13 @@
                                  </div>
                              </div>
                            </div>
-                          </li><br><?php } ?>
+                          </li><?php } ?>
                         </ul> 
                   </div><!--./faq-cat-one-->
               </div><!--/.faq-cat-content-->
             </div><!-- /.container -->
 
-          <div class="container col-lg-4 col-lg-offset-3 col-md-8 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 hidden-lg hidden-md visible-sm visible-xs">
+          <div class="container col-lg-4 col-lg-offset-3 col-md-8 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-8 col-xs-offset-2 hidden-lg hidden-md visible-sm visible-xs">
             <div class="row center-block text-center likebarcontent">
                <iframe class="fbAvatar" name="f7e65ffb8" width="1000px" height="1000px" frameborder="0" allowtransparency="true" scrolling="no" title="fb:like_box Facebook Social Plugin" src="https://www.facebook.com/plugins/like_box.php?app_id=113869198637480&amp;channel=https%3A%2F%2Fs-static.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D28%23cb%3Df26660671%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Fff5235b4c%26relation%3Dparent.parent&amp;header=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fboateterranight&amp;locale=pt_BR&amp;sdk=joey&amp;show_border=false&amp;show_faces=true&amp;stream=false" ></iframe>
                 <div class="parentFbFaces">
@@ -200,9 +199,9 @@
         </div><!-- /.section -->  
 
 <div class="clearfix"></div>
-        <div id="section3" class="section">
-         <div class="container text-center col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
-           <div class="row col-lg-6 col-lg-offset-3 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+        <div id="section3">
+         <div class="container text-center col-lg-6 col-lg-offset-3 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+           <div class="row  col-lg-10 col-lg-offset-1 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
               <h1 class="pull-left aldo">Como chegar</h1>
             </div>
           <div class="clearfix"></div>
@@ -260,8 +259,7 @@
       </div>
     </div>
   
-      
-   <?php include 'rodape.php'; ?>   
+  
 
     <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
@@ -271,4 +269,7 @@
         </script>
 
 </body>
+
+    
+   <?php include 'rodape.php'; ?>   
   </html>

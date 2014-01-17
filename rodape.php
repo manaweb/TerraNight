@@ -1,39 +1,33 @@
-<footer>
-  <?php include_once("analyticstracking.php") ?>
+
           <div  id="section4">
-            <div class="container container col-lg-6 col-lg-offset-3 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+            <div class="container col-lg-6 col-lg-offset-3 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
               <div class="row">
+                <div class="affix col-lg-4 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-12 col-xs-offset-0 end">
                   <h1 class="pull-left aldo">Contato</h1>
-              </div>
+                </div>
+                <div class="col-lg-4 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-12 col-xs-offset-0 end">
+                  <h1 class="gc"><b>Endereço:</b></h1>
 
-
-               
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-0 col-md-4 col-sm-12 col-xs-10 col-xs-offset-1 end">
-                      <h1 class="gc"><b>Endereço:</b></h1>
+                    <h4 class="gc">
+                      
+                      <address><b>Rua</b> Juvenal Augusto nº386
+                        <br> 
+                         Centro - Terra Roxa, SP
+                        <br> 
+                         CEP 14745-000 
+                      </address>
+                    </h4>
+                        
+                  <h3 class="gc"><abbr title="Telefone"><i class="fa fa-phone"></i>&nbsp;<b>Telefone:</b></abbr>(017)99724-5004</h3>
+                    <a class="gc email" href="mailto:contato@terranight.com.br">
+                      <h4><i class="fa fa-envelope-o"></i>&nbsp;contato@terranight.com.br</h4>
+                      
+                    </a>
                       <img class="marcador-footer" src="../img/marcador-footer.png">
-                        <h4 class="gc">
-                          <address><b>Rua</b> Juvenal Augusto nº386
-                            <br> 
-                             Bairro Centro - Terra Roxa, SP
-                            <br> 
-                             CEP 14745-000 
-                          </address>
-                        </h4>
-                            
-                      <h3 class="gc"><abbr title="Telefone"><i class="fa fa-phone"></i>&nbsp;<b>Telefone:</b></abbr>(017) 99724-5004</h3>
-                              
-                            
-                          
-                      <a class="gc email" href="mailto:contato@terranight.com.br">
-                        <h4><i class="fa fa-envelope-o"></i>&nbsp;contato@terranight.com.br</h4>
-                      </a>
+                </div>
 
-
-                    </div>
-               <br>
-              <div class="col-lg-7 col-lg-offset-1 col-md-6 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-10 col-xs-offset-1 contatorodape">
-                <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+               <div class="col-lg-7 col-lg-offset-1 col-md-6 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0 contatorodape">
+                <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
                   <div class="col-lg-11 col-lg-offset-2 col-md-12 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
                       <h4 class="text-center gc">Preencha o formulário ou entre em contato conosco.</h4>
                    </div>
@@ -66,12 +60,35 @@
                       <div class="input-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
                           <button type="submit" class="btn-enviar pull-right gc"></button>    
                        </div>
+                    </form>  
                   </div>
-                </form>    
-               </div>
+                
+               
             </div>
           </div>
-</footer>
+        </div>
+      <footer>
+        <div class="clearfix"></div>
+        <div class="section">
+          <div class="container col-lg-6 col-lg-offset-3 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+            <ul class="list-inline pull-right">
+              <li>
+                <a href="http://www.manaweb.com.br/">
+                  <a href="http://www.w3.org/html/logo/">
+                    <img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-graphics-semantics.png" width="197" height="64" alt="HTML5 Powered with CSS3 / Styling, Graphics, 3D &amp; Effects, and Semantics" title="HTML5 Powered with CSS3 / Styling, Graphics, 3D &amp; Effects, and Semantics">
+                  </a>
+                </a>
+              </li>
+              <li>
+                <a href="http://www.manaweb.com.br/">
+                  <img src="../img/manaweb.png" alt="Maná WEB">
+                </a>
+              </li>
+            </ul>
+            <?php include_once("analyticstracking.php") ?>
+          </div>
+        </div>
+      </footer>
             <script src="js/jquery-1.10.2.min.js"></script>
             <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
             <script src="js/bootstrap.min.js"></script>
@@ -128,12 +145,6 @@
 
                 });
               });
-
-            $('#pog').click(function() {
-              $('html,body').animate({
-                scrollTop: $('#section3').offset().top
-              },1000);
-            });
             $('#contatus').click(function() {
               $('html,body').animate({
                 scrollTop: $('#section4').offset().top
