@@ -48,8 +48,8 @@
               </div>
             </div>
             <div class="clearfix"></div>
-              <div class="row center-block">
-                <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
+              <div class="row center-block wrapper-parent">
+                <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12" id="open-image">
                        
                        <?php 
                             $gCod = $_GET['gcod'];
@@ -65,7 +65,7 @@
                               while ($fotosDados = mysql_fetch_assoc($query)) {
                                 if ($_SESSION['isLogged'] == 1) {
                                   $href = 'painel/arquivos/galeria/'.$hash.'/fotos/'.$fotosDados['imagem'].'';
-                                  $attr = 'data-toggle="lightbox" data-gallery="columnwrappers" data-parent=".wrapper-parent" data-type="image"';
+                                  $attr = 'data-toggle="lightbox" data-gallery="terranight" data-parent=".wrapper-parent" data-type="image"';
                                 }
                                 else {
                                   $href = 'javascript:void(0);';
@@ -111,12 +111,7 @@
           /*$('#media .lightbox').click(function() {
             $('#lightbox-img').attr('src',$(this).attr('data-large-src'));
           });*/
-          <?php if ($_SESSION['isLogged'] == 1) { ?>
-           $('*[data-toggle="lightbox"]').click(function (e) {
-                e.preventDefault();
-                $(this).ekkoLightbox();
-            });
-          <?php }else { ?>
+          <?php if ($_SESSION['isLogged'] != 1) { ?>
             $('.fotos-item,.navbar-toggle').click(function(e) {
               $('#menutudo').slideToggle('slow');
               $('.dropdown').toggleClass('open');
