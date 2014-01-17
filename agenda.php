@@ -7,7 +7,7 @@ if (isset($mes)) {
     include("php/config/config.php");
       include("painel/includes/BancoDeDados.php");
       $conexao = db_conectar();
-      $query = mysql_query("SELECT descricao, titulo, DAY(datahora) as dia, MONTH(datahora) as mes FROM tbprogramacao WHERE MONTH(datahora) = '$mes' ORDER BY datahora ASC");
+      $query = mysql_query("SELECT descricao, titulo, DAY(datahora) as dia, MONTH(datahora) as mes FROM tbprogramacao WHERE MONTH(datahora) = '$mes' ORDER BY datahora DESC");
       if (mysql_num_rows($query) <= 0) {
         $retorno .= '
           <span>Não há eventos cadastrados nesse mês</span>

@@ -50,78 +50,82 @@
 
         <div id="section3" class="section">
 
-          <div class="container">
+          <div class="container col-lg-6 col-lg-offset-3 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
 
             <div class="row">
               <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
                 <h1 class="pull-left aldo">Programação</h1>
               </div>
             </div>
+            
+              <div class="row headagenda center-block">
+                <div class="col-lg-9 col-lg-offset-1 col-md-9 col-md-offset-1 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+                  <!-- Nav tabs category -->
+                  <ul class="nav nav-tabs faq-cat-tabs list-inline">
+                    <li class="active">
+                      <a href="#faq-cat-0" data-toggle="tab"> <b class="gc meses">JAN</b>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#faq-cat-1" data-toggle="tab"> <b class="gc meses">FEV</b>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#faq-cat-2" data-toggle="tab">
+                        <b class="gc meses">MAR</b>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#faq-cat-3" data-toggle="tab">
+                        <b class="gc meses">ABR</b>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#faq-cat-4" data-toggle="tab">
+                        <b class="gc meses">MAI</b>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#faq-cat-5" data-toggle="tab">
+                        <b class="gc meses">JUN</b>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#faq-cat-6" data-toggle="tab">
+                        <b class="gc meses">JUL</b>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#faq-cat-7" data-toggle="tab">
+                        <b class="gc meses">AGO</b>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#faq-cat-8" data-toggle="tab">
+                        <b class="gc meses">SET</b>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#faq-cat-9" data-toggle="tab">
+                        <b class="gc meses">OUT</b>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#faq-cat-10" data-toggle="tab">
+                        <b class="gc meses">NOV</b>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#faq-cat-11" data-toggle="tab">
+                        <b class="gc meses">DEZ</b>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
             <br>
-            <div class="row headagenda center-block">
-              <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
-                <!-- Nav tabs category -->
-                <ul class="nav nav-tabs faq-cat-tabs">
-                  <li class="active">
-                    <a href="#faq-cat-0" data-toggle="tab"> <b class="gc meses">JAN</b>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#faq-cat-1" data-toggle="tab"> <b class="gc meses">FEV</b>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#faq-cat-2" data-toggle="tab">
-                      <b class="gc meses">MAR</b>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#faq-cat-3" data-toggle="tab">
-                      <b class="gc meses">ABR</b>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#faq-cat-4" data-toggle="tab">
-                      <b class="gc meses">MAI</b>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#faq-cat-5" data-toggle="tab">
-                      <b class="gc meses">JUN</b>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#faq-cat-6" data-toggle="tab">
-                      <b class="gc meses">JUL</b>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#faq-cat-7" data-toggle="tab">
-                      <b class="gc meses">AGO</b>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#faq-cat-8" data-toggle="tab">
-                      <b class="gc meses">SET</b>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#faq-cat-9" data-toggle="tab">
-                      <b class="gc meses">OUT</b>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#faq-cat-10" data-toggle="tab">
-                      <b class="gc meses">NOV</b>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#faq-cat-11" data-toggle="tab">
-                      <b class="gc meses">DEZ</b>
-                    </a>
-                  </li>
-
-                </ul>
+            <div class="row center-block">
+              <div class="tab col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
                 <!-- Tab panes -->
                 <div class="tab-content faq-cat-content ttdata">
                   <ul class="agenda">
@@ -134,8 +138,7 @@
                         <div class="panel-group" id="accordion-cat-<?=$i?>">
                           <div class="panel panel-faq" id="contentDarkTerraNiggaNight">
                             <div class="panel-heading">
-                              <a data-toggle="collapse" data-parent="#accordion-cat-<?=$i?>
-                                " href="#faq-cat-<?=$i?>-sub-<?=$i?>">
+                              <a data-toggle="collapse" data-parent="#accordion-cat-<?=$i?>" href="#faq-cat-<?=$i?>-sub-<?=$i?>">
                                 <div class="pull-left">
                                   <p class="dia gc" style="color:#000000 !important;">
                                     <b><?=((int)$dadosAgenda['dia'] < 10 ? "0{$dadosAgenda['dia']}" : $dadosAgenda['dia'])?></b>
@@ -156,8 +159,7 @@
                                 </div>
                               </a>
                             </div>
-                            <div id="faq-cat-<?=$i?>-sub-<?=$i?>
-                              " class="panel-collapse collapse">
+                            <div id="faq-cat-<?=$i?>-sub-<?=$i?>" class="panel-collapse collapse">
                               <div class="panel-body">
                                 <p class="gc">
                                   <?=utf8_encode($dadosAgenda['descricao'])?></p>
@@ -168,9 +170,8 @@
                       </li>
                       <br>
                       <?php } ?></ul>
-                  </div>
-                  <!--./faq-cat-one--> </div>
-                <!--/.faq-cat-content-->
+                  </div><!--./faq-cat-one--> 
+                </div><!--/.faq-cat-content-->
                 <br>
                 <div class="center-block col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
                   <img class="img-responsive center-block" src="../img/logo-ovo.png">
