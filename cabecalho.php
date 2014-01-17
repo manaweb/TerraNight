@@ -47,7 +47,7 @@
                   <a href="fotos.php" class="gc">Fotos</a>
                 </li>
                 <li>
-                  <a href="agenda.php" class="gc">Programação</a>
+                  <a href="programacao.php" class="gc">Programação</a>
                 </li>
                 <li>
                   <a href="#section4" class="gc" id="contatus">Contato</a>
