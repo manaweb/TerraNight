@@ -7,10 +7,10 @@
 	$Config = array(
 		'arquivo'=>'sobre',
 		'tabela'=>'historico',
-		'titulo'=>'sobre',
+		'titulo'=>'informacoes',
 		'id'=>'id',
 		'urlfixo'=>'', 
-		'pasta'=>'',
+		'pasta'=>'informacoes',
 	);
 
 ?>
@@ -34,6 +34,8 @@ include('../includes/Mensagem.php');
 	$campos = array(
 		#	0=>Tipo			1=>Título				2=>Fonte			3=>Url
 		array('texto',		'Quem Somos',			'texto',			''),
+		array('foto',		'Imagem',				'imagem',			''),
+
 	);
 
 

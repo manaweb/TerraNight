@@ -64,18 +64,17 @@
                     $informacao = mysql_fetch_assoc($result);
                     echo utf8_encode($informacao['texto']);
                   ?>
-                </p> 
+                </p>
             </div>
             <div class="row">
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                  <img class="img-responsive" src="http://lorempixel.com/output/abstract-q-g-300-300-1.jpg" alt="...">
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                  <img class="img-responsive" src="http://lorempixel.com/output/abstract-q-g-300-300-1.jpg" alt="...">
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                  <img class="img-responsive" src="http://lorempixel.com/output/abstract-q-g-300-300-1.jpg" alt="...">
-              </div>
+              <?php
+                if($informacao['imagem'] != ""){
+                  echo 
+                      "<div class='col-lg-4 col-md-4 col-sm-4 col-xs-6'>
+                        <img class='img-responsive' src='painel/arquivos/informacoes/".$informacao['imagem']."' alt='...'>
+                      </div>";
+                }
+              ?>
             </div>
           </div>
         </div><!--/.section - section3 -->

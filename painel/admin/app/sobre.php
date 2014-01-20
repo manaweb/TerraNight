@@ -9,7 +9,8 @@
 		'titulo'=>'sobre',
 		'id'=>'id',
 		'urlfixo'=>'', 
-		'pasta'=>'',
+		'pasta'=>'informacoes',
+
 	);
 
 
@@ -33,7 +34,24 @@
 		# Dados
 		$dados = array('texto'=>$texto);
 
+		if (!empty($_FILES['imagem']['name'])) {
+			$dados['imagem'] = processaArquivo('imagem',$Config,$_FILES,1,'imagem');
+			if ($dados['imagem'] == false) { header("Location: ../sys/".$Config2['arquivo'].".php?erro=".urlencode('Erro processando Imagem.'),true); exit; }
+		}
 
+		if ($$Config['id']>0) {
+			# Apagando a Imagem se houver uma nova cadastrada
+			if (strlen($dados["foto$i"])>0) {
+				db_apagaArquivo("imagem",$Config,$$Config['id']);
+			}
+			db_executa($Config['tabela'],$dados,'update', $Config['id'].'='.$$Config['id']);
+
+		} else {
+			db_executa($Config['tabela'],$dados);
+
+			# Hist�rico
+			cadHistorico(ID_MODULO,1,db_insert_id());
+		}
 
 
 
