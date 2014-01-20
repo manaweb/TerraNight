@@ -116,13 +116,12 @@
               $('.dropdown').toggleClass('open');
               return false;
             });
-            $('.fotos-item,#myModalCad').click(function(e) {
+            $('.fotos-item,#myModalCad .close').click(function(e) {
               $('#myModalCad').toggleClass('in').fadeToggle('slow');
               return false;
             });
           <?php } ?>
       });
       </script>
-
     </body>
   </html>
