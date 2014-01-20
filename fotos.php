@@ -100,38 +100,26 @@
                 </div><!-- /.row --> 
               </div><!-- /.container --> 
             </div><!-- /.section -->
-
-<<<<<<< HEAD
-  
-=======
-<?php include 'rodape.php';?>
->>>>>>> 7e9a41ef4f9368dbad9c908f0102665a96a23d1e
-<!-- yea, yea, not a cdn, i know -->
- <script src="../js/ekko-lightbox.js"></script>
-     
-      <script>
-      jQuery(function ($) {
-          /*$('#media .lightbox').click(function() {
-            $('#lightbox-img').attr('src',$(this).attr('data-large-src'));
-          });*/
-          <?php if ($_SESSION['isLogged'] != 1) { ?>
-            $('.fotos-item,.navbar-toggle').click(function(e) {
-              $('#menutudo').slideToggle('slow');
-              $('.dropdown').toggleClass('open');
-              return false;
-            });
-            $('.fotos-item,#myModalCad .close').click(function(e) {
-              $('#myModalCad').toggleClass('in').fadeToggle('slow');
-              return false;
-            });
-          <?php } ?>
-      });
-      </script>
-<<<<<<< HEAD
-
-    </body>
         <?php include 'rodape.php';?>
-=======
-    </body>
->>>>>>> 7e9a41ef4f9368dbad9c908f0102665a96a23d1e
-  </html>
+        <!-- yea, yea, not a cdn, i know -->
+      <script src="../js/ekko-lightbox.js"></script>
+      <script>
+        jQuery(function ($) {
+            /*$('#media .lightbox').click(function() {
+              $('#lightbox-img').attr('src',$(this).attr('data-large-src'));
+            });*/
+            <?php if ($_SESSION['isLogged'] != 1) { ?>
+              $('.fotos-item,.navbar-toggle').click(function(e) {
+                $('#menutudo').slideToggle('slow');
+                $('.dropdown').toggleClass('open');
+                return false;
+              });
+              $('.fotos-item,#myModalCad .close').click(function(e) {
+                $('#myModalCad').toggleClass('in').fadeToggle('slow');
+                return false;
+              });
+            <?php } ?>
+        });
+      </script>
+  </body>
+</html>
