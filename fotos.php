@@ -101,12 +101,11 @@
               </div><!-- /.container --> 
             </div><!-- /.section -->
 
-        <?php include 'rodape.php';?>
-  
+<?php include 'rodape.php';?>
 <!-- yea, yea, not a cdn, i know -->
  <script src="../js/ekko-lightbox.js"></script>
-    
-          <script>
+     
+      <script>
       jQuery(function ($) {
           /*$('#media .lightbox').click(function() {
             $('#lightbox-img').attr('src',$(this).attr('data-large-src'));
@@ -117,13 +116,12 @@
               $('.dropdown').toggleClass('open');
               return false;
             });
-            $('.fotos-item,#myModalCad').click(function(e) {
+            $('.fotos-item,#myModalCad .close').click(function(e) {
               $('#myModalCad').toggleClass('in').fadeToggle('slow');
               return false;
             });
           <?php } ?>
       });
       </script>
-
-</body>
+    </body>
   </html>
