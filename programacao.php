@@ -130,7 +130,7 @@
                 <div class="tab tab-content faq-cat-content ttdata">
                   <ul class="agenda">
 
-                    <?php $query = mysql_query("SELECT descricao, titulo, DAY(datahora) as dia, MONTH(datahora) as mes FROM tbprogramacao WHERE MONTH(datahora) = '".date('m')."' ORDER BY datahora DESC");
+                    <?php $query = mysql_query("SELECT descricao, titulo, DAY(datahora) as dia, MONTH(datahora) as mes FROM tbprogramacao WHERE MONTH(datahora) = '".date('m')."' ORDER BY datahora ASC");
                           for ($i = 0;$dadosAgenda = mysql_fetch_assoc($query);$i++) {
                         ?>
                     <li>
