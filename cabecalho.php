@@ -41,7 +41,7 @@
                   <a href="index.php" class="gc">Home</a>
                 </li>
                 <li>
-                  <a href="fotos.php" class="gc">Informações</a>
+                  <a href="informacoes.php" class="gc">Informações</a>
                 </li>
                 <li>
                   <a href="fotos.php" class="gc">Fotos</a>
