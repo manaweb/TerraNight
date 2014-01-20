@@ -101,7 +101,11 @@
               </div><!-- /.container --> 
             </div><!-- /.section -->
 
+<<<<<<< HEAD
+  
+=======
 <?php include 'rodape.php';?>
+>>>>>>> 7e9a41ef4f9368dbad9c908f0102665a96a23d1e
 <!-- yea, yea, not a cdn, i know -->
  <script src="../js/ekko-lightbox.js"></script>
      
@@ -123,5 +127,11 @@
           <?php } ?>
       });
       </script>
+<<<<<<< HEAD
+
     </body>
+        <?php include 'rodape.php';?>
+=======
+    </body>
+>>>>>>> 7e9a41ef4f9368dbad9c908f0102665a96a23d1e
   </html>

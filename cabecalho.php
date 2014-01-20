@@ -123,8 +123,6 @@
                     </div>
                       <input class="form-control" name="primeironome" placeholder="Seu nome" type="text" required autofocus />
                       <br />
-                      <input class="form-control" name="tel" placeholder="Seu telefone" type="tel" required />
-                      <br />
                       <input class="form-control" name="email" placeholder="Seu email" type="email" required />
                       <br />
                        <input class="form-control" name="senha" placeholder="Sua senha" type="password" required />
