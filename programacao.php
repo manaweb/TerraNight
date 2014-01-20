@@ -53,13 +53,13 @@
           <div class="container col-lg-8 col-lg-offset-2 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
 
             <div class="row">
-              <div class="col-lg-12 col-lg-offset-0 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+              <div class="col-lg-12 col-lg-offset-0 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
                 <h1 class="pull-left aldo">Programação</h1>
               </div>
             </div>
             
-              <div class="row headagenda center-block">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+              <div class="row headagenda">
+                <div class="col-lg-12 col-lg-offset-0 col-md-10 col-md-offset-1 col-sm-7 col-sm-offset-2 col-xs-12 col-xs-offset-0">
                   <!-- Nav tabs category -->
                   <ul class="nav nav-tabs faq-cat-tabs list-inline">
                     <li class="active">
@@ -124,13 +124,13 @@
                 </div>
             </div>
             <br>
-            <div class="row center-block">
-              <div class="tab col-lg-4 col-lg-offset-1 col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+            <div class="row">
+              <div class="tab col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-12 col-xs-offset-0">
                 <!-- Tab panes -->
                 <div class="tab tab-content faq-cat-content ttdata">
                   <ul class="agenda">
 
-                    <?php $query = mysql_query("SELECT descricao, titulo, DAY(datahora) as dia, MONTH(datahora) as mes FROM tbprogramacao WHERE MONTH(datahora) = '".date('m')."' ORDER BY datahora ASC");
+                    <?php $query = mysql_query("SELECT descricao, titulo, DAY(datahora) as dia, MONTH(datahora) as mes FROM tbprogramacao WHERE MONTH(datahora) = '".date('m')."' ORDER BY datahora DESC");
                           for ($i = 0;$dadosAgenda = mysql_fetch_assoc($query);$i++) {
                         ?>
                     <li>

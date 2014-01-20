@@ -5,10 +5,10 @@
                 <BR>
                 <BR>
                 <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
-                  <div class="col-lg-12 col-lg-offset-0 col-md-10 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+                  <div class="">
                     <h1 class="pull-left aldo">Contato</h1>
                   </div>
-                  <div class="col-lg-10 col-lg-offset-3 col-md-10 col-md-offset-2 col-sm-8 col-sm-offset-3 col-xs-10 col-xs-offset-0">
+                  <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-2 col-sm-8 col-sm-offset-3 col-xs-10 col-xs-offset-0">
                       <h4 class="gc">
                         <img class="marcador-footer" src="../img/marcador-footer.png">
                         <address><b>Rua</b> Juvenal Augusto 
@@ -24,7 +24,7 @@
                       </a>
                   </div>
                 </div>
-               <div class="col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0 contatorodape">
+               <div class="col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0 contatorodape">
                 
                   <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
                       <h4 class="text-center gc">Preencha o formulário ou entre em contato conosco.</h4>
@@ -68,7 +68,7 @@
 
         <div class="clearfix"></div>
         <div class="section">
-          <div class="container col-lg-6 col-lg-offset-3 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+          <div class="container">
             <ul class="list-inline pull-right">
               <li>
                 <a href="http://www.manaweb.com.br/">
