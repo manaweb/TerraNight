@@ -14,7 +14,7 @@
 		'urlfixo'=>'', 
 		'pasta'=>'banner',
 		'imagem'=>array(
-			'x'=>1900, 'y'=>590, 'corte'=>1, 
+			'x'=>1900, 'y'=>590, 'corte'=>0, 
 			'mini'=>array(
 				'x'=>100, 'y'=>100, 'corte'=>0
 			)
@@ -123,7 +123,7 @@
 				# Excluindo do Bando de dados
 				db_consulta("DELETE FROM ".$Config['tabela']." WHERE ".$Config['id']."=".$id);
 
-				# Hist�rico
+				# Histórico
 				cadHistorico(ID_MODULO,4,$id);
 
 			}
@@ -157,5 +157,5 @@
 
 	// Se nada for feito...
 	header("Location: ../sys/".$Config['arquivo'].".php?info=".urlencode('Nada feito').$Config['urlfixo'],true); exit;
-	
+
 ?>

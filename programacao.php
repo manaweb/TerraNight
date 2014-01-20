@@ -53,13 +53,13 @@
           <div class="container col-lg-6 col-lg-offset-3 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
 
             <div class="row">
-              <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+              <div class="col-lg-12 col-lg-offset-0 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
                 <h1 class="pull-left aldo">Programação</h1>
               </div>
             </div>
             
               <div class="row headagenda center-block">
-                <div class="col-lg-9 col-lg-offset-1 col-md-9 col-md-offset-1 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+                <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
                   <!-- Nav tabs category -->
                   <ul class="nav nav-tabs faq-cat-tabs list-inline">
                     <li class="active">
@@ -125,9 +125,9 @@
             </div>
             <br>
             <div class="row center-block">
-              <div class="tab-content col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+              <div class="tab col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
                 <!-- Tab panes -->
-                <div class="tab-content faq-cat-content ttdata">
+                <div class="tab tab-content faq-cat-content ttdata">
                   <ul class="agenda">
 
                     <?php $query = mysql_query("SELECT descricao, titulo, DAY(datahora) as dia, MONTH(datahora) as mes FROM tbprogramacao WHERE MONTH(datahora) = '".date('m')."' ORDER BY datahora DESC");
@@ -180,20 +180,12 @@
              </div><!--/.row--> 
            </div><!--/.container-->
          </div><!--/.section - section3 -->
-         <?php include 'rodape.php'; ?>
          <script>
           $(function() {
             var data = new Date();
             $('.faq-cat-tabs li').removeClass('active').eq(data.getMonth()).addClass('active');
           });
          </script>
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src='//www.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
-
-</body>
-
+  </body>
+ <?php include 'rodape.php'; ?>
 </html>
