@@ -101,12 +101,11 @@
               </div><!-- /.container --> 
             </div><!-- /.section -->
 
-        <?php include 'rodape.php';?>
-  
+<?php include 'rodape.php';?>
 <!-- yea, yea, not a cdn, i know -->
  <script src="../js/ekko-lightbox.js"></script>
-    
-          <script>
+     
+      <script>
       jQuery(function ($) {
           /*$('#media .lightbox').click(function() {
             $('#lightbox-img').attr('src',$(this).attr('data-large-src'));
@@ -125,5 +124,5 @@
       });
       </script>
 
-</body>
+    </body>
   </html>
