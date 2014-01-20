@@ -24,9 +24,9 @@
                       </a>
                   </div>
                 </div>
-               <div class="col-lg-6 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0 contatorodape">
+               <div class="col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0 contatorodape">
                 
-                  <div class="col-lg-10 col-lg-offset-1 col-md-12 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                  <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
                       <h4 class="text-center gc">Preencha o formulário ou entre em contato conosco.</h4>
                    </div>
                    <br>

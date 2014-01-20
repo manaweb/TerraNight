@@ -48,9 +48,9 @@
 
         <?php include 'cabecalho.php'; ?>
 
-        <div id="section3" class="section">
+        <div class="section">
 
-          <div class="container col-lg-6 col-lg-offset-3 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+          <div class="container col-lg-8 col-lg-offset-2 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
 
             <div class="row">
               <div class="col-lg-12 col-lg-offset-0 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
@@ -59,7 +59,7 @@
             </div>
             
               <div class="row headagenda center-block">
-                <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
                   <!-- Nav tabs category -->
                   <ul class="nav nav-tabs faq-cat-tabs list-inline">
                     <li class="active">
@@ -125,7 +125,7 @@
             </div>
             <br>
             <div class="row center-block">
-              <div class="tab col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+              <div class="tab col-lg-4 col-lg-offset-1 col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
                 <!-- Tab panes -->
                 <div class="tab tab-content faq-cat-content ttdata">
                   <ul class="agenda">
