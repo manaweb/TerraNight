@@ -49,11 +49,11 @@
         <?php include 'cabecalho.php'; ?>
 <div class="clearfix"></div>
         <div id="section2">
-            <div class="container col-lg-4 col-lg-offset-3 col-md-8 col-sm-6 col-xs-12">
-              <div class="row">
+            <div class="container col-lg-6 col-lg-offset-2 col-md-8 col-sm-6 col-xs-12">
+              <div class="row center-block">
                   <h1 class="pull-left aldo">Últimas Fotos</h1>
               </div>
-              <div class="row">
+              <div class="row center-block">
                 <?php
 
                 $query = mysql_query("SELECT id_galeria, titulo, codigo, DATE_FORMAT(data,'%d/%m') as data1 FROM tbgalerias WHERE flag_status = 1 ORDER BY id_galeria DESC");
@@ -110,7 +110,7 @@
          </div><!-- /.container -->         
 
             <div class="container col-lg-2 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
-              <div class="row">
+              <div class="row center-block">
                     <h1 class="pull-left aldo">Programação</h1>
               </div>
               <div class="row">
@@ -200,8 +200,8 @@
 
 <div class="clearfix"></div>
         <div id="section3">
-         <div class="container text-center col-lg-6 col-lg-offset-3 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
-           <div class="row">
+         <div class="container text-center col-lg-8 col-lg-offset-2 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+           <div class="row center-block">
               <h1 class="pull-left aldo">Como chegar</h1>
             </div>
           <div class="clearfix"></div>
