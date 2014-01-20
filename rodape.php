@@ -1,32 +1,30 @@
-
+      <footer>
           <div  id="section4">
-            <div class="container col-lg-6 col-lg-offset-3 col-md-10 col-md-offset-1 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+            <div class="container col-lg-6 col-lg-offset-3 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
               <div class="row">
-                <div class="affix end">
-                  <h1 class="pull-left aldo">Contato</h1>
+                <BR>
+                <BR>
+                <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+                  <div class="col-lg-12 col-lg-offset-0 col-md-10 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+                    <h1 class="pull-left aldo">Contato</h1>
+                  </div>
+                  <div class="col-lg-12 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-8 col-sm-offset-3 col-xs-10 col-xs-offset-0">
+                      <h4 class="gc">
+                        <img class="marcador-footer" src="../img/marcador-footer.png">
+                        <address><b>Rua</b> Juvenal Augusto 
+                          <br> 
+                           nº386 Centro - Terra Roxa, SP
+                          <br> 
+                           CEP 14745-000 
+                        </address>
+                      </h4>
+                    <h3 class="gc"><abbr title="Telefone"><i class="fa fa-phone"></i>&nbsp;<b>Telefone:</b></abbr>(017)99724-5004</h3>
+                      <a class="gc email" href="mailto:contato@terranight.com.br">
+                        <h4><i class="fa fa-envelope-o"></i>&nbsp;contato@terranight.com.br</h4>
+                      </a>
+                  </div>
                 </div>
-                <div class="col-lg-4 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-12 col-xs-offset-0 end">
-                  <h1 class="gc"><b>Endereço:</b></h1>
-
-                    <h4 class="gc">
-                      
-                      <address><b>Rua</b> Juvenal Augusto nº386
-                        <br> 
-                         Centro - Terra Roxa, SP
-                        <br> 
-                         CEP 14745-000 
-                      </address>
-                    </h4>
-                        
-                  <h3 class="gc"><abbr title="Telefone"><i class="fa fa-phone"></i>&nbsp;<b>Telefone:</b></abbr>(017)99724-5004</h3>
-                    <a class="gc email" href="mailto:contato@terranight.com.br">
-                      <h4><i class="fa fa-envelope-o"></i>&nbsp;contato@terranight.com.br</h4>
-                      
-                    </a>
-                      <img class="marcador-footer" src="../img/marcador-footer.png">
-                </div>
-
-               <div class="col-lg-7 col-lg-offset-1 col-md-6 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0 contatorodape">
+               <div class="col-lg-6 col-lg-offset-0 col-md-5 col-md-offset-1 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0 contatorodape">
                 <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
                   <div class="col-lg-11 col-lg-offset-2 col-md-12 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
                       <h4 class="text-center gc">Preencha o formulário ou entre em contato conosco.</h4>
@@ -67,7 +65,7 @@
             </div>
           </div>
         </div>
-      <footer>
+
         <div class="clearfix"></div>
         <div class="section">
           <div class="container col-lg-6 col-lg-offset-3 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
