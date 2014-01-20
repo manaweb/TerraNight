@@ -59,7 +59,6 @@ $ondeestou = 'videos';
 	$campos = array(
 		#	0=>Tipo			1=>Titulo					2=>Nome Campo				3=>Tamanho(px)		4=>CampoExtra		5=>Comentário								6=>Atributos
 		array('textarea',	'Texto',					'texto',					'500',				'',					'',											''),
-		array('file',		'Imagem',					'imagem[]',					'500',				'',					'',											'multiple="multiple"'),
 	);
 
 

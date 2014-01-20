@@ -4,9 +4,9 @@
 	foreach ($_POST as $campo => $valor) $$campo = processaString($valor);
 	
 	$Config = array(
-		'arquivo'=>'sobre',
-		'tabela'=>'historico',
-		'titulo'=>'sobre',
+		'arquivo'=>'imagens_sobre',
+		'tabela'=>'imagens_historico',
+		'titulo'=>'imagens',
 		'id'=>'id',
 		'urlfixo'=>'', 
 		'pasta'=>'informacoes',
