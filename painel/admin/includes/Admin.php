@@ -65,7 +65,7 @@ function adminCampos($campos,$config,$dados) {
 						$saida .= '<img vspace=2 src="../../arquivos/'.$config['pasta']."/".$dados[$campo[2]].'" alt="">';
 					} else $saida .= 'Ver arquivo';
 					$saida .= '</a>';
-					$saida .= '</div>';
+					$saida .= '<a id="'.$campo[2].'" class="btnExcluirImagem" name="'.$dados[$campo[2]].'" href="javascript:void(0)">Excluir arquivo</a></div>';
 				}
 				break;
 
@@ -493,7 +493,7 @@ function adminLista($campos,$dados,$acoes,$config,$excluir_massa=true) {
 				
 				case 'foto':
 					$imagem = $dado[$campo[2]] == '' ? '../../arquivos/produtos/sem-foto.png': $dado[$campo[2]] ;
-					$saida .= '<a href="../../arquivos/'.$config['arquivo'].'/'.$imagem.'" target="_blank"><img src="../../arquivos/'.$config['arquivo'].'/'.$imagem.'" width="80px" height="80px" /></a>';
+					$saida .= '<a href="../../arquivos/'.$config['pasta'].'/'.$imagem.'" target="_blank"><img src="../../arquivos/'.$config['pasta'].'/'.$imagem.'" width="80px" height="80px" /></a>';
 					break;
 			
 				default:
