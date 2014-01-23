@@ -123,7 +123,7 @@
 				# Excluindo do Bando de dados
 				db_consulta("DELETE FROM ".$Config['tabela']." WHERE ".$Config['id']."=".$id);
 
-				# Hist�rico
+				# Histórico
 				cadHistorico(ID_MODULO,4,$id);
 
 			}
@@ -157,5 +157,5 @@
 
 	// Se nada for feito...
 	header("Location: ../sys/".$Config['arquivo'].".php?info=".urlencode('Nada feito').$Config['urlfixo'],true); exit;
-	
+
 ?>

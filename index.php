@@ -49,8 +49,8 @@
         <?php include 'cabecalho.php'; ?>
 <div class="clearfix"></div>
         <div id="section2">
-            <div class="container col-lg-4 col-lg-offset-3 col-md-8 col-sm-6 col-xs-12">
-              <div class="row">
+            <div class="container col-lg-6 col-lg-offset-2 col-md-8 col-sm-6 col-xs-12">
+              <div class="row center-block">
                   <h1 class="pull-left aldo">Últimas Fotos</h1>
               </div>
               <div class="row">
@@ -71,7 +71,7 @@
               </div><!-- /.row -->
               <br>
               <div class="visible-lg visible-md hidden-sm hidden-xs">
-                <div class="row center-block text-center likebarcontent">
+                <div class="row text-center likebarcontent">
                    <iframe class="fbAvatar" name="f7e65ffb8" width="1000px" height="1000px" frameborder="0" allowtransparency="true" scrolling="no" title="fb:like_box Facebook Social Plugin" src="https://www.facebook.com/plugins/like_box.php?app_id=113869198637480&amp;channel=https%3A%2F%2Fs-static.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D28%23cb%3Df26660671%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Fff5235b4c%26relation%3Dparent.parent&amp;header=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fboateterranight&amp;locale=pt_BR&amp;sdk=joey&amp;show_border=false&amp;show_faces=true&amp;stream=false" ></iframe>
                     <div class="parentFbFaces">
                     <iframe class="fbFriendFaces" name="f189ac9d8" width="1000px" height="1000px" frameborder="0" allowtransparency="true" scrolling="no" title="fb:like_box Facebook Social Plugin" src="https://www.facebook.com/plugins/like_box.php?app_id=113869198637480&amp;channel=https%3A%2F%2Fs-static.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D28%23cb%3Df227f89074%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Fff5235b4c%26relation%3Dparent.parent&amp;header=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fboateterranight&amp;locale=pt_BR&amp;sdk=joey&amp;show_border=false&amp;show_faces=true&amp;stream=false"></iframe>
@@ -82,8 +82,8 @@
                   <ul class="list-inline acompanhe ">
                     <li>
                       <div>
-                        <a href="https://www.facebook.com/boateterranight" class="social" target="_blank">
-                          <img src="../img/title_facebook.png"></a>
+                        <a href="http://instagram.com/boateterranight" class="social" target="_blank">
+                         <img src="../img/title_instagram.png"></a>
                       </div>
                     </li>
                     <li>
@@ -94,14 +94,14 @@
                     </li>
                     <li>
                       <div>
-                        <a href="http://statigr.am/tag/terranight/" class="social" target="_blank">
-                          <img src="../img/title_instagram.png"></a>
+                        <a href="http://www.youtube.com/results?search_query=terra+night" class="social" target="_blank">
+                          <img src="../img/title_youtube.png"></a>
                       </div>
                     </li>
                     <li>
                       <div>
-                        <a href="http://www.youtube.com/results?search_query=terra+night" class="social" target="_blank">
-                          <img src="../img/title_youtube.png"></a>
+                          <a href="https://www.facebook.com/boateterranight" class="social" target="_blank">
+                          <img src="../img/title_facebook.png"></a>
                       </div>
                     </li>
                   </ul>
@@ -110,14 +110,14 @@
          </div><!-- /.container -->         
 
             <div class="container col-lg-2 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
-              <div class="row">
+              <div class="row center-block">
                     <h1 class="pull-left aldo">Programação</h1>
               </div>
               <div class="row">
                 <div class="tab-content faq-cat-content ttdata">
                        <ul class="agenda">
 
-                        <?php $query = mysql_query("SELECT descricao, titulo, DAY(datahora) as dia, MONTH(datahora) as mes FROM tbprogramacao WHERE MONTH(datahora) = '".date('m')."' ORDER BY datahora DESC limit 4");
+                        <?php $query = mysql_query("SELECT descricao, titulo, DAY(datahora) as dia, MONTH(datahora) as mes FROM tbprogramacao WHERE MONTH(datahora) = '".date('m')."' ORDER BY datahora ASC limit 4");
                               for ($i = 0;$dadosAgenda = mysql_fetch_assoc($query);$i++) {
                             ?><li>
                             <div class="tab-pane in fade" id="faq-cat-<?=$i?>">
@@ -200,13 +200,12 @@
 
 <div class="clearfix"></div>
         <div id="section3">
-         <div class="container text-center col-lg-6 col-lg-offset-3 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
-           <div class="row">
+         <div class="container text-center col-lg-8 col-lg-offset-2 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+           <div class="row center-block">
               <h1 class="pull-left aldo">Como chegar</h1>
             </div>
           <div class="clearfix"></div>
-          <div class="row maps">
-            <div class="row">
+          <div class="row maps center-block">
               <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
               <style>
                   html, body, #map-canvas {
@@ -254,22 +253,9 @@
                 }
             </script>
               <div id="map_canvas" style="width:3000px;height:365px;" class="img-responsive" type="submit"></div>
-            </div>
           </div>
       </div>
     </div>
-  
-  
-
-    <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src='//www.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
-
-</body>
-
-    
-   <?php include 'rodape.php'; ?>   
-  </html>
+  </body>
+ <?php include 'rodape.php'; ?>   
+</html>
