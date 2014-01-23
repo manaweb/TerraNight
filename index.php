@@ -53,7 +53,7 @@
               <div class="row center-block">
                   <h1 class="pull-left aldo">Últimas Fotos</h1>
               </div>
-              <div class="row center-block">
+              <div class="row">
                 <?php
 
                 $query = mysql_query("SELECT id_galeria, titulo, codigo, DATE_FORMAT(data,'%d/%m') as data1 FROM tbgalerias WHERE flag_status = 1 ORDER BY id_galeria DESC");
@@ -71,7 +71,7 @@
               </div><!-- /.row -->
               <br>
               <div class="visible-lg visible-md hidden-sm hidden-xs">
-                <div class="row center-block text-center likebarcontent">
+                <div class="row text-center likebarcontent">
                    <iframe class="fbAvatar" name="f7e65ffb8" width="1000px" height="1000px" frameborder="0" allowtransparency="true" scrolling="no" title="fb:like_box Facebook Social Plugin" src="https://www.facebook.com/plugins/like_box.php?app_id=113869198637480&amp;channel=https%3A%2F%2Fs-static.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D28%23cb%3Df26660671%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Fff5235b4c%26relation%3Dparent.parent&amp;header=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fboateterranight&amp;locale=pt_BR&amp;sdk=joey&amp;show_border=false&amp;show_faces=true&amp;stream=false" ></iframe>
                     <div class="parentFbFaces">
                     <iframe class="fbFriendFaces" name="f189ac9d8" width="1000px" height="1000px" frameborder="0" allowtransparency="true" scrolling="no" title="fb:like_box Facebook Social Plugin" src="https://www.facebook.com/plugins/like_box.php?app_id=113869198637480&amp;channel=https%3A%2F%2Fs-static.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D28%23cb%3Df227f89074%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Fff5235b4c%26relation%3Dparent.parent&amp;header=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fboateterranight&amp;locale=pt_BR&amp;sdk=joey&amp;show_border=false&amp;show_faces=true&amp;stream=false"></iframe>
@@ -82,8 +82,8 @@
                   <ul class="list-inline acompanhe ">
                     <li>
                       <div>
-                        <a href="https://www.facebook.com/boateterranight" class="social" target="_blank">
-                          <img src="../img/title_facebook.png"></a>
+                        <a href="http://instagram.com/boateterranight" class="social" target="_blank">
+                         <img src="../img/title_instagram.png"></a>
                       </div>
                     </li>
                     <li>
@@ -94,14 +94,14 @@
                     </li>
                     <li>
                       <div>
-                        <a href="http://statigr.am/tag/terranight/" class="social" target="_blank">
-                          <img src="../img/title_instagram.png"></a>
+                        <a href="http://www.youtube.com/results?search_query=terra+night" class="social" target="_blank">
+                          <img src="../img/title_youtube.png"></a>
                       </div>
                     </li>
                     <li>
                       <div>
-                        <a href="http://www.youtube.com/results?search_query=terra+night" class="social" target="_blank">
-                          <img src="../img/title_youtube.png"></a>
+                          <a href="https://www.facebook.com/boateterranight" class="social" target="_blank">
+                          <img src="../img/title_facebook.png"></a>
                       </div>
                     </li>
                   </ul>
@@ -117,7 +117,7 @@
                 <div class="tab-content faq-cat-content ttdata">
                        <ul class="agenda">
 
-                        <?php $query = mysql_query("SELECT descricao, titulo, DAY(datahora) as dia, MONTH(datahora) as mes FROM tbprogramacao WHERE MONTH(datahora) = '".date('m')."' ORDER BY datahora DESC limit 4");
+                        <?php $query = mysql_query("SELECT descricao, titulo, DAY(datahora) as dia, MONTH(datahora) as mes FROM tbprogramacao ORDER BY datahora ASC limit 4");
                               for ($i = 0;$dadosAgenda = mysql_fetch_assoc($query);$i++) {
                             ?><li>
                             <div class="tab-pane in fade" id="faq-cat-<?=$i?>">

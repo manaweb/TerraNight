@@ -48,18 +48,18 @@
 
         <?php include 'cabecalho.php'; ?>
 
-        <div id="section3" class="section">
+        <div class="section">
 
-          <div class="container col-lg-6 col-lg-offset-3 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+          <div class="container col-lg-8 col-lg-offset-2 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
 
             <div class="row">
-              <div class="col-lg-12 col-lg-offset-0 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+              <div class="col-lg-12 col-lg-offset-0 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
                 <h1 class="pull-left aldo">Programação</h1>
               </div>
             </div>
             
-              <div class="row headagenda center-block">
-                <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+              <div class="row headagenda">
+                <div class="col-lg-12 col-lg-offset-0 col-md-10 col-md-offset-1 col-sm-7 col-sm-offset-2 col-xs-12 col-xs-offset-0">
                   <!-- Nav tabs category -->
                   <ul class="nav nav-tabs faq-cat-tabs list-inline">
                     <li class="active">
@@ -124,19 +124,19 @@
                 </div>
             </div>
             <br>
-            <div class="row center-block">
-              <div class="tab col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+            <div class="row">
+              <div class="tab col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-12 col-xs-offset-0">
                 <!-- Tab panes -->
                 <div class="tab tab-content faq-cat-content ttdata">
                   <ul class="agenda">
 
-                    <?php $query = mysql_query("SELECT descricao, titulo, DAY(datahora) as dia, MONTH(datahora) as mes FROM tbprogramacao WHERE MONTH(datahora) = '".date('m')."' ORDER BY datahora ASC");
+                    <?php $query = mysql_query("SELECT descricao, titulo, DAY(datahora) as dia, MONTH(datahora) as mes FROM tbprogramacao WHERE MONTH(datahora) = '".date('m')."' ORDER BY datahora DESC");
                           for ($i = 0;$dadosAgenda = mysql_fetch_assoc($query);$i++) {
                         ?>
                     <li>
                       <div class="tab-pane in fade" id="faq-cat-<?=$i?>">
                         <div class="panel-group" id="accordion-cat-<?=$i?>">
-                          <div class="panel panel-faq" id="contentDarkTerraNiggaNight">
+                          <div class="panel panel-faq contentDarkTerraNiggaNight">
                             <div class="panel-heading">
                               <a data-toggle="collapse" data-parent="#accordion-cat-<?=$i?>" href="#faq-cat-<?=$i?>-sub-<?=$i?>">
                                 <div class="pull-left">
@@ -168,7 +168,6 @@
                           </div>
                         </div>
                       </li>
-                      <br>
                       <?php } ?></ul>
                   </div><!--./faq-cat-one--> 
                 </div><!--/.faq-cat-content-->
@@ -185,6 +184,25 @@
           $(function() {
             var data = new Date();
             $('.faq-cat-tabs li').removeClass('active').eq(data.getMonth()).addClass('active');
+
+             $('.faq-cat-tabs li a').click(function() {
+              var index = $(this).index('.faq-cat-tabs li a');
+              $.ajax({
+                url: 'agenda.php?mes='+index,
+                dataType: 'html',
+                beforeSend: function() {
+                  $('.contentDarkTerraNiggaNight').html('');
+                },
+                success: function(data) {
+                  if ($('.contentDarkTerraNiggaNight').eq(0).html() == '')
+                    $('.contentDarkTerraNiggaNight').eq(0).html(data);
+                   else
+                    $('.contentDarkTerraNiggaNight').eq(index).html(data);
+                   if ($('.contentDarkTerraNiggaNight span').text() != '')
+                      $('.agenda li').slice(1).hide();
+                }
+              });
+            });
           });
          </script>
   </body>
