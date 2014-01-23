@@ -172,6 +172,10 @@ function adminCampos($campos,$config,$dados) {
 				$saida .= '<a href="javascript:abrirCalendario(\'\', \'frmDados\', \''.$campo[2].'\', \'date\')"><img src="../img/calendario.gif" align="absmiddle" /></a>';
 				break;
 
+			case 'coletor':
+				$saida .= '<input type="'.$campo[0].'" name="'.$campo[2].'" value="'.$dados[$campo[2]].'" readonly="readonly" size="20" onfocus="this.className=\'focus\';" onblur="this.className=\'\';" id="datepicker" /> ';
+				break;
+
 			default: break;
 		
 		
