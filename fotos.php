@@ -43,7 +43,7 @@
         <div class="clearfix"></div>
           <div class="container col-lg-8 col-lg-offset-2 col-md-8 col-lg-offset-2 col-sm-12 col-xs-12">
             <div class="row center-block">
-              <h2 class="pull-left aldo">Álbum de fotos</h2>
+              <h1 class="pull-left aldo">Álbum de fotos</h1>
             </div>
             <div class="clearfix"></div>
               <div class="row center-block wrapper-parent">

@@ -15,7 +15,7 @@
         </ p>
         <![endif]-->
       <nav class="navbar navbar-inverse navbar-fixed-top menu" role="navigation">
-          <div class="container col-lg-10 col-lg-offset-1 col-xs-12 col-xs-offset-0">
+          <div class="container col-lg-10 col-lg-offset-1 col-xs-10 col-xs-offset-1">
             <div id="section1" class="navbar-header">
             <div class="row">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">

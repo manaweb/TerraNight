@@ -27,6 +27,14 @@
         <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/bullets-slideshow.css">
+        <style>
+          .gc {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+          }
+          .gc * {color: white !important;}
+        </style>
 
         <!--[if gte IE 9]>
         <style type="text/css">
@@ -56,7 +64,7 @@
               </div>
             </div>
             <div class="row">
-                <p class="gc col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                <span class="gc col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
                   <?php
                     $SQL = "SELECT * FROM historico ORDER BY id DESC";
 
@@ -64,7 +72,7 @@
                     $informacao = mysql_fetch_assoc($result);
                     echo utf8_encode($informacao['texto']);
                   ?>
-                </p>
+                </span>
             </div>
             <div class="row">
               <?php
