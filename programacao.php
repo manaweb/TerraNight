@@ -150,7 +150,7 @@
                     <li>
                       <div class="tab-pane in fade" id="faq-cat-<?=$i?>">
                         <div class="panel-group" id="accordion-cat-<?=$i?>">
-                          <div class="panel panel-faq" id="contentDarkTerraNiggaNight">
+                          <div class="panel panel-faq contentDarkTerraNiggaNight">
                             <div class="panel-heading">
                               <a data-toggle="collapse" data-parent="#accordion-cat-<?=$i?>" href="#faq-cat-<?=$i?>-sub-<?=$i?>">
                                 <div class="pull-left">
@@ -182,7 +182,6 @@
                           </div>
                         </div>
                       </li>
-                      <br>
                       <?php } ?></ul>
                   </div><!--./faq-cat-one--> 
                 </div><!--/.faq-cat-content-->
@@ -199,6 +198,25 @@
           $(function() {
             var data = new Date();
             $('.faq-cat-tabs li').removeClass('active').eq(data.getMonth()).addClass('active');
+
+             $('.faq-cat-tabs li a').click(function() {
+              var index = $(this).index('.faq-cat-tabs li a');
+              $.ajax({
+                url: 'agenda.php?mes='+index,
+                dataType: 'html',
+                beforeSend: function() {
+                  $('.contentDarkTerraNiggaNight').html('');
+                },
+                success: function(data) {
+                  if ($('.contentDarkTerraNiggaNight').eq(0).html() == '')
+                    $('.contentDarkTerraNiggaNight').eq(0).html(data);
+                   else
+                    $('.contentDarkTerraNiggaNight').eq(index).html(data);
+                   if ($('.contentDarkTerraNiggaNight span').text() != '')
+                      $('.agenda li').slice(1).hide();
+                }
+              });
+            });
           });
          </script>
   </body>

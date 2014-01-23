@@ -68,11 +68,17 @@
             </div>
             <div class="row">
               <?php
-                if($informacao['imagem'] != ""){
-                  echo 
+                $SQL = "SELECT * FROM imagens_historico ORDER BY id DESC";
+
+                $result = mysql_query($SQL);
+                
+                while($imagens = mysql_fetch_assoc($result)){
+                  if($imagens['arquivo'] != ""){
+                    echo 
                       "<div class='col-lg-4 col-md-4 col-sm-4 col-xs-6'>
-                        <img class='img-responsive' src='painel/arquivos/informacoes/".$informacao['imagem']."' alt='...'>
+                        <img class='img-responsive' src='painel/arquivos/informacoes/".$imagens['arquivo']."' alt='...'>
                       </div>";
+                  }
                 }
               ?>
             </div>
