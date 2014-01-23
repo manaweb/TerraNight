@@ -61,3 +61,27 @@
 .ekko-lightbox .modal-footer {
   text-align: left;
 }
+
+button.close {
+    background: transparent;
+    border: 0 none;
+    cursor: pointer;
+    padding: 6px;
+}
+
+.close:hover, .close:focus {
+    color: #FFFFFF;
+    cursor: pointer;
+    opacity: 0.9;
+    text-decoration: none;
+}
+
+.close {
+    color: #FFFFFF;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 0;
+    opacity: 1;
+    text-shadow: 2px 2px 5px #000000;
+}

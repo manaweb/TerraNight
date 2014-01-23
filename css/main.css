@@ -82,8 +82,7 @@ top:107px;
 width:346%;
 }
 .acompanhe div{
-margin:3px;
-margin-bottom:auto;
+margin:3px 8px auto;
 }
 .list-inline.acompanhe > li{
 padding:0;
@@ -358,7 +357,7 @@ opacity:0;
    -moz-transition:opacity 0.5s;
      -o-transition:opacity 0.5s;
         transition:opacity 0.5s;
-color:#fff;
+color:#ffffff;
 font-size:30px;
 height:100%;
 width:49%;
@@ -454,7 +453,7 @@ vertical-align:top;
 .fbFriendFaces{
 border:none;
 visibility:visible;
-width:391px;
+width:450px;
 height:150px;
 position:relative;
 overflow:hidden;
@@ -463,7 +462,7 @@ bottom:93px;
 .parentFbFaces{
 overflow:hidden;
 display:inline-block;
-height:50px;
+height:55px;
 }
 .likebarcontent{
 overflow:hidden;
@@ -473,7 +472,7 @@ width:100%;
 
 .cycle-slideshow{
 width:auto;
-margin:0% 0% 0% -2%;
+margin:0% -2% 0% -2%;
 }
 .cycle-slideshow a{
 display:block;

@@ -15,7 +15,7 @@
         </ p>
         <![endif]-->
       <nav class="navbar navbar-inverse navbar-fixed-top menu" role="navigation">
-          <div class="container col-lg-10 col-lg-offset-1">
+          <div class="container col-lg-10 col-lg-offset-1 col-xs-12 col-xs-offset-0">
             <div id="section1" class="navbar-header">
             <div class="row">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -31,11 +31,8 @@
               </a>
               </div>
             </div>
-
             <!-- Collect the nav links, forms, and other content for toggling -->
-
-
-            <div class="collapse navbar-collapse navbar-ex1-collapse" id="menutudo">
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
               <ul class="nav navbar-nav navbar-right">
                 <li>
                   <a href="index.php" class="gc">Home</a>
@@ -185,6 +182,5 @@
               </a>
        <?php } ?>
     </div>
-    <div class="cycle-pager"></div>
   </div>
 </div>

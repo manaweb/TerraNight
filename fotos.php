@@ -40,16 +40,14 @@
 <body data-spy="scroll" data-offset="0" data-target="#myScrollspy">
   <?php include_once("analyticstracking.php") ?>
         <?php include 'cabecalho.php';?>
-        <div class="section">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-                <h2 class="pull-left aldo">Álbum de fotos</h2>
-              </div>
+        <div class="clearfix"></div>
+          <div class="container col-lg-8 col-lg-offset-2 col-md-8 col-lg-offset-2 col-sm-12 col-xs-12">
+            <div class="row center-block">
+              <h2 class="pull-left aldo">Álbum de fotos</h2>
             </div>
             <div class="clearfix"></div>
               <div class="row center-block wrapper-parent">
-                <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12" id="open-image">
+                <div class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12" id="open-image">
                        
                        <?php 
                             $gCod = $_GET['gcod'];
@@ -71,7 +69,7 @@
                                   $href = 'javascript:void(0);';
                                   $attr = '';
                                 }
-                                $fotos .= '<div class="portfolio-item col-lg-2 col-md-2 col-sm-2 col-xs-4 fotos-item">
+                                $fotos .= '<div class="portfolio-item col-lg-3 col-md-3 col-sm-6 col-xs-6 fotos-item">
                             <a href="'.$href.'" '.$attr.'><img class="img-responsive" src="painel/arquivos/galeria/'.$hash.'/miniaturas/'.$fotosDados['imagem'].'"></a>
                               </div>';
                               }
@@ -92,14 +90,10 @@
                               }
                             }
                           ?>
-
-
                    <?=$fotos?>
-                  
                  </div>
                 </div><!-- /.row --> 
               </div><!-- /.container --> 
-            </div><!-- /.section -->
         <?php include 'rodape.php';?>
         <!-- yea, yea, not a cdn, i know -->
       <script src="../js/ekko-lightbox.js"></script>
@@ -110,12 +104,7 @@
             });*/
             <?php if ($_SESSION['isLogged'] != 1) { ?>
               $('.fotos-item,.navbar-toggle').click(function(e) {
-                $('#menutudo').slideToggle('slow');
                 $('.dropdown').toggleClass('open');
-                return false;
-              });
-              $('.fotos-item,#myModalCad .close').click(function(e) {
-                $('#myModalCad').toggleClass('in').fadeToggle('slow');
                 return false;
               });
             <?php } ?>

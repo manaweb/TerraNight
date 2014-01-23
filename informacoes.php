@@ -49,17 +49,38 @@
         <?php include 'cabecalho.php'; ?>
 
         <div class="section">
-          <div class="container col-lg-6 col-lg-offset-3 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+          <div class="container col-lg-8 col-lg-offset-2 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
             <div class="row">
-              <div class="col-lg-12 col-lg-offset-0 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+              <div class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
                 <h1 class="pull-left aldo">Informações</h1>
               </div>
             </div>
             <div class="row">
-                lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor 
+                <p class="gc col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                  <?php
+                    $SQL = "SELECT * FROM historico ORDER BY id DESC";
+
+                    $result = mysql_query($SQL);
+                    $informacao = mysql_fetch_assoc($result);
+                    echo utf8_encode($informacao['texto']);
+                  ?>
+                </p>
             </div>
             <div class="row">
-              
+              <?php
+                $SQL = "SELECT * FROM imagens_historico ORDER BY id DESC";
+
+                $result = mysql_query($SQL);
+                
+                while($imagens = mysql_fetch_assoc($result)){
+                  if($imagens['arquivo'] != ""){
+                    echo 
+                      "<div class='col-lg-4 col-md-4 col-sm-4 col-xs-6'>
+                        <img class='img-responsive' src='painel/arquivos/informacoes/".$imagens['arquivo']."' alt='...'>
+                      </div>";
+                  }
+                }
+              ?>
             </div>
           </div>
         </div><!--/.section - section3 -->
