@@ -58,7 +58,7 @@ $ondeestou = 'videos';
 	# Montando os Dados
 	$campos = array(
 		#	0=>Tipo			1=>Titulo					2=>Nome Campo				3=>Tamanho(px)		4=>CampoExtra		5=>Comentário								6=>Atributos
-		array('textarea',	'Texto',					'texto',					'500',				'',					'',											''),
+		array('textarea',	'Texto',					'texto',					'500',				'',					'',											'jqte'),
 	);
 
 
