@@ -125,23 +125,6 @@
                     scrollTop: $('#section4').offset().top
                   },1000);
                 }
-
-                $('.faq-cat-tabs li a').click(function() {
-                  var index = $(this).index('.faq-cat-tabs li a');
-                  $.ajax({
-                    url: 'agenda.php?mes='+index,
-                    dataType: 'html',
-                    beforeSend: function() {
-                      $('#contentDarkTerraNiggaNight').html('');
-                    },
-                    success: function(data) {
-                      $('#contentDarkTerraNiggaNight').html(data);
-                       if ($('#contentDarkTerraNiggaNight span').text() != '')
-                          $('.agenda li').slice(1).hide();
-                    }
-                  });
-
-                });
               });
             $('#contatus').click(function() {
               $('html,body').animate({

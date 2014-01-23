@@ -10,7 +10,7 @@
 		'titulo'=>'imagens',
 		'id'=>'id',
 		'urlfixo'=>'', 
-		'pasta'=>'informacoes',
+		'pasta'=>'informacoes'
 	);
 
 ?>
@@ -33,7 +33,7 @@ include('../includes/Mensagem.php');
 	# Montando os campos
 	$campos = array(
 		#	0=>Tipo			1=>Título				2=>Fonte			3=>Url
-		array('foto',		'Imagem',				'imagem',			''),
+		array('imagem',		'Imagem',				'arquivo',			''),
 
 	);
 
@@ -43,7 +43,7 @@ include('../includes/Mensagem.php');
 
 
 	# Processando os dados
-	$Lista = new Consulta($SQL,1,$PGATUAL);
+	$Lista = new Consulta($SQL,20,$PGATUAL);
 	while ($linha = db_lista($Lista->consulta)) {
 		$dados[] = $linha;
 	}
@@ -51,19 +51,6 @@ include('../includes/Mensagem.php');
 
 	# Listando
 	echo adminLista($campos,$dados,array('excluir'),$Config,false);
-
-
-
-	# Paginação
-	echo '<div class="paginacao">'.$Lista->geraPaginacao().'</div>';
-
-
-
-
-
-
-
-
 
 ?>
 </div>

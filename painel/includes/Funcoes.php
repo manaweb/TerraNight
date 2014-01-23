@@ -1,7 +1,7 @@
 <?php
 
 // ------------------------------------------------------------------------------
-// * processaString: tira caracteres que sï¿½o incluidos automaticamente no envio de um form
+// * processaString: tira caracteres que são incluidos automaticamente no envio de um form
 // ------------------------------------------------------------------------------
 function processaString($fonte) {
 	$fonte = str_replace('\\"','"',$fonte);
@@ -10,7 +10,7 @@ function processaString($fonte) {
 }
 
 // ------------------------------------------------------------------------------
-// * Criando imagem de vï¿½deos do youtube e vimeo
+// * Criando imagem de vídeos do youtube e vimeo
 // ------------------------------------------------------------------------------
 function video_imagem($url){
     $url_imagem = parse_url($url);
@@ -27,7 +27,7 @@ function video_imagem($url){
 // * tiraCaracteres: Deixa somente caracteres a-z A-Z 0-9 (com acentos)
 // ------------------------------------------------------------------------------
 function tiraCaracteres($aonde) {
-	$texto = preg_replace("/[^a-zA-Zï¿½-ï¿½0-9\s]/"," ",$aonde);
+	$texto = preg_replace("/[^a-zA-ZÀ-ú0-9\s]/"," ",$aonde);
 	while (strpos($texto,"  ")) $texto=str_replace("  "," ",$texto);
 	return trim($texto);
 }
@@ -37,7 +37,7 @@ function tiraCaracteres($aonde) {
 // ------------------------------------------------------------------------------
 function retiraAcentos($texto) {
 
-	$array1 = array( "ï¿½", "ï¿½", "ï¿½", "ï¿½", "ï¿½", "ï¿½", "ï¿½", "ï¿½", "ï¿½", "ï¿½", "ï¿½", "ï¿½", "ï¿½", "ï¿½", "ï¿½", "ï¿½", "ï¿½", "ï¿½", "ï¿½", "ï¿½", "ï¿½", "ï¿½", "ï¿½", "ï¿½", "ï¿½", "ï¿½", "ï¿½", "ï¿½", "ï¿½", "ï¿½", "ï¿½", "ï¿½", "ï¿½", "ï¿½", "ï¿½", "ï¿½", "ï¿½", "ï¿½", "ï¿½", "ï¿½", "ï¿½", "ï¿½", "ï¿½", "ï¿½", "ï¿½", "ï¿½" );
+	$array1 = array( "á", "à", "â", "ã", "ä", "é", "è", "ê", "ë", "í", "ì", "î", "ï", "ó", "ò", "ô", "õ", "ö", "ú", "ù", "û", "ü", "ç", "Á", "À", "Â", "Ã", "Ä", "É", "È", "Ê", "Ë", "Í", "Ì", "Î", "Ï", "Ó", "Ò", "Ô", "Õ", "Ö", "Ú", "Ù", "Û", "Ü", "Ç" );
 	$array2 = array( "a", "a", "a", "a", "a", "e", "e", "e", "e", "i", "i", "i", "i", "o", "o", "o", "o", "o", "u", "u", "u", "u", "c", "A", "A", "A", "A", "A", "E", "E", "E", "E", "I", "I", "I", "I", "O", "O", "O", "O", "O", "U", "U", "U", "U", "C" );
 
 	return str_replace( $array1, $array2, $texto );
@@ -55,7 +55,7 @@ function tiraRepetidos($fonte) {
 
 
 // ------------------------------------------------------------------------------
-// * soNumeros: Deixa somente nï¿½meros em uma string
+// * soNumeros: Deixa somente números em uma string
 // ------------------------------------------------------------------------------
 function soNumeros($fonte) {
 	return preg_replace("/[^0-9]/","",$fonte);
@@ -63,7 +63,7 @@ function soNumeros($fonte) {
 
 
 // ------------------------------------------------------------------------------
-// * formataValor: Formata um nï¿½mero para reais (1000.00 -> 1.000,00)
+// * formataValor: Formata um número para reais (1000.00 -> 1.000,00)
 // ------------------------------------------------------------------------------
 function formataValor($valor){
 	
@@ -110,7 +110,7 @@ function pesquisaQuery($colunas,$termos,$prefixo="%",$sufixo="%") {
 
 
 // -----------------------------------------------------------------------------------------------------------
-// * Paginacao: Gera paginaï¿½ï¿½o
+// * Paginacao: Gera paginação
 //	Requer: db_lista() e db_consulta() em BancoDeDados.php, paginar() - logo abaixo
 // -----------------------------------------------------------------------------------------------------------
 class Consulta {
@@ -141,12 +141,12 @@ class Consulta {
 		return ($this->pp * ($this->pgatual-1));
 	}
 
-	# Total de pï¿½ginas
+	# Total de páginas
 	function totalPaginas() {
 		return $this->pgtotal;
 	}
 
-	# Total de pï¿½ginas
+	# Total de páginas
 	function geraPaginacao() {
 		return paginar($this->pgatual,$this->pgtotal);
 	}
@@ -155,7 +155,7 @@ class Consulta {
 
 
 // ------------------------------------------------------------------------------
-// * paginar: Monta paginaï¿½ï¿½o
+// * paginar: Monta paginação
 // ------------------------------------------------------------------------------
 function paginar($atual,$qt) {
 
@@ -180,19 +180,19 @@ function paginar($atual,$qt) {
 		}
 	}
 
-	# Botï¿½o -Anterior-
+	# Botão -Anterior-
 	$saida .= '<a ';
 	if ($atual>1) $saida .= ' href="'.$url.'pg/'.($atual-1).'" ';
 	$saida .= ' class="pg-naveg-ante">Anterior</a>';
 
-	# Paginaï¿½ï¿½o
+	# Paginação
 	for ($i=$inicio;$i<=$fim;$i++) {
 		$saida .= '<a href="'.$url.'pg/'.$i.'"';
 		if ($i==$atual) $saida .= ' class="atual" ';
 		$saida .= ' class="num" >'.$i.'</a>';
 	}
 
-	# Botï¿½o -Prï¿½xima-
+	# Botão -Próxima-
 	$saida .= '<a ';
 	if ($atual<$qt) $saida .= ' href="'.$url.'pg/'.($atual+1).'" ';
 	$saida .= ' class="pg-naveg-prox">Pr&oacute;xima</a>';
@@ -215,28 +215,28 @@ function dataYMD_DMY($fonte){
 
 
 // ------------------------------------------------------------------------------
-// * nomeDia: retorna o dia da semana (1-dom , 7-sï¿½b)
+// * nomeDia: retorna o dia da semana (1-dom , 7-sáb)
 // ------------------------------------------------------------------------------
 function nomeDia($dia) { 
 	switch($dia) {
 		case 1: return "Domingo"; break;
 		case 2: return "Segunda-feira"; break;
-		case 3: return "Terï¿½a-feria"; break;
+		case 3: return "Terça-feria"; break;
 		case 4: return "Quarta-feira"; break;
 		case 5: return "Quinta-feira"; break;
 		case 6: return "Sexta-feira"; break;
-		case 7: return "Sï¿½bado"; break;
+		case 7: return "Sábado"; break;
 	}			
 }
 
 // ------------------------------------------------------------------------------
-// * nomeMes: retorna o mï¿½s do ano
+// * nomeMes: retorna o mês do ano
 // ------------------------------------------------------------------------------
 function nomeMes($mes) { 
 	switch($mes) {
 		case 1: return "Janeiro"; break;
 		case 2: return "Fevereiro"; break;
-		case 3: return "Marï¿½o"; break;
+		case 3: return "Março"; break;
 		case 4: return "Abril"; break;
 		case 5: return "Maio"; break;
 		case 6: return "Junho"; break;
@@ -255,7 +255,7 @@ function nomeMes($mes) {
 
 
 // ------------------------------------------------------------------------------
-// * Gera saï¿½da para publicidade (imagem ou flash)
+// * Gera saída para publicidade (imagem ou flash)
 // ------------------------------------------------------------------------------
 function mostraBanner($arq,$x,$y, $destino) {
 
@@ -292,7 +292,7 @@ function mostraBanner($arq,$x,$y, $destino) {
 }
 
 // ------------------------------------------------------------------------------
-// * senhaAleatoria: Gera uma senha aleatï¿½ria.
+// * senhaAleatoria: Gera uma senha aleatória.
 // ------------------------------------------------------------------------------
 function senhaAleatoria($tamanho=8) {
     $chars = "abcdefghijkmnopqrstuvwxyz023456789";
@@ -310,7 +310,7 @@ function senhaAleatoria($tamanho=8) {
 
 
 // ------------------------------------------------------------------------------
-// * zeraSessao: Zera uma sessï¿½o.
+// * zeraSessao: Zera uma sessão.
 // ------------------------------------------------------------------------------
 function zeraSessao() {
 	foreach ($_SESSION as $campo => $valor) {
@@ -338,7 +338,7 @@ function urlOrigem() {
 
 
 // ------------------------------------------------------------------------------
-// * ExtensaoArquivo: retorna a extensï¿½o de um arquivo								
+// * ExtensaoArquivo: retorna a extensão de um arquivo								
 // ------------------------------------------------------------------------------
 function extensaoArquivo($nomearquivo) {
 	$extensao = explode(".", $nomearquivo);
@@ -350,55 +350,35 @@ function extensaoArquivo($nomearquivo) {
 // ------------------------------------------------------------------------------
 // * FazerUpload: faz um upload				
 // ------------------------------------------------------------------------------
-function FazerUpload($arquivo,$destino,$nome_arquivo='',$tamanhomax=0) {
+function fazerUpload($arquivo,$destino,$nome_arquivo='',$tamanhomax=0,$index=0) {
 
 	// Tamanho do arquivo em bytes
-	if ( ($arquivo["size"] > $tamanhomax) && ($tamanhomax > 0 ) ) return false;
+	if ( ($arquivo["size"][$index] > $tamanhomax) && ($tamanhomax > 0 ) ) return false; 
 
 	// Definindo o nome do arquivo
 	if ($nome_arquivo == "") { 
-		$nome_arquivo = md5(uniqid(time())). "." . strtolower(extensaoArquivo($arquivo['name'])); 
+		$nome_arquivo = md5(uniqid(time())). "." . strtolower(extensaoArquivo($arquivo['name'][$index])); 
 	}
 
-	move_uploaded_file($arquivo["tmp_name"], $destino.$nome_arquivo); // Fazendo o upload
+	move_uploaded_file($arquivo["tmp_name"][$index], $destino.$nome_arquivo); // Fazendo o upload
 	
 	return $nome_arquivo;
 
 }
 
-function fazerUpload2($arquivo) {
-	$local =  str_replace(' ', '', "../../arquivos/banner/");
-	$nomeArquivo = str_replace(' ', '', microtime().$arquivo["name"]);
-	if(move_uploaded_file($arquivo["tmp_name"], $local.$nomeArquivo)){
-		return $nomeArquivo;
-	} // Fazendo o upload
-	
-	return false;
-}
-
-function fazerUploadProdutos($arquivo) {
-	$local =  str_replace(' ', '', "../../arquivos/produtos/");
-	$nomeArquivo = str_replace(' ', '', microtime().$arquivo["name"]);
-	if(move_uploaded_file($arquivo["tmp_name"], $local.$nomeArquivo)){
-		return $nomeArquivo;
-	} // Fazendo o upload
-	
-	return false;
-}
-
 
 // ------------------------------------------------------------------------------
-// * ListaDiretorio: lista o conteï¿½do de um diretï¿½rio									
+// * ListaDiretorio: lista o conteúdo de um diretório									
 // ------------------------------------------------------------------------------
 function ListaDiretorio($diretorio, $tipoarquivo=null){ 
-	$d = dir($diretorio); // Abrindo diretï¿½rio 
+	$d = dir($diretorio); // Abrindo diretório 
 	// Fazendo buscar por um arquivo ou diretorio de cada vez que estejam dentro da pasta especificada 
 	while (false !== ($entry = $d->read())) {
 		if ($tipoarquivo == '') {
 			$array[] = $entry;
 		}
 		else if ($tipoarquivo == 'dir') {  
-			// Verificando se o que foi encontrado ï¿½ um diretorio 
+			// Verificando se o que foi encontrado é um diretorio 
 			if (substr_count($entry, '.') == 0){
 				// Se sim colocando na matriz 
 				$array[] = $entry;
@@ -427,16 +407,16 @@ function ListaDiretorio($diretorio, $tipoarquivo=null){
 
 
 // ------------------------------------------------------------------------------
-// * apagarDir: Apaga um diretï¿½rio completo !! CUIDADO !!				
+// * apagarDir: Apaga um diretório completo !! CUIDADO !!				
 // ------------------------------------------------------------------------------
 function apagarDir($dir){
-	if(is_dir($dir)) { // verifica se realmente ï¿½ uma pasta
+	if(is_dir($dir)) { // verifica se realmente é uma pasta
 		if($handle = opendir($dir)) {
 			while(false !== ($file = readdir($handle))) { // varre cada um dos arquivos da pasta
 				if(($file == ".") or ($file == "..")) {
 					continue;
 				}
-				if(is_dir($dir."/".$file)) { // verifica se o arquivo atual ï¿½ uma pasta
+				if(is_dir($dir."/".$file)) { // verifica se o arquivo atual é uma pasta
 					// caso seja uma pasta, faz a chamada para a funcao novamente
 					apagarDir($dir."/".$file);
 				} else {
@@ -462,7 +442,7 @@ function apagarDir($dir){
 
 
 // ------------------------------------------------------------------------------
-// * Gera um nome para arquivo vï¿½lido
+// * Gera um nome para arquivo válido
 // Requer: retiraAcentos()
 // ------------------------------------------------------------------------------
 function nomeArquivo($orig,$pasta='') {
@@ -500,7 +480,7 @@ function nomeArquivo($orig,$pasta='') {
 
 
 // ------------------------------------------------------------------------------
-// * CriarImagem: classe que gera uma imagem de confirmaï¿½ï¿½o
+// * CriarImagem: classe que gera uma imagem de confirmação
 // ------------------------------------------------------------------------------
 class CriarImagem{ 
    // Matriz para criar o texto para imagem 
@@ -519,7 +499,7 @@ class CriarImagem{
 
    var $image; 
 
-   // Gera uma semente para ser utilizada pela funï¿½ï¿½o srand 
+   // Gera uma semente para ser utilizada pela função srand 
    function make_seed() { 
 	   list($usec, $sec) = explode(' ', microtime()); 
 	   return (float) $sec + ((float) $usec * 100000); 
@@ -540,21 +520,21 @@ class CriarImagem{
 	   return ImageColorAllocate($this->image, $rgb['r'], $rgb['g'], $rgb['b']); 
    } 
 	
-   // Aloca uma cor aleatï¿½ria para imagem 
+   // Aloca uma cor aleatória para imagem 
    function randcolor(){ 
 	   srand($this->make_seed()); 
 	   shuffle($this->hexcolors); 
 	   return $this->color($this->hexcolors[0]);    
    } 
 	
-   // Aloca uma cor aleatï¿½ria para imagem 
+   // Aloca uma cor aleatória para imagem 
    function randcolor2(){ 
 	   srand($this->make_seed()); 
 	   shuffle($this->linecolors); 
 	   return $this->color($this->linecolors[0]);    
    } 
 
-   // Cria uma linha em  posiï¿½ï¿½o e cor aleatï¿½ria 
+   // Cria uma linha em  posição e cor aleatória 
    function randline(){ 
 	   srand($this->make_seed()); 
 	   shuffle($this->hexcolors); 
@@ -564,7 +544,7 @@ class CriarImagem{
 	   imageline($this->image,$i,0,$k,$this->height,$this->randcolor2());    
    } 
 	
-   // Cria um quadrado 10x10 em posiï¿½ï¿½o e cor aleatï¿½ria 
+   // Cria um quadrado 10x10 em posição e cor aleatória 
    function randsquare(){ 
 	   imagesetthickness ($this->image, 1); 
 	   srand($this->make_seed()); 
@@ -574,7 +554,7 @@ class CriarImagem{
 	   //ImageRectangle( $this->image, $x+20, $y, $x, $y+20, $this->randcolor2()); 
    } 
 	
-   // Cria uma imagem com texto aleatï¿½rio e retorno o texto 
+   // Cria uma imagem com texto aleatório e retorno o texto 
    function output(){ 
 	   $defstr=""; 
 	   //$this->image = ImageCreate($this->width,$this->height); 
@@ -610,7 +590,7 @@ class CriarImagem{
 
 
 // ------------------------------------------------------------------------------
-// * Gera um nome de url vï¿½lido
+// * Gera um nome de url válido
 // Requer: retiraAcentos()
 // ------------------------------------------------------------------------------
 function nomeURL($orig) {
