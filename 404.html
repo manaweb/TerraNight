@@ -1,9 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <meta charset="utf-8">
         <title>Página não Encontrada :(</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
         <style>
+        body {
+            font-family:'century gothic';
+            color:#FFFFFF;
+            text-shadow:0px 2px 13px rgba(255, 255, 255, 0.3);
+            }
             ::-moz-selection {
                 background: #b3d4fc;
                 text-shadow: none;
@@ -18,8 +25,8 @@
                 padding: 30px 10px;
                 font-size: 20px;
                 line-height: 1.4;
-                color: #737373;
-                background: #f0f0f0;
+                color: #FFFFFF;
+                background: #333333;
                 -webkit-text-size-adjust: 100%;
                 -ms-text-size-adjust: 100%;
             }
@@ -36,8 +43,8 @@
                 border: 1px solid #b3b3b3;
                 border-radius: 4px;
                 margin: 0 auto;
-                box-shadow: 0 1px 10px #a7a7a7, inset 0 1px 0 #fff;
-                background: #fcfcfc;
+                box-shadow: 0 1px 10px #a7a7a7, inset 0 1px 0 #ffffff;
+                background: #000000;
             }
 
             h1 {
@@ -47,7 +54,7 @@
             }
 
             h1 span {
-                color: #bbb;
+                color: #FFFFFF;
             }
 
             h3 {
@@ -93,7 +100,6 @@
 
             #goog-wm-qt {
                 width: 220px;
-                height: 20px;
                 padding: 5px;
                 margin: 5px 10px 0 0;
                 box-shadow: inset 0 1px 1px #ccc;
@@ -133,6 +139,10 @@
                 color: #222;
             }
 
+            .search-goog > b {
+                color: #F6931C;
+            }
+
             input::-moz-focus-inner {
                 padding: 0;
                 border: 0;
@@ -142,10 +152,8 @@
     <body>
         <div class="containers">
             <div class="row">
-            <a href="../index.html">
-              <div class="terranight-lg visible-lg hidden-md hidden-sm hidden-xs" >
-                <img src="img/logo-tranp.fw.png" class="img-responsive"  alt="..."/>
-             </div>
+            <a href="http://terranight.com.br">
+              <img src="img/logo-menu.png" class="img-responsive"  alt="..."/>
             </a>
           </div>
             <h1>A Página Solicitada não foi encontrada <span>:(</span></h1>
@@ -159,7 +167,9 @@
             <script>
                 var GOOG_FIXURL_LANG = (navigator.language || '').slice(0,2),GOOG_FIXURL_SITE = location.host;
             </script>
+
             <script src="//linkhelp.clients.google.com/tbproxy/lh/wm/fixurl.js"></script>
         </div>
+
     </body>
 </html>
