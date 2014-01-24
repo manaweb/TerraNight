@@ -32,17 +32,12 @@ $ondeestou = 'videos';
 	# Montando os Dados
 	$campos = array(
 		#	0=>Tipo			1=>Titulo					2=>Nome Campo				3=>Tamanho(px)		4=>CampoExtra		5=>Comentário								6=>Atributos
-		array('file',		'Imagem(ns)',					'imagem[]',					'500',				'',					'',											'multiple="multiple"'),
+		array('file',		'Imagem(ns)',					'imagem',					'500',				'',					'',											''),
 	);
 
 
 	# Exibindo os campos
 	echo adminCampos($campos,$Config,$dados);
-
-
-
-
-
 
 ?>
 </div>
