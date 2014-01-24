@@ -17,8 +17,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title></title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <meta name="author" content="">
+        <meta name="description" content="Boate Terra Night">
+        <meta name="author" content="Boate Terra Night">
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/normalize.css">
@@ -83,25 +83,25 @@
                     <li>
                       <div>
                         <a href="http://instagram.com/boateterranight" class="social" target="_blank">
-                         <img src="../img/title_instagram.png"></a>
+                         <img src="../img/title_instagram.png" alt="instagram"></a>
                       </div>
                     </li>
                     <li>
                       <div>
                         <a href="https://twitter.com/search?q=terranight" class="social" target="_blank">
-                          <img src="../img/title_twitter.png"></a>
+                          <img src="../img/title_twitter.png" alt="Twitter"></a>
                       </div>
                     </li>
                     <li>
                       <div>
                         <a href="http://www.youtube.com/results?search_query=terra+night" class="social" target="_blank">
-                          <img src="../img/title_youtube.png"></a>
+                          <img src="../img/title_youtube.png" alt="YouTube"></a>
                       </div>
                     </li>
                     <li>
                       <div>
                           <a href="https://www.facebook.com/boateterranight" class="social" target="_blank">
-                          <img src="../img/title_facebook.png"></a>
+                          <img src="../img/title_facebook.png" alt="Facebook"></a>
                       </div>
                     </li>
                   </ul>
@@ -132,7 +132,7 @@
                                               <p class="mes gc" style="color:#000000 !important;">
                                                 <b><?=((int)$dadosAgenda['mes'] < 10 ? "0{$dadosAgenda['mes']}" : $dadosAgenda['mes'])?></b>
                                               </p>
-                                              <img class="img-responsive" src="../img/ovo-data.png">
+                                              <img class="img-responsive" src="../img/ovo-data.png" alt="Boate TerraNight">
                                             </div>
                                             <div class="agendaposition">
                                               <h4 class="gc">
@@ -172,25 +172,25 @@
                     <li>
                       <div>
                         <a href="https://www.facebook.com/boateterranight" class="social" target="_blank">
-                          <img src="../img/title_facebook.png"></a>
+                          <img src="../img/title_facebook.png" alt="facebook"></a>
                       </div>
                     </li>
                     <li>
                       <div>
                         <a href="https://twitter.com/search?q=terranight" class="social" target="_blank">
-                          <img src="../img/title_twitter.png"></a>
+                          <img src="../img/title_twitter.png" alt="Twitter"></a>
                       </div>
                     </li>
                     <li>
                       <div>
                         <a href="http://statigr.am/tag/terranight/" class="social" target="_blank">
-                          <img src="../img/title_instagram.png"></a>
+                          <img src="../img/title_instagram.png" alt="instagram"></a>
                       </div>
                     </li>
                     <li>
                       <div>
                         <a href="http://www.youtube.com/results?search_query=terra+night" class="social" target="_blank">
-                          <img src="../img/title_youtube.png"></a>
+                          <img src="../img/title_youtube.png" alt="YouTube"></a>
                       </div>
                     </li>
                   </ul>
