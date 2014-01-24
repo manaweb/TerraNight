@@ -16,7 +16,7 @@
         <![endif]-->
       <nav class="navbar navbar-inverse navbar-fixed-top menu" role="navigation">
           <div class="container col-lg-10 col-lg-offset-1 col-xs-10 col-xs-offset-1">
-            <div id="section1" class="navbar-header">
+            <div class="navbar-header">
             <div class="row">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                 <span class="sr-only">Toggle navigation</span>
@@ -24,10 +24,9 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-       
                <!-- You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js (do a quick Google search for it and you'll find it) -->
                 <a href="index.php">
-                <img class="img-responsive" src="img/logo-menu.fw.png"/>
+                <img class="img-responsive" src="img/logo-menu.png"/>
               </a>
               </div>
             </div>
@@ -93,9 +92,7 @@
             </div>         <!-- /.navbar-collapse -->
           </div>          <!-- /.container --> 
         </nav>
-
         <div class="clearfix"></div>
-
         <div class="modal fade" id="myModalCad" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">        <!-- Modal -->
           <div class="modal-dialog">
             <div class="modal-content">
@@ -129,7 +126,6 @@
                       </form>
                       <br>
                   </div>
-               
                   <div class="col-md-6 col-lg-6">
                    <img class="img-responsive center-block" src="../img/logo-ovo.png">
                   </div>
@@ -160,7 +156,7 @@
           </div>
         </div>-->
 <BR>
-<div id="section1" class="section"> 
+<div class="section"> 
   <div class="col-lg-8 col-lg-offset-2 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
 
     <div class="cycle-slideshow" data-cycle-fx="scrollHorz" 
