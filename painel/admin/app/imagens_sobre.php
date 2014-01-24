@@ -36,10 +36,8 @@
 
 		# Arquivo
 		$size = count($_FILES['imagem']['name']);
-		for ($i = 0;$i < $size;$i++) {
-			$dados2['arquivo'][$i] = processaArquivo('imagem',$Config,$_FILES,1,$i,'arquivo');
-			if ($dados2['arquivo'][$i] == false) { header("Location: ../sys/".$Config['arquivo'].".php?erro=".urlencode('Erro processando Imagem.'),true); exit; }
-		}
+		$dados2['arquivo'][0] = processaArquivo('imagem',$Config,$_FILES,1,$i,'arquivo');
+		if ($dados2['arquivo'][0] == false) { header("Location: ../sys/".$Config['arquivo'].".php?erro=".urlencode('Erro processando Imagem.'),true); exit; }
 
 		
 		
@@ -53,11 +51,9 @@
 
 		} else {
 			$tmpDados = $dados2;
-			for ($i = 0; $i < $size;$i++) {
-				$tmpVar = $tmpDados['arquivo'][$i];
-				$dados2['arquivo'] = $tmpVar;
-				db_executa($Config['tabela'],$dados2);
-			}
+			$tmpVar = $tmpDados['arquivo'][0];
+			$dados2['arquivo'] = $tmpVar;
+			db_executa($Config['tabela'],$dados2);
 			# Hist�rico
 			cadHistorico(ID_MODULO,1,db_insert_id());
 		}
