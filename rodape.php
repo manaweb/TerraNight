@@ -1,5 +1,5 @@
       <footer>
-          <div  id="section4">
+          <div>
             <div class="container col-lg-8 col-lg-offset-2 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
               <div class="row">
                 <BR>
@@ -55,7 +55,7 @@
                               <span class="input-group-addon glyphicon glyphicon-pencil"></span>
                             <textarea class="form-control" rows="6" name="texto" required></textarea>
                        </div>
-                      <div class="input-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                      <div  id="section4" class="input-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
                           <button type="submit" class="btn-enviar pull-right gc"></button>    
                        </div>
                     </form>  

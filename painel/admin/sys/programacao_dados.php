@@ -38,20 +38,16 @@ $ondeestou = 'Nova Programa&ccedil;&atilde;o';
 		#	0=>Tipo			1=>Titulo		2=>Nome Campo		3=>Tamanho(px)	4=>CampoExtra		5=>Comentário								6=>Atributos
 		array('text',		'T&iacutetulo',		'titulo',			'500',			'',					'',											''),
 		array('text',		'Descri&ccedil;&atilde;o',		'descricao',			'250',			'',					'',											''),
-		array('coletor',	'Data/Hora',			'data',				'100',			'',					'',											''),
+		array('data',	'Data/Hora',			'data',				'100',			'',					'',											''),
 	);
 
 
 	# Exibindo os campos
 	echo adminCampos($campos,$Config,$dados);
 
-
-
-
-
-
 ?>
 </div>
 <?
 	include('../includes/Rodape.php');
+
 ?>
