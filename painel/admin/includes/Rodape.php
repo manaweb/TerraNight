@@ -27,6 +27,7 @@ Powered By Man&aacute; WEB</a><br>
         <script type='application/javascript' src='../js/fullcalendar.min.js'></script>
         <script type='text/javascript' src='../js/visualize.jQuery.js'></script>
         <script type='application/javascript' src='../js/functions.js'></script>
+        <script type="text/javascript" src="../datepicker/jquery.datetimepicker.js"></script>
         <script>
             var config = CKEDITOR.config;
             CKEDITOR.config.extraPlugins = 'toolbar';
@@ -34,6 +35,12 @@ Powered By Man&aacute; WEB</a><br>
             CKEDITOR.replace('jqte',{
                 toolbar: null,
                 toolbarGroups: null
+            });
+            $(function() {
+                $('input[type=data]').click(function(e) {
+                    e.preventDefault();
+                    abrirCalendario('', 'frmDados', this, 'date');
+                });
             });
         </script>
 </body>

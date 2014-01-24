@@ -10,7 +10,6 @@ function consultaSelTodos(selecionado) {
 }
 
 
-
 /**
  * Opens calendar window.
  *
@@ -24,12 +23,6 @@ function abrirCalendario(params, form, field, type) {
 	dateField = eval("document." + form + "." + field);
 	dateType = type;
 }
-
-
-
-
-
-
 
 function open_newwin( mypage, myname, w ,h , settings )
 {
