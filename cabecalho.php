@@ -32,7 +32,7 @@
                     </a>
                   </li>
                   <li class="tnradio">
-                    <iframe src="http://www.virtualcast.com.br/players/audio/002/transparente.php?canal=terranight&autoplay=1" allowtransparency="true" frameborder="0" height="38" scrolling="No" width="450"></iframe> 
+                    <iframe class="visible-lg visible-md visible-sm hidden-xs" src="http://www.virtualcast.com.br/players/audio/002/transparente.php?canal=terranight&autoplay=1" allowtransparency="true" frameborder="0" height="38" scrolling="No" width="450"></iframe> 
                   </li>
             </div>
           </div>
