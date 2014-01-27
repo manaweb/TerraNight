@@ -63,61 +63,61 @@
                   <!-- Nav tabs category -->
                   <ul class="nav nav-tabs faq-cat-tabs list-inline">
                     <li class="active">
-                      <a href="#faq-cat-0" data-toggle="tab"> <b class="gc meses">JAN</b>
+                      <a href="#faq-cat-0" data-toggle="tab"> <b class="gcn meses">JAN</b>
                       </a>
                     </li>
                     <li>
-                      <a href="#faq-cat-1" data-toggle="tab"> <b class="gc meses">FEV</b>
+                      <a href="#faq-cat-1" data-toggle="tab"> <b class="gcn meses">FEV</b>
                       </a>
                     </li>
                     <li>
                       <a href="#faq-cat-2" data-toggle="tab">
-                        <b class="gc meses">MAR</b>
+                        <b class="gcn meses">MAR</b>
                       </a>
                     </li>
                     <li>
                       <a href="#faq-cat-3" data-toggle="tab">
-                        <b class="gc meses">ABR</b>
+                        <b class="gcn meses">ABR</b>
                       </a>
                     </li>
                     <li>
                       <a href="#faq-cat-4" data-toggle="tab">
-                        <b class="gc meses">MAI</b>
+                        <b class="gcn meses">MAI</b>
                       </a>
                     </li>
                     <li>
                       <a href="#faq-cat-5" data-toggle="tab">
-                        <b class="gc meses">JUN</b>
+                        <b class="gcn meses">JUN</b>
                       </a>
                     </li>
                     <li>
                       <a href="#faq-cat-6" data-toggle="tab">
-                        <b class="gc meses">JUL</b>
+                        <b class="gcn meses">JUL</b>
                       </a>
                     </li>
                     <li>
                       <a href="#faq-cat-7" data-toggle="tab">
-                        <b class="gc meses">AGO</b>
+                        <b class="gcn meses">AGO</b>
                       </a>
                     </li>
                     <li>
                       <a href="#faq-cat-8" data-toggle="tab">
-                        <b class="gc meses">SET</b>
+                        <b class="gcn meses">SET</b>
                       </a>
                     </li>
                     <li>
                       <a href="#faq-cat-9" data-toggle="tab">
-                        <b class="gc meses">OUT</b>
+                        <b class="gcn meses">OUT</b>
                       </a>
                     </li>
                     <li>
                       <a href="#faq-cat-10" data-toggle="tab">
-                        <b class="gc meses">NOV</b>
+                        <b class="gcn meses">NOV</b>
                       </a>
                     </li>
                     <li>
                       <a href="#faq-cat-11" data-toggle="tab">
-                        <b class="gc meses">DEZ</b>
+                        <b class="gcn meses">DEZ</b>
                       </a>
                     </li>
                   </ul>
@@ -140,15 +140,15 @@
                             <div class="panel-heading">
                               <a data-toggle="collapse" data-parent="#accordion-cat-<?=$i?>" href="#faq-cat-<?=$i?>-sub-<?=$i?>">
                                 <div class="pull-left">
-                                  <p class="dia gc" style="color:#000000 !important;">
+                                  <p class="dia gcn" style="color:#000000 !important;">
                                     <b><?=((int)$dadosAgenda['dia'] < 10 ? "0{$dadosAgenda['dia']}" : $dadosAgenda['dia'])?></b>
                                   </p>
-                                  <p class="mes gc" style="color:#000000 !important;">
+                                  <p class="mes gcn" style="color:#000000 !important;">
                                     <b><?=((int)$dadosAgenda['mes'] < 10 ? "0{$dadosAgenda['mes']}" : $dadosAgenda['mes'])?></b>
                                   </p>
                                   <img class="img-responsive" src="../img/ovo-data.png"></div>
                                 <div class="agendaposition">
-                                  <h3 class="gc">
+                                  <h3 class="gcn">
                                     <b>
                                       <?=utf8_encode($dadosAgenda['titulo'])?></b>
                                     <br>

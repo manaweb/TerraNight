@@ -15,7 +15,7 @@
         </ p>
         <![endif]-->
       <nav class="navbar navbar-inverse navbar-fixed-top menu" role="navigation">
-          <div class="container col-lg-10 col-lg-offset-1 col-xs-10 col-xs-offset-1">
+          <div class="container col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-10 col-xs-offset-1">
             <div class="navbar-header">
             <div class="row">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -25,11 +25,17 @@
                 <span class="icon-bar"></span>
               </button>
                <!-- You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js (do a quick Google search for it and you'll find it) -->
-                <a href="index.php">
-                <img class="img-responsive" src="img/logo-menu.png"/>
-              </a>
-              </div>
+                <ul class="list-inline">
+                  <li>
+                    <a href="index.php">
+                     <img class="img-responsive" src="img/logo-menu.png"/>
+                    </a>
+                  </li>
+                  <li class="tnradio">
+                    <iframe src="http://www.virtualcast.com.br/players/audio/002/transparente.php?canal=terranight&autoplay=1" allowtransparency="true" frameborder="0" height="38" scrolling="No" width="450"></iframe> 
+                  </li>
             </div>
+          </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
               <ul class="nav navbar-nav navbar-right">
@@ -155,6 +161,7 @@
             </div>
           </div>
         </div>-->
+<BR>        
 <BR>
 <div class="section"> 
   <div class="col-lg-8 col-lg-offset-2 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
