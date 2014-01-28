@@ -23,16 +23,16 @@ if (isset($mes)) {
             <div class="panel-heading">
               <a data-toggle="collapse" data-parent="#accordion-cat-'.$i.'" href="#faq-cat-'.$i.'-sub-'.$i.'">
                   <div class="pull-left">
-                    <p class="dia gc" style="color:#000000 !important;">
+                    <p class="dia gcn" style="color:#000000 !important;">
                       '.((int)$dadosAgenda['dia'] < 10 ? "0{$dadosAgenda['dia']}" : $dadosAgenda['dia']).'
                     </p>
-                    <p class="mes gc" style="color:#000000 !important;">
+                    <p class="mes gcn" style="color:#000000 !important;">
                       '.((int)$dadosAgenda['mes'] < 10 ? "0{$dadosAgenda['mes']}" : $dadosAgenda['mes']).'
                     </p>
                     <img class="img-responsive" src="../img/ovo-data.png">
                   </div>
                   <div class="agendaposition">
-                    <h3 class="gc">
+                    <h3 class="gcn">
                      <b>'.utf8_encode($dadosAgenda['titulo']).'</b>
                       <br>
                       <small> 
