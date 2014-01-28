@@ -42,7 +42,7 @@
         <link href="/css/bootstrap-ie7.css" rel="stylesheet">
         <![endif]-->
 </head>
-<body onload="window.open('http://terranight.com.br/radio.html', 'Rádio - Terra Night', 'STATUS=NO, TOOLBAR=NO, LOCATION=NO, DIRECTORIES=NO, RESISABLE=NO, SCROLLBARS=NO, TOP=10, LEFT=10, WIDTH=500, HEIGHT=250')">
+<body onload="window.open('http://terranight.com.br/radio.php', 'Rádio - Terra Night', 'STATUS=NO, TOOLBAR=NO, LOCATION=NO, DIRECTORIES=NO, RESISABLE=NO, SCROLLBARS=NO, TOP=10, LEFT=10, WIDTH=500, HEIGHT=250')">
   	<?php include_once("analyticstracking.php") ?>
 
 	<a href="index.php">
